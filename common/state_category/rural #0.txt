@@ -1,0 +1,8 @@
+state_categories={
+	rural = {
+		local_building_slots = 0
+	
+		color = { 10 0 0 }
+
+	}
+}
