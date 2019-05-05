@@ -1,0 +1,96 @@
+﻿capital = 603
+
+oob = "CHY_1100"
+
+set_research_slots = 2
+set_stability = 0.39
+set_war_support = 0.95
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_mp38 = 1
+}
+
+    declare_war_on = {
+		target = LEX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CHI
+		type = annex_everything
+	}
+
+set_convoys = 18
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 15
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 85
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = henism_autocracy
+	last_election = "1935.1.1"
+	election_frequency = 12
+	elections_allowed = no
+
+}
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Chygyigo"
+	desc = ""
+	picture = "gfx/leaders/Portrait_CHY.dds"
+	expire = "1965.1.1"
+	ideology = henism_auto
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "CHY Leader Commander 1"
+	picture = ""
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

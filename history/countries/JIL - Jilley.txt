@@ -1,0 +1,66 @@
+﻿capital = 681
+
+oob = "RUE_1936"
+set_stability = 0.4
+set_war_support = 0.4
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 100
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Jilley"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+	}
+}

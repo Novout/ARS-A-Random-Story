@@ -1,0 +1,101 @@
+﻿capital = 598
+
+oob = "LEX_1100"
+
+set_research_slots = 2
+set_stability = 0.45
+set_war_support = 0.71
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_mp38 = 1
+	ars_stg = 1
+	early_light_boat = 1 
+	early_medium_boat = 1 
+	fighter1 = 1
+	tactical_bomber1 = 1
+}
+
+    declare_war_on = {
+		target = CHI
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CHY
+		type = annex_everything
+	}
+
+set_convoys = 18
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 100
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = radicalism
+	last_election = "1935.1.1"
+	election_frequency = 12
+	elections_allowed = no
+
+}
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Lexfoyno"
+	desc = ""
+	picture = "gfx/leaders/Portrait_LEX.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "LEX Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}

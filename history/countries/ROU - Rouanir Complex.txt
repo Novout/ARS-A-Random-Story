@@ -1,0 +1,84 @@
+﻿capital = 701
+
+oob = "ROU_1936"
+
+set_research_slots = 2
+set_stability = 0.11
+set_war_support = 0.45
+
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	fighter1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 18
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 82
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = reactionary
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Rouanir"
+	desc = "POLITCS_ROUANIR_LEADER"
+	picture = "Portrait_Rouanir.dds"
+	expire = "1965.1.1"
+	ideology = plutocracy
+	traits = {
+		rou_notion
+		rou_leader
+		rou_repression
+	}
+}
+
+create_corps_commander = {
+	name = "Rouanir General 1"
+	portrait_path = ""
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

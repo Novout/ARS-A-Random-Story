@@ -1,0 +1,89 @@
+﻿capital = 27
+
+oob = "VVV_1936"
+
+set_research_slots = 2
+set_war_support = 0.38
+
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	trench_warfare = 1
+
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 100
+		}
+
+		reactionary = {
+			popularity = 8
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = henism_pacifism
+	last_election = "1935.3.1"
+	election_frequency = 24
+	elections_allowed = yes
+
+}
+
+set_stability = 0.82
+
+create_country_leader = {
+	name = "Veriqken"
+	desc = ""
+	picture = "gfx/leaders/VVV/Portrait_Veriqken.dds"
+	expire = "1965.1.1"
+	ideology = henism_democratic
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Veriqken"
+	portrait_path = ""
+	traits = { trait_mountaineer hill_fighter }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}

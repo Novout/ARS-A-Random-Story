@@ -1,0 +1,76 @@
+﻿capital = 741
+
+oob = "LIG_1936"
+
+set_research_slots = 1
+set_stability = 0.24
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_convoys = 8
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 90
+		}
+		
+		coronelism = {
+			popularity = 10
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "1935.1.1"
+	election_frequency = 12
+	elections_allowed = no
+
+}
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Ligarta"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+
+	}
+}

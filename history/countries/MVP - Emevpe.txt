@@ -1,0 +1,43 @@
+﻿capital = 592
+
+oob = "MVP_1936"
+
+set_research_slots = 1
+set_stability = 0.92
+set_war_support = 0.95
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+add_ideas = {
+    mvp_war
+}
+
+set_politics = {
+
+	parties = {
+		radicalism = {
+			popularity = 100
+		}
+	}
+	
+	ruling_party = radicalism
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Emevpe"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = syndicalism
+	traits = {
+		#
+	}
+}

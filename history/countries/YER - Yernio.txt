@@ -1,0 +1,98 @@
+﻿capital = 104
+
+oob = "YER_1936"
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_armored_car = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+	ars_stg = 1
+	early_light_boat = 1
+	early_medium_boat = 1
+	ars_artillery = 1
+	ars_support_enginner = 1
+}
+set_war_support = 0.61
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 54
+		}
+		
+		coronelism = {
+			popularity = 31
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 15
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Gerhuiyo Karja"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "YER Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "YER Leader Commander 2"
+	picture = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}

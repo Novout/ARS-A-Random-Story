@@ -1,0 +1,93 @@
+﻿capital = 495
+
+oob = "AGL_1936"
+
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = 0.8
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	early_fighter = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 100
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 3
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "1935.1.1"
+	election_frequency = 64
+	elections_allowed = yes
+
+}
+
+add_ideas = {
+}
+
+#Order matters here Daladier will start as leaders because added last
+create_country_leader = {
+	name = "Agtiya"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "AGL Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}

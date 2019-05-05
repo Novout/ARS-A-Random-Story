@@ -1,0 +1,90 @@
+﻿capital = 27
+
+oob = "YAY_1936"
+
+set_research_slots = 1
+set_stability = 0.18
+set_war_support = 0.51
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_armored_car = 1
+}
+
+add_ideas = {
+	yay_1_country
+	yay_tec_1
+	yay_industry_1
+	yay_military_1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 25
+		}
+
+		henism_autocracy = {
+			popularity = 50
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 15
+		}
+
+		anarchism = {
+			popularity = 5
+		}
+
+		fundamentalism = {
+			popularity = 5
+		}
+	}
+	
+	ruling_party = henism_autocracy
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Yayr"
+	desc = "POLITICS_YAYR_LEADER"
+	picture = "Portrait_Harald_De_Gaul.dds"
+	expire = "1965.1.1"
+	ideology = henism_auto
+	traits = {
+		ars_war_code
+		yay_guided_for_war
+	}
+}
+
+create_field_marshal = {
+	name = "General Yayr 1"
+	traits = { offensive_doctrine logistics_wizard }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 1
+}

@@ -1,0 +1,42 @@
+﻿capital = 682
+
+oob = "ACAN_1936"
+
+set_research_slots = 3
+set_country_flag = monroe_doctrine
+set_stability = 0.8
+set_war_support = 0.1
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+set_politics = {
+
+	parties = {
+		traditional_conservatism = { 
+			popularity = 56
+		}
+
+		henism_pacifism = {
+			popularity = 44
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "1105.10.14"
+	election_frequency = 30
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Canada"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+		#
+	}
+}

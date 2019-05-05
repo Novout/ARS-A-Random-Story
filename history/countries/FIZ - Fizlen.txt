@@ -1,0 +1,156 @@
+﻿capital = 453
+
+oob = "FIZ_1936"
+
+set_research_slots = 1
+set_stability = 0.27
+set_war_support = 0.69
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+# DIPLOMACY / WAR on 1936
+	declare_war_on = {
+		target = BMY
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = NEL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = WIL
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ZAX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = HAT
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = NYU
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = REI
+		type = annex_everything
+	}
+
+set_convoys = 8
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 5
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 10
+		}
+
+		reactionary = {
+			popularity = 85
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = reactionary
+	last_election = "1935.1.1"
+	election_frequency = 12
+	elections_allowed = no
+
+}
+
+add_ideas = {
+    recruitable_4
+    war_economy_ars
+    high_taxes_ars
+}
+
+create_country_leader = {
+	name = "Fizlen"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = plutocracy
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "FIZ Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "FIZ Leader Commander 2"
+	picture = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "FIZ Leader Commander 3"
+	picture = ""
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "FIZ Leader Commander 4"
+	picture = ""
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+

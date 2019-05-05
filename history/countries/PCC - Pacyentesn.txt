@@ -1,0 +1,139 @@
+﻿capital = 209
+
+oob = "PCC_1936"
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.17
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_mp38 = 1
+	ars_fm = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 5
+		}
+
+		radicalism = {
+			popularity = 5
+		}
+
+		henism_autocracy = {
+			popularity = 20
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 65
+		}
+
+		anarchism = {
+			popularity = 5
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = reactionary
+	last_election = "1101.1.1"
+	election_frequency = 12
+	elections_allowed = yes
+
+}
+
+add_ideas = {
+    pacyentesn_desorganization
+    pacyentesn_military_exp
+    high_taxes
+    partial_economy
+    low_recruitment
+}
+
+create_country_leader = {
+	name = "Hetino"
+	desc = "POLITICS_HETINO_LEADER"
+	picture = "Portrait_Hetino.dds"
+	expire = "1965.1.1"
+	ideology = plutocracy
+	traits = {
+        pcc_deficiency
+        pcc_genius
+        pcc_opinion
+	}
+}
+
+create_country_leader = {
+	name = "Nicholas III"
+	desc = "POLITICS_NICHOLAS_LEADER"
+	picture = "Portrait_Nicholas.dds"
+	expire = "1965.1.1"
+	ideology = henism_auto
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "PCC Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "PCC Leader Commander 2"
+	picture = ""
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "PCC Leader Commander 3"
+	picture = ""
+	traits = {  }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "PCC Leader Commander 4"
+	picture = ""
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

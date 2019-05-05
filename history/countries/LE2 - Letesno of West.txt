@@ -1,0 +1,98 @@
+﻿capital = 115
+
+oob = "LE1_1936"
+
+set_research_slots = 2
+set_stability = 0.11
+set_war_support = 0.72
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		egalitarianism = {
+			popularity = 100
+		}
+	}
+	
+	ruling_party = egalitarianism
+	last_election = "1935.1.1"
+	election_frequency = 12
+	elections_allowed = no
+
+}
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Letesno Puppet"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = egalitarianism
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "COD Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "COD Leader Commander 2"
+	picture = ""
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}

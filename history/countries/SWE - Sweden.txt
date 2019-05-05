@@ -1,0 +1,40 @@
+﻿capital = 141	
+
+oob = "SWE_1100"
+
+set_research_slots = 2
+
+add_ideas = {
+}
+set_stability = 0.45
+set_war_support = 0.8
+
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		henism_autocracy = { 
+			popularity = 100
+		}	
+	}
+	
+	ruling_party = henism_autocracy
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "State of Sweden"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = henism_auto
+	traits = {
+		#
+	}
+}

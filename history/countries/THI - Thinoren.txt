@@ -1,0 +1,67 @@
+﻿capital = 173
+
+oob = "THI_1936"
+set_stability = 0.62
+set_war_support = 0.34
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	fighter1 = 1
+	fighter2 = 1
+	tactical_bomber1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 40
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 53
+		}
+
+		reactionary = {
+			popularity = 7
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = henism_pacifism
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = yes
+
+}
+
+create_country_leader = {
+	name = "Thinoren"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = henism_monarch
+}

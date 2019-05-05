@@ -1,0 +1,38 @@
+﻿capital = 37
+
+oob = "DES_1936"
+
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		unknown = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = unknown
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+add_ideas = {
+	unknown_ide
+}
+
+create_country_leader = {
+	name = "Unknown"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = unknow
+	traits = {
+		#
+	}
+}

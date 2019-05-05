@@ -1,0 +1,65 @@
+﻿capital = 380
+
+oob = "LPP_1936"
+set_stability = 0.4
+set_war_support = 0.76
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 70
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 10
+		}
+
+		henism_autocracy = {
+			popularity = 10
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 0
+		}
+
+		anarchism = {
+			popularity = 5
+		}
+
+		fundamentalism = {
+			popularity = 5
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "5039.1.1"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Lpepef"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+	}
+}

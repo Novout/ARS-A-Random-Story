@@ -1,0 +1,70 @@
+﻿capital = 550
+
+oob = "HAT_1936"
+set_stability = 0.71
+set_war_support = 0.46
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 40
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 0
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 2
+		}
+
+		anarchism = {
+			popularity = 8
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+
+		dictatorship = {
+			popularity = 50
+		}
+	}
+	
+	ruling_party = dictatorship
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Hatyi"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = dictatorship
+	traits = {
+	}
+}

@@ -1,0 +1,62 @@
+﻿capital = 595
+
+oob = "CHI_1936"
+set_stability = 0.75
+set_war_support = 0.58
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_armored_car = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+	ars_stg = 1
+}
+
+    declare_war_on = {
+		target = LEX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CHY
+		type = annex_everything
+	}
+
+add_ideas = {
+    chi_army_despondent
+    chi_primitive_thinking
+}    
+
+set_politics = {
+
+	parties = {
+		radicalism = { 
+		    popularity = 100
+	    }
+	}
+	ruling_party = radicalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Zeryendo Harfilo"
+	desc = ""
+	picture = "gfx/leaders/Portrait_China.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "CHI Leader Commander"
+	picture = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}

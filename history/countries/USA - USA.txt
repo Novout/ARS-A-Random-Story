@@ -1,0 +1,69 @@
+﻿capital = 375
+
+oob = "USA_1936"
+
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.5
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	fighter1 = 1
+	early_light_boat = 1
+	ars_armored_car = 1
+	industry_efficient = 1
+	industry_efficient2 = 1
+	industry_resources = 1
+	ars_artillery = 1
+	ars_support_enginner = 1
+	ars_field_hospital = 1
+	early_light_boat = 1
+	early_medium_boat = 1
+}
+
+set_convoys = 14
+
+
+set_politics = {
+
+	parties = {
+		traditional_conservatism = { 
+			popularity = 52
+		}
+
+		henism_autocracy = { 
+			popularity = 48
+		}
+	}
+	
+	ruling_party = traditional_conservatism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+    usa_union
+}
+
+create_country_leader = {
+	name = "Desferi Vivo"
+	desc = "POLITICS_DESFERI_LEADER"
+	picture = "Portrait_Desferi.dds"
+	expire = "1947.1.1"
+	ideology = federal
+	traits = {
+	    usa_victory_for_pacifism
+	}
+}
+
+create_country_leader = {
+	name = "Gioheine"
+	desc = "POLITICS_GIOHEINE_LEADER"
+	picture = "Portrait_Gioheine.dds"
+	expire = "1947.1.1"
+	ideology = henism_auto
+	traits = {
+	    usa_gieheine_annex
+	}
+}

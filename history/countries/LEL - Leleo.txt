@@ -1,0 +1,77 @@
+﻿capital = 291
+
+oob = "LEL_1936"
+set_stability = 0.55
+set_war_support = 0.42
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	ars_armored_car = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+	ars_stg = 1
+	early_light_boat = 1
+	early_medium_boat = 1
+	ars_artillery = 1
+	ars_support_enginner = 1
+}
+
+set_convoys = 45
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 1
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 1
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 98
+		}
+	}
+	
+	ruling_party = fundamentalism
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Yelo Dynasty"
+	desc = "POLITICS_YELO_LEADER"
+	picture = "Portrait_Yelo.dds"
+	expire = "1965.1.1"
+	ideology = heyeloism
+	traits = {
+	    lel_expand
+	}
+}

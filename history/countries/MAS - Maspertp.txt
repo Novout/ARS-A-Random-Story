@@ -1,0 +1,84 @@
+﻿capital = 616
+
+oob = "MAS_1936"
+
+set_research_slots = 2
+set_stability = 0.75
+set_war_support = 1.0
+
+# Starting tech
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+}
+
+add_ideas = {
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 0
+		}
+
+		traditional_conservatism = {
+			popularity = 0
+		}
+		
+		coronelism = {
+			popularity = 0
+		}
+
+		radicalism = {
+			popularity = 90
+		}
+
+		henism_autocracy = {
+			popularity = 5
+		}
+
+		henism_pacifism = {
+			popularity = 0
+		}
+
+		reactionary = {
+			popularity = 5
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = radicalism
+	last_election = "1935.1.1"
+	election_frequency = 24
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Maspertp"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = syndicalism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "General MAS"
+	traits = { offensive_doctrine logistics_wizard }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 1
+}

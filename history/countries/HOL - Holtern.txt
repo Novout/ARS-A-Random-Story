@@ -1,0 +1,95 @@
+﻿capital = 7
+
+oob = "HOL_1936"
+
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.1
+
+set_technology = {
+	ars_carabine = 1
+	ars_carabine1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_destroyer = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+set_politics = {
+
+	parties = {
+		kiinism = { 
+			popularity = 
+		}
+
+		traditional_conservatism = {
+			popularity = 1
+		}
+		
+		coronelism = {
+			popularity = 1
+		}
+
+		radicalism = {
+			popularity = 0
+		}
+
+		henism_autocracy = {
+			popularity = 23
+		}
+
+		henism_pacifism = {
+			popularity = 75
+		}
+
+		reactionary = {
+			popularity = 8
+		}
+
+		anarchism = {
+			popularity = 0
+		}
+
+		fundamentalism = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = henism_pacifism
+	last_election = "1936.1.1"
+	election_frequency = 24
+	elections_allowed = yes
+
+}
+
+create_country_leader = {
+	name = "Holtern"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = henism_monarch
+	traits = {
+		#
+	}
+}
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Holtern Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+}
