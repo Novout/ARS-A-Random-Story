@@ -1,0 +1,166 @@
+focus_tree = {
+	id = japan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = JAL
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 250 y = 1800}
+
+	focus = {
+		id = JA1_state
+		available = {
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		}
+		icon = GFX_focus_generic_treaty
+		x = 6
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = JAL_territory_1
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = JA1_state }
+		x = 5
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAL = { 
+			    transfer_state = 531
+			    transfer_state = 532
+			    add_state_core = 531
+			    add_state_core = 532
+		    }
+		}
+	}
+
+	focus = {
+		id = JAL_territory_2
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = JA1_state }
+		x = 7
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAL = { 
+			    transfer_state = 534
+			    transfer_state = 533
+			    add_state_core = 534
+			    add_state_core = 533
+		    }
+		}
+	}
+
+	focus = {
+		id = JAL_rise
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = JAL_territory_2 }
+		prerequisite = { focus = JAL_territory_1 }
+		x = 6
+		y = 2
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		    exists = yes
+		}
+		cost = 25
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAL_war_zxd
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = JAL_rise }
+		x = 6
+		y = 3
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		    exists = yes
+		}
+		cost = 15
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+
+		completion_reward = {
+			country_event = ars_japan_default.1
+		}	
+	}
+}	

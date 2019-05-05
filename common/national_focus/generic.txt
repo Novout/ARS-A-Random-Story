@@ -1,0 +1,2060 @@
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 1250 }
+
+	focus = {
+		id = ars_industrial_effort
+		icon = GFX_goal_generic_production
+		cost = 14.00
+		available = {
+			NOT = {
+				has_government = kiinism
+				has_government = unknown
+				has_government = coronelism
+				has_government = anarchism
+			}
+		}
+		x = 6
+		y = 0
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+		    factor = 3
+	    }
+    }
+
+    focus = {
+		id = ars_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ars_industrial_effort }
+		x = 4
+		y = 1
+		relative_position_id = ars_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_logistics_15_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_infrastructure_effort_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ars_infrastructure_effort }
+		x = 0
+		y = 1
+		relative_position_id = ars_infrastructure_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_logistics_30_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_infrastructure_effort_3
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ars_infrastructure_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = ars_infrastructure_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_logistics_45_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_infrastructure_effort_4
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ars_infrastructure_effort_3 }
+		x = 0
+		y = 1
+		relative_position_id = ars_infrastructure_effort_3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_logistics_60_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = ars_civilian_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ars_industrial_effort }
+		x = 0
+		y = 1
+		relative_position_id = ars_industrial_effort
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_industry_15_cf
+		}
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_oil_construction_effort
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ars_civilian_construction_effort }
+		x = 2
+		y = 1
+		relative_position_id = ars_civilian_construction_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_engineering_15_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_oil_construction_effort_2
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ars_civilian_construction_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = ars_oil_construction_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		    has_country_flag = ars_engineering_30_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_steel_construction_effort
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ars_civilian_construction_effort }
+		x = -2
+		y = 1
+		relative_position_id = ars_civilian_construction_effort
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_engineering_15_cf
+		}
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = steel_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = steel_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = steel_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_steel_construction_effort_2
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ars_civilian_construction_effort_2 }
+		x = -2
+		y = 1
+		relative_position_id = ars_civilian_construction_effort_2
+
+		available = {
+		    has_country_flag = ars_engineering_30_cf
+		}
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = steel_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = steel_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = steel_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_civilian_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ars_civilian_construction_effort }
+		prerequisite = { focus = ars_steel_construction_effort focus = ars_oil_construction_effort }
+		x = 0
+		y = 2
+		relative_position_id = ars_civilian_construction_effort
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_industry_30_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = generic_extra_tech_slot
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = ars_civilian_construction_effort_2 }
+		prerequisite = { focus = ars_steel_construction_effort_2 focus = ars_oil_construction_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = ars_civilian_construction_effort_2
+		available = {
+		    has_country_flag = ars_science_30_cf
+		}
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ars_civilian_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = generic_extra_tech_slot }
+		prerequisite = { focus = ars_steel_construction_effort_3 focus = ars_oil_construction_effort_3 }
+		x = 0
+		y = 4
+		relative_position_id = ars_civilian_construction_effort_2
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_industry_45_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_oil_construction_effort_3
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = generic_extra_tech_slot }
+		x = 2
+		y = 1
+		relative_position_id = generic_extra_tech_slot
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		    has_country_flag = ars_engineering_45_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_steel_construction_effort_3
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = generic_extra_tech_slot }
+		x = -2
+		y = 1
+		relative_position_id = generic_extra_tech_slot
+
+		available = {
+		    has_country_flag = ars_engineering_45_cf
+		}
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = steel_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = steel_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = steel_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_oil_construction_effort_4
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ars_civilian_construction_effort_3 }
+		x = 2
+		y = 1
+		relative_position_id = ars_civilian_construction_effort_3
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		    has_country_flag = ars_engineering_60_cf
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = synthetic_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_steel_construction_effort_4
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ars_civilian_construction_effort_3 }
+		x = -2
+		y = 1
+		relative_position_id = ars_civilian_construction_effort_3
+
+		available = {
+		    has_country_flag = ars_engineering_60_cf
+		}
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = steel_refinery
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = steel_refinery
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = steel_refinery
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = ars_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ars_industrial_effort }
+		x = -4
+		y = 1
+		relative_position_id = ars_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		    has_country_flag = ars_engineering_15_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ars_production_effort }
+		x = 0
+		y = 1
+		relative_position_id = ars_production_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		    has_country_flag = ars_engineering_30_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ars_production_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = ars_production_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		    has_country_flag = ars_engineering_45_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_production_effort_4
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ars_production_effort_3 }
+		x = 0
+		y = 1
+		relative_position_id = ars_production_effort_3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_40_cf
+		    has_country_flag = ars_engineering_60_cf
+		}
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ars_knowledge
+		icon = GFX_goal_generic_demand_territory
+		x = 15
+		y = 0
+		cost = 10
+
+		available = {
+			NOT = {
+				has_government = kiinism
+				has_government = unknown
+				has_government = coronelism
+				has_government = anarchism
+			}
+		}
+		available = {
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 250
+		}
+	}
+
+	focus = {
+		id = ars_society
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ars_knowledge }
+		mutually_exclusive = { focus = ars_authoritarianism }
+		x = 1
+		y = 1
+		relative_position_id = ars_knowledge
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_concept_of_society_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = -1000
+				OR = {
+				    has_government = radicalism
+				    has_government = dictatorship
+				    has_government = henism_autocracy
+				    has_government = reactionary
+				    has_government = traditional_conservatism
+			    }
+			}
+		}
+
+		completion_reward = {
+			add_ideas = society
+		}
+	}
+
+	focus = {
+		id = ars_paramilitarism
+		text = paramilitarism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = ars_society }
+		x = 0
+		y = 2
+		relative_position_id = ars_society
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+	}
+
+	focus = {
+		id = ars_volunteer_corps
+		text = volunteer_corps
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ars_paramilitarism }
+		x = 0
+		y = 2
+		relative_position_id = ars_paramilitarism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    set_rule = { can_send_volunteers = yes }
+			add_ideas = volunteer_corps_focus
+		}
+	}
+
+	focus = {
+		id = ars_authoritarianism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ars_knowledge }
+		mutually_exclusive = { focus = ars_society }
+		available = {
+			OR = {
+				has_government = radicalism
+				has_government = dictatorship
+				has_government = henism_autocracy
+				has_government = reactionary
+				has_government = traditional_conservatism
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = ars_knowledge
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = authoritarianism
+		}
+	}
+
+	focus = {
+		id = ars_military
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ars_authoritarianism }
+		x = 0
+		y = 2
+		relative_position_id = ars_authoritarianism
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = military_organization
+		}
+	}
+
+	focus = {
+		id = ars_search
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ars_military }
+		x = 0
+		y = 2
+		relative_position_id = ars_military
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_ancient_language_15_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = search_past
+		}
+	}
+
+	focus = {
+		id = ars_army_general
+		icon = GFX_goal_generic_position_armies
+		x = 21
+		y = 0
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+
+	focus = {
+		id = light_boat
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = ars_army_general }
+		x = 0
+		y = 1
+		relative_position_id = ars_army_general
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		}
+
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_light_boat
+			}
+		}
+	}
+
+	focus = {
+		id = heavy_boat
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = light_boat }
+		x = 0
+		y = 1
+		relative_position_id = light_boat
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		}
+
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_medium_boat
+			}
+		}
+	}
+
+	focus = {
+		id = fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = ars_army_general }
+		x = 2
+		y = 1
+		relative_position_id = ars_army_general
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = fighter_focus }
+		x = 0
+		y = 1
+		relative_position_id = fighter_focus
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		}
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = bomber_focus }
+		x = 0
+		y = 1
+		relative_position_id = bomber_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_40_cf
+		}
+
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ars_army_general }
+		x = -2
+		y = 1
+		relative_position_id = ars_army_general
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = equipment_effort }
+		x = 0
+		y = 1
+		relative_position_id = equipment_effort
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = equipment_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = equipment_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_40_cf
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = equipment_effort_3 }
+		x = 0
+		y = 1
+		relative_position_id = equipment_effort_3
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_50_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+}    

@@ -1,0 +1,553 @@
+focus_tree = {
+	id = Letesno
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = COD
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 0 y = 1700}
+	
+	focus = {
+		id = LET_stability_necessary
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		available = {
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		}
+		x = 7
+		y = 0
+		available = {
+		    has_government = egalitarianism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.015
+		}
+	}
+
+	focus = {
+		id = LET_east_puppet
+		prerequisite = { focus = LET_stability_necessary }
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10,00
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		x = 7
+		y = 1
+		available = {
+		    has_government = egalitarianism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_stability = 0.1
+			country_event = letesno.1
+		}
+	}
+
+	focus = {
+		id = LET_dockyard
+		prerequisite = { focus = LET_west_puppet }
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		x = 2
+		y = 2
+		available = {
+		    has_government = egalitarianism
+		    LE2 = {
+		        controls_state = 114
+		        controls_state = 1
+		    }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    114 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			1 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LET_fortification
+		prerequisite = { focus = LET_west_puppet }
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10,00
+		x = 3
+		y = 3
+		available = {
+		    has_government = egalitarianism
+		    LE2 = {
+		        controls_state = 114
+		        controls_state = 1
+		    }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    114 = {
+				add_building_construction = {
+            	    type = coastal_bunker
+            	    province = {
+            	    	all_provinces = yes
+            	    	limit_to_coastal = yes
+            	    }
+            	    level = 1
+            	    instant_build = yes
+		        }
+            }
+            1 = {
+				add_building_construction = {
+            	    type = coastal_bunker
+            	    province = {
+            	    	all_provinces = yes
+            	    	limit_to_coastal = yes
+            	    }
+            	    level = 1
+            	    instant_build = yes
+		        }
+            }
+		}
+	}
+
+	focus = {
+		id = LET_hungry_problem_resolve
+		prerequisite = { focus = LET_fortification }
+		prerequisite = { focus = LET_dockyard }
+		icon = GFX_goal_generic_national_unity
+		cost = 10,00
+		x = 2
+		y = 4
+		available = {
+		    has_country_flag = ars_nationalism_tier_1_cf
+		}
+		available = {
+		    has_government = egalitarianism
+		    LE2 = {
+		        controls_state = 114
+		        controls_state = 1
+		    }
+		    COD = {
+		        controls_state = 157
+		        controls_state = 162
+		        controls_state = 2
+		    }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    remove_ideas = let_hungry_problem
+		    114 = {
+		        add_manpower = 50050
+		    } 
+		    1 = {
+		        add_manpower = 7000
+		    }
+		    157 = {
+		        add_manpower = -30050
+		    }
+		    162 = {
+		        add_manpower = -21000
+		    }
+		    2 = {
+		        add_manpower = -6000
+		    }
+		}
+	}
+
+	focus = {
+		id = LET_balearic_islands
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = LET_hungry_problem_resolve }
+		prerequisite = { focus = LET_west_army }
+		x = 3
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = letesno.5
+		}
+	}
+
+	focus = {
+		id = LET_west_puppet
+		prerequisite = { focus = LET_stability_necessary }
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10,00
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		x = 3
+		y = 1
+		available = {
+		    has_government = egalitarianism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_stability = 0.1
+			country_event = letesno.2
+		}
+	}
+
+	focus = {
+		id = LET_eastern_political_decisions
+		prerequisite = { focus = LET_east_puppet }
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		x = 7
+		y = 3
+		available = {
+		    has_government = egalitarianism
+		}
+		available = {
+		    has_country_flag = ars_concept_of_society_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = LET_west_army
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = LET_eastern_political_decisions }
+		x = 7
+		y = 4
+		cost = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    LE1 = {
+                country_event = letesno.4
+            }    
+	    }
+	}
+
+	focus = {
+		id = LET_old_territory
+		prerequisite = { focus = LET_eastern_political_decisions }
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		x = 5
+		y = 4
+		available = {
+		    has_government = egalitarianism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -40
+			731 = { add_claim_by = COD }
+			47 = { add_claim_by = COD }
+		}
+	}
+
+	focus = {
+		id = LET_rouanir_problem
+		prerequisite = { focus = LET_old_territory }
+		prerequisite = { focus = LET_turkey_territory }
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 10,00
+		x = 7
+		y = 5
+		available = {
+		    has_government = egalitarianism
+		}
+
+		bypass = {
+		    LEL = {
+		        controls_state = 347
+		    }    
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = letesno.7
+		}
+	}
+
+	focus = {
+		id = LET_turkey_territory
+		prerequisite = { focus = LET_eastern_political_decisions }
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		x = 9
+		y = 4
+		available = {
+		    has_government = egalitarianism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    187 = { add_claim_by = COD }
+		    339 = { add_claim_by = COD }
+		    340 = { add_claim_by = COD }
+		    347 = { add_claim_by = COD }
+		    341 = { add_claim_by = COD }
+			add_political_power = -40
+		}
+	}
+
+	focus = {
+		id = LET_south_puppet
+		prerequisite = { focus = LET_stability_necessary }
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		cost = 10,00
+		x = 11
+		y = 1
+		available = {
+		    has_government = egalitarianism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_stability = 0.1
+			country_event = letesno.3
+		}
+	}
+
+	focus = {
+		id = LET_bmy_border
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = LET_south_puppet }
+		x = 0
+		y = 2
+		relative_position_id = LET_south_puppet
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		}
+			
+		completion_reward = {
+			448 = {
+				if = {
+					limit = { is_controlled_by = LE3 }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1118
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9980
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7066
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4194
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1149
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1189
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12039
+							instant_build = yes
+						}
+					}
+				}
+			}	
+			665 = {
+				if = {
+					limit = { is_controlled_by = LE3 }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4992
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1105
+							instant_build = yes
+						}
+				    } 
+				}
+			}
+			custom_effect_tooltip = BMY_forts  			
+		}
+	}
+	focus = {
+		id = LET_south_army
+		relative_position_id = LET_bmy_border
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = LET_bmy_border }
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    LE3 = {
+                country_event = letesno.9
+            }    
+	    }
+	}
+
+	focus = {
+		id = LET_bwiyn
+		relative_position_id = LET_south_army
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = LET_south_army }
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    country_event = letesno.10    
+	    }
+	}
+
+	focus = {
+		id = LET_new_country
+		prerequisite = { focus = LET_bwiyn }
+		prerequisite = { focus = LET_rouanir_problem }
+		prerequisite = { focus = LET_balearic_islands }
+		icon = GFX_focus_generic_treaty
+		cost = 4,00
+		x = 7
+		y = 7
+		available = {
+		    has_country_flag = ars_concept_of_society_45_cf
+		}
+		available = {
+		    is_puppet = no
+		    LE1 = {
+		        is_puppet_of = COD
+		        exists = yes
+		    }
+		    LE2 = {
+		        is_puppet_of = COD
+		        exists = yes
+		    }
+		    LE3 = {
+		        is_puppet_of = COD
+		        exists = yes
+		    }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+		}
+	}
+
+	focus = {
+		id = LET_italy
+		prerequisite = { focus = LET_new_country }
+		mutually_exclusive = { focus = LET_egalitarianism_power }
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 9,00
+		x = 10
+		y = 8
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = letesno.11
+		}
+	}
+
+	focus = {
+		id = LET_egalitarianism_power
+		prerequisite = { focus = LET_new_country }
+		mutually_exclusive = { focus = LET_italy }
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 9,00
+		x = 4
+		y = 8
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.10
+		}
+	}
+}

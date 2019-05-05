@@ -1,0 +1,993 @@
+focus_tree = {
+	id = china_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = CHI
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 0 y = 1300 }
+
+	focus = {
+		id = CHI_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = {
+		    has_country_flag = ars_science_15_cf  
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_industry_military
+		prerequisite = { focus = CHI_industry }
+		icon = GFX_focus_generic_industry_2
+		x = 12
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = {
+		    has_country_flag = ars_industry_15_cf  
+		    has_country_flag = ars_military_theory_10_cf  
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_extra_tech_slot
+		text = extra_tech_slot 
+		icon = GFX_focus_research
+		prerequisite = { focus = CHI_industry_military }
+		available = {
+		    has_country_flag = ars_science_30_cf  
+		}
+		x = 0
+		y = 1
+		relative_position_id = CHI_industry_military
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = CHI_steel_refinery
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = CHI_extra_tech_slot }
+		prerequisite = { focus = CHI_fallert focus = CHI_fallert_down }
+		available = {
+		    has_country_flag = ars_industry_30_cf  
+		}
+		x = 0
+		y = 1
+		relative_position_id = CHI_extra_tech_slot
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}	
+
+		completion_reward = {
+			595 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = steel_refinery
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_leader_control
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 8
+		y = 0
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+		    NOT = {
+		        country_exists = CHY
+			}   
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			create_country_leader = {
+	            name = "Zeryendo Harfilo"
+	            desc = ""
+	            picture = "gfx/leaders/Portrait_China.dds"
+	            expire = "1965.1.1"
+	            ideology = syndicalism
+	            traits = {
+	                chi_military
+	            }
+            }
+		}
+	}
+
+	focus = {
+		id = CHI_fallert
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CHI_leader_control }
+		mutually_exclusive = { focus = CHI_fallert_down}
+		x = 8
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+		    has_country_flag = ars_communication_nations_15_cf  
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			FAL = {
+			    country_event = arschina.6
+			}    
+		}
+	}
+
+	focus = {
+		id = CHI_ligarte
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = CHI_fallert }
+		x = 8
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+		    has_country_flag = ars_communication_nations_15_cf  
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			declare_war_on = {
+		        target = LIG
+		        type = annex_everything
+		    }   
+		}
+	}
+
+	focus = {
+		id = CHI_fallert_down
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = CHI_leader_control }
+		mutually_exclusive = { focus = CHI_fallert}
+		x = 10
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		    has_country_flag = ars_communication_nations_15_cf  
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_opinion_modifier = { target = FAL modifier = CHI_ant_FAL }
+			FAL = { add_opinion_modifier = { target = ROOT modifier = CHI_ant_FAL } }    
+		}
+	}
+
+	focus = {
+		id = CHI_down_fallert
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = CHI_fallert_down }
+		x = 10
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			declare_war_on = {
+		        target = FAL
+		        type = annex_everything
+		    }     
+	    }  
+	}
+
+	focus = {
+		id = CHI_paramilitarism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CHI_fallert_down focus = CHI_fallert}
+		x = 9
+		y = 3
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf  
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+	}	
+	
+
+	focus = {
+		id = CHI_tecnology_air
+		icon = GFX_goal_generic_air_fighter
+		available = {
+			has_country_flag = lex_air_supremacy
+		}
+		x = -2
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_base
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = CHI_tecnology_air }
+		x = 0
+		y = 2
+		relative_position_id = CHI_tecnology_air
+		cost = 4
+
+		available = {
+		    has_country_flag = ars_logistics_15_cf  
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_nuclear_effort
+		text = nuclear_effort
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = CHI_base }
+		prerequisite = { focus = CHI_remove }
+		x = 0
+		y = 3
+		relative_position_id = CHI_base
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_naval
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 4
+		y = 0
+		cost = 15
+
+		available_if_capitulated = yes
+
+
+		available = {
+			controls_state = 597
+			controls_state = 598
+		}
+		
+		completion_reward = {
+			country_event = arschina.4
+		}	
+	}
+
+	focus = {
+		id = CHI_light_boat
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = CHI_naval }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_battleship_primacy
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = CHI_battleship_primacyu
+				bonus = 0.5
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_defence_coastal
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = CHI_light_boat }
+		available = {
+			CHY = {
+			    exists = no
+			}   
+			LEX = {
+			    exists = no
+			} 
+		}
+		cancel_if_invalid = yes
+		x = 0
+		y = 2
+		relative_position_id = CHI_light_boat
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = chi_coastal_ct
+			hidden_effect = {
+				if = {
+					limit = {
+						has_full_control_of_state = 743
+					}
+					743 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 597
+					}
+					597 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 598
+					}
+					598 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 596
+					}
+					596 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 595
+					}
+					595 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 593
+					}
+					593 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 326
+					}
+					326 = {
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_army_rework
+		icon = GFX_focus_chi_army_reform
+		cost = 10,00
+		x = 1
+		y = 0
+
+		available = {
+		    has_war = yes
+		    has_country_flag = ars_military_theory_10_cf
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+			    add_idea = chi_army_despondent_2
+			    remove_idea = chi_army_despondent
+			}    
+		}
+	}
+
+	focus = {
+		id = CHI_equipment_effort
+		text = equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = CHI_army_rework }
+		available = {
+		    has_country_flag = ars_logistics_15_cf
+		}    
+		x = -1
+		y = 1
+		relative_position_id = CHI_army_rework
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_experience
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = CHI_army_rework }
+		x = 1
+		y = 1
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		} 
+		relative_position_id = CHI_army_rework
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = CHI_know
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = CHI_leader_control }
+		x = 1
+		y = 1
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		} 
+		relative_position_id = CHI_leader_control
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = chi_primitive_thinking
+		}
+	}
+
+	focus = {
+		id = CHI_war_is_necessary
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = CHI_experience
+		prerequisite = { focus = CHI_experience }
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+			    add_idea = chi_army_despondent_3
+			    remove_idea = chi_army_despondent_2
+			}    
+		}
+	}
+
+	focus = {
+		id = CHI_infantry_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = CHI_war_is_necessary
+		prerequisite = { focus = CHI_war_is_necessary }
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		}
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = chi_arm    
+		}
+	}
+
+	focus = {
+		id = CHI_remove
+		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = CHI_infantry_effort }
+		prerequisite = { focus = CHI_armoured_effort }
+		available = {
+		    has_country_flag = ars_military_theory_40_cf
+		}
+		x = -1
+		y = 1
+		relative_position_id = CHI_infantry_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			remove_ideas = chi_army_despondent_3
+		}
+	}
+
+	focus = {
+		id = CHI_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		text = equipment_effort_2
+		prerequisite = { focus = CHI_equipment_effort }
+		x = 0
+		y = 1
+		relative_position_id = CHI_equipment_effort
+		cost = 10
+		available = {
+		    has_country_flag = ars_logistics_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonuss
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_armoured_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = CHI_equipment_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = CHI_equipment_effort_2
+		cost = 10
+		available = {
+		    has_country_flag = ars_logistics_45_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = CHI_why_are_we_fighting
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 14,00
+		available = {
+		    is_puppet = no
+		}
+		x = 6
+		y = 0
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 220
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = CHI_political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = { focus = CHI_why_are_we_fighting }
+
+		available = {
+		    has_war = no
+		    has_country_flag = ars_concept_of_society_30_cf
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+		        target = MVP
+		        type = annex_everything
+	        }
+	        declare_war_on = {
+		        target = LAC
+		        type = annex_everything
+	        }
+	        declare_war_on = {
+		        target = RFL
+		        type = annex_everything
+	        }
+		}
+	}
+
+	focus = {
+		id = CHI_prente_ultimatum
+		icon = GFX_goal_generic_territory_or_war
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = CHI_political_effort }
+
+		available = {
+		    is_puppet = no
+		}
+
+		available = {
+		    has_country_flag = ars_military_theory_40_cf
+		}
+
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		    PRE = {
+			    country_event = arschina.1
+			}    
+		}
+	}
+	focus = {
+		id = CHI_core
+		icon = GFX_goal_generic_territory_or_war
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = CHI_prente_ultimatum }
+
+		available = {
+		    MVP = {
+		        EXISTS = NO
+		    } 
+		    LAC = {
+		        EXISTS = NO
+		    }   
+		    RFL = {
+		        EXISTS = NO
+		    }
+		}
+
+		available = {
+		    has_country_flag = ars_military_theory_50_cf
+		}
+
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		    YIJ = {
+			    country_event = arschina.2
+			}    
+		}
+	}
+
+	focus = {
+		id = CHI_japan
+		icon = GFX_goal_generic_territory_or_war
+		x = 6
+		y = 4
+		cost = 25
+		prerequisite = { focus = CHI_core }
+
+		available = {
+		    has_country_flag = ars_military_theory_60_cf
+		    MAT = {
+		        exiSts = yes
+		    }
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		    country_event = arschina.3   
+		}
+	}
+}	

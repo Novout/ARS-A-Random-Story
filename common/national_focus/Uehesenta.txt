@@ -1,0 +1,738 @@
+focus_tree = {
+	id = Uehesenta
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = USA
+		}
+	}
+
+	continuous_focus_position = { x = 0 y = 1700}
+
+	default = no
+	
+	focus = {
+		id = USA_ars_military_construction
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = industrial_effort
+		}
+		x = 13
+		y = 0
+		available_if_capitulated = yes
+		available = {
+		    has_completed_focus = Nationalist_Victory
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		    has_country_flag = ars_engineering_15_cf
+		}    
+		completion_reward = {
+			375 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+			add_ideas = usa_military
+		}
+	}
+
+	focus = {
+		id = USA_research_milit
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 0
+		cost = 10
+		available = {
+		    has_completed_focus = Nationalist_Victory
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		}
+
+		completion_reward = {
+		    army_experience = 50
+		    add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.4
+				uses = 1
+				category = infantry_weapons
+			}
+			add_ideas = usa_research_military   
+		}
+	}
+
+	focus = {
+		id = USA_steel_construction
+		icon = GFX_focus_generic_steel
+		x = 11
+		y = 2
+		cost = 10
+		prerequisite = { focus = USA_infrastructure_general }   
+		prerequisite = { focus = USA_research_milit }  
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		    has_country_flag = ars_engineering_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    378 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
+				}
+			} 
+		}
+	}
+
+	focus = {
+		id = USA_construction_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = USA_steel_construction }
+		prerequisite = { focus = USA_infrastructure_general }
+		x = 12
+		y = 3
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_logistics_30_cf
+		    has_country_flag = ars_industry_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		    }
+		    random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		    }
+		    random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		    }
+		    random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = USA_aviation_doctrine_stability
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = USA_infrastructure_general focus = USA_boat }
+		x = 14
+		y = 3
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		    has_country_flag = ars_engineering_30_cf
+		    has_country_flag = ars_mathematics_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_eletronics
+			}
+		}
+	}
+
+	focus = {
+		id = USA_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 15
+		y = 1
+		cost = 8
+
+		available = {
+		    has_country_flag = ars_engineering_15_cf
+		    has_country_flag = ars_mathematics_15_cf
+		}
+
+		prerequisite = { focus = USA_ars_military_construction }    
+
+		available_if_capitulated = yes
+
+
+		available = {
+			479 = {
+				is_controlled_by = ROOT
+			}
+		}
+		
+		completion_reward = {
+			479 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+		} 	
+	}
+
+	focus = {
+		id = USA_boat
+		text = FFR_battleship_primacy
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = USA_naval_effort }
+		x = 15
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		    has_country_flag = ars_mathematics_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FFR_battleship_primacy
+				bonus = 0.4
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = FFR_battleship_primacy
+				bonus = 0.4
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_infrastructure_general
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = USA_ars_military_construction }
+		x = 0
+		y = 1
+		relative_position_id = USA_ars_military_construction
+		cost = 9
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_logistics_15_cf
+		    has_country_flag = ars_industry_15_cf
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = 1110_Elections
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		x = 6
+		y = 0
+
+		available_if_capitulated = no
+
+		available = {
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		    has_country_flag = ars_language_10_start_cf
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = uehesenta.1
+		}
+	}
+
+	focus = {
+		id = Pacifist_Victory
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 2,00
+		available = {
+		    has_country_flag = USA_traditional_conservatism_tt
+		}   
+		prerequisite = {
+			focus = 1110_Elections
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = Nationalist_Victory
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			add_political_power = 200
+			add_war_support = -0.10
+		}
+
+	}
+	focus = {
+		id = Active_Passivism
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = Pacifist_Victory 
+		}
+		mutually_exclusive = {
+			focus = Neutral_Passivism
+		}
+		available = {
+		    has_country_flag = ars_concept_of_society_15_start_cf
+		    has_country_flag = ars_language_20_cf
+		    has_country_flag = ars_political_thought_tier_1_cf
+		}
+		x = 4 
+		y = 2  
+		completion_reward = {
+		    add_popularity = {
+			    popularity = 0.10
+			    ideology = traditional_conservatism
+		    }
+        }
+	}
+	focus = {
+		id = League_of_America
+		icon = GFX_goal_generic_alliance
+		cost = 10,00
+		prerequisite = {
+			focus = Active_Passivism
+		}
+		x = 4
+		y = 3
+		available = {
+		    has_country_flag = ars_concept_of_society_30_cf
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = league_of_america_faction
+		}
+	}
+	focus = {
+		id = Invite_Mijernt
+		icon = GFX_goal_anschluss
+		cost = 6,00
+		prerequisite = {
+			focus = League_of_America
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_to_faction = MJN
+		}
+	}
+	focus = {
+		id = Invite_Lpepef
+		icon = GFX_goal_anschluss
+		cost = 6,00
+		prerequisite = {
+			focus = League_of_America
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			add_to_faction = LPP
+		}
+
+	}
+	focus = {
+		id = Invite_Gollerium
+		icon = GFX_goal_anschluss
+		cost = 6,00
+		prerequisite = {
+			focus = League_of_America
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			add_to_faction = GOL
+		}
+
+	}
+	focus = {
+		id = Cevevo_decision
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 9,00
+		available = {
+		    has_country_flag = ars_old_customs_30_cf
+		}
+		mutually_exclusive = {
+			focus = Pre-_Emptive_Intervention
+		}
+		prerequisite = {
+			focus = Invite_Gollerium
+		}
+		prerequisite = {
+			focus = Invite_Mijernt
+		}
+		prerequisite = {
+			focus = Invite_Lpepef
+		}
+		x = 4  
+		y = 6
+		completion_reward = {
+			country_event = uehesenta.3
+		}
+	}
+	focus = {
+		id = The_United_States
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 4,00
+		prerequisite = {
+			focus = Cevevo_decision
+		}   
+		available = {
+		    has_country_flag = ars_our_past_30_cf
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+		    set_cosmetic_tag = USA_UNIFIED
+			hidden_effect = {
+			    news_event = { id = usa_news.1 hours = 12 }
+			    every_state = {
+				    limit = {
+					    is_owned_by = USA
+				    }
+				    add_core_of = ROOT
+			    }
+		    }
+		}
+	}
+	focus = {
+		id = Armed_Neutrality
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = The_United_States
+		}
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		}
+		x = 5
+		y = 8
+		completion_reward = {
+		    add_war_support = 0.04
+		    army_experience = 100
+        }
+	}
+	focus = {
+		id = American_Economic_Foundation
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 2,50
+		prerequisite = {
+			focus = Cevevo_decision
+		}
+		available = {
+		    has_country_flag = ars_concept_of_society_45_cf
+		    has_country_flag = ars_language_30_cf
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+		    add_ideas = usa_aid
+        }
+	}
+	focus = {
+		id = USA_canada
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = American_Economic_Foundation
+		}
+		available = {
+		    has_country_flag = ars_our_past_30_cf
+		    has_country_flag = ars_ancient_language_30_cf
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+		    country_event = uehesenta.4
+        }
+	}
+	focus = {
+		id = Nationalist_Victory
+		icon = GFX_goal_generic_demand_territory
+		cost = 2,00
+		prerequisite = {
+			focus = 1110_Elections
+		}
+		available = {
+		    has_country_flag = USA_henism_autocracy_tt
+		} 
+
+		mutually_exclusive = {
+			focus = Pacifist_Victory
+		}
+		x = 8
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			country_event = uehesenta.2
+			custom_effect_tooltip = cevevo_war_cft
+		}
+	}
+	focus = {
+		id = Colonial_Policy
+		icon = GFX_focus_AST_rats_tobruk
+		cost = 9,00
+		prerequisite = {
+			focus = Unification_or_War!
+		}
+		available = {
+		    has_country_flag = ars_communication_nations_30_cf
+		}
+		x = 7
+		y = 5
+
+		completion_reward = {
+		    add_ideas = usa_colonial_policy
+		}
+	}
+	focus = {
+		id = USA_intervention
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = Colonial_Policy }
+		prerequisite = { focus = Integration }
+		available = {
+		}
+		continue_if_invalid = yes
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = usa_volunter
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = Victory_over_Cevevo
+		icon = GFX_focus_generic_little_entente
+		cost = 7,00
+		prerequisite = {
+			focus = Nationalist_Victory
+		}
+		available = {
+		    CVV = {
+		        exists = no
+            }
+        }
+        available = {
+		    has_country_flag = ars_nationalism_tier_1_cf
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+		    add_political_power = 300
+		    add_stability = 0.10
+		    add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = Unification_or_War!
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 12,00
+		prerequisite = {
+			focus = Victory_over_Cevevo
+		}
+		available = {
+		    has_country_flag = ars_concept_of_society_30_cf
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			add_named_threat = { threat = 3 name = USA_intervene_in_america }
+			custom_effect_tooltip = USA_unification_effort_tt
+		}
+	}
+	focus = {
+		id = Integration
+		icon = GFX_goal_generic_major_alliance
+		cost = 10,00
+		prerequisite = {
+			focus = Unification_or_War!
+		}
+		available = {
+		    custom_trigger_tooltip = {
+				tooltip = lpepet_state_tt
+				controls_state = 380
+				controls_state = 382
+				controls_state = 379
+				controls_state = 387
+			}
+			custom_trigger_tooltip = {
+				tooltip = felyinert_state_tt
+				controls_state = 390
+				controls_state = 391
+				controls_state = 389
+				controls_state = 467
+				controls_state = 469
+				controls_state = 470
+				controls_state = 471
+				controls_state = 472
+				controls_state = 683
+			}
+			custom_trigger_tooltip = {
+				tooltip = mijernt_state_tt
+				controls_state = 367
+				controls_state = 365
+				controls_state = 364
+				controls_state = 363
+				controls_state = 366
+			}
+			custom_trigger_tooltip = {
+				tooltip = gollerium_state_tt
+				controls_state = 357
+			}
+			custom_trigger_tooltip = {
+				tooltip = xjpep_state_tt
+				controls_state = 465
+				controls_state = 464
+			}
+			custom_trigger_tooltip = {
+				tooltip = kikade_state_tt
+				controls_state = 466
+				controls_state = 332
+			}
+		}
+		available = {
+		    has_country_flag = ars_concept_of_society_45_cf
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		    custom_effect_tooltip = USA_integration_tt
+			hidden_effect = {
+			    every_state = {
+				    limit = {
+					    is_owned_by = USA
+				    }
+				    add_core_of = USA
+			    }
+		    }
+		}
+	}
+}

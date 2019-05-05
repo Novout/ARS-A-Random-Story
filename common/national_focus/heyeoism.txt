@@ -1,0 +1,1058 @@
+focus_tree = {
+	id = frederitch_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = LEL
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 250 y = 1800 }
+
+	focus = {
+		id = LEL_rouanir
+		available = {
+		    has_country_flag = ars_ancient_language_15_cf
+		    DES = {
+		        controls_state = 347
+		    }    
+		}
+		icon = GFX_goal_generic_demand_territory
+		x = 2
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			339 = { add_claim_by = LEL }
+			340 = { add_claim_by = LEL }
+			347 = { add_claim_by = LEL }
+			341 = { add_claim_by = LEL }
+			211 = { add_claim_by = LEL }
+			212 = { add_claim_by = LEL }
+			COD = {
+			    country_event = ars_rouanir.2
+			}     
+		}
+	}
+
+	focus = {
+		id = LEL_expand
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_rouanir }
+		x = 0
+		y = 1
+		relative_position_id = LEL_rouanir
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		    has_country_flag = ars_ancient_language_30_cf
+			country_exists = MIH
+			NOT = {
+				has_war_with = MIH
+			}
+		}
+		bypass = {
+			NOT = { country_exists = MIH }
+		}
+		completion_reward = {
+			MIH = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_KAR
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -5
+		y = 1
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = KAR
+			NOT = {
+				has_war_with = KAR
+			}
+		}
+		bypass = {
+			NOT = { country_exists = KAR }
+		}
+		completion_reward = {
+			KAR = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_YUU
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -5
+		y = 2
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = YUU
+			NOT = {
+				has_war_with = YUU
+			}
+		}
+		bypass = {
+			NOT = { country_exists = YUU }
+		}
+		completion_reward = {
+			YUU = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_RAO
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -5
+		y = 3
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = RAO
+			NOT = {
+				has_war_with = RAO
+			}
+		}
+		bypass = {
+			NOT = { country_exists = RAO }
+		}
+		completion_reward = {
+			RAO = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_FAL
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -5
+		y = 4
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = FAL
+			NOT = {
+				has_war_with = FAL
+			}
+		}
+		bypass = {
+			NOT = { country_exists = FAL }
+		}
+		completion_reward = {
+			FAL = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_REI
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -3
+		y = 1
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = REI
+			NOT = {
+				has_war_with = REI
+			}
+		}
+		bypass = {
+			NOT = { country_exists = REI }
+		}
+		completion_reward = {
+			REI = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_TAC
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -3
+		y = 2
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = TAC
+			NOT = {
+				has_war_with = TAC
+			}
+		}
+		bypass = {
+			NOT = { country_exists = TAC }
+		}
+		completion_reward = {
+			TAC = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_FIZ
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -3
+		y = 3
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = FIZ
+			NOT = {
+				has_war_with = FIZ
+			}
+		}
+		bypass = {
+			NOT = { country_exists = FIZ }
+		}
+		completion_reward = {
+			FIZ = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_UAN
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -3
+		y = 4
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = UAN
+			NOT = {
+				has_war_with = UAN
+			}
+		}
+		bypass = {
+			NOT = { country_exists = UAN }
+		}
+		completion_reward = {
+			UAN = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_SHA
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -1
+		y = 1
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = SHA
+			NOT = {
+				has_war_with = SHA
+			}
+		}
+		bypass = {
+			NOT = { country_exists = SHA }
+		}
+		completion_reward = {
+			SHA = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_OMV
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -1
+		y = 2
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = OMV
+			NOT = {
+				has_war_with = OMV
+			}
+		}
+		bypass = {
+			NOT = { country_exists = OMV }
+		}
+		completion_reward = {
+			OMV = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_ARQ
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -1
+		y = 3
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = ARQ
+			NOT = {
+				has_war_with = ARQ
+			}
+		}
+		bypass = {
+			NOT = { country_exists = ARQ }
+		}
+		completion_reward = {
+			ARQ = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_CHI
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = -1
+		y = 4
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+		}
+		bypass = {
+			NOT = { country_exists = CHI }
+		}
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_ROU
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 1
+		y = 1
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = ROU
+			NOT = {
+				has_war_with = ROU
+			}
+		}
+		bypass = {
+			NOT = { country_exists = ROU }
+		}
+		completion_reward = {
+			ROU = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_COD
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 1
+		y = 2
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = COD
+			NOT = {
+				has_war_with = COD
+			}
+		}
+		bypass = {
+			NOT = { country_exists = COD }
+		}
+		completion_reward = {
+			COD = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_TAR
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 1
+		y = 3
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = TAR
+			NOT = {
+				has_war_with = TAR
+			}
+		}
+		bypass = {
+			NOT = { country_exists = TAR }
+		}
+		completion_reward = {
+			TAR = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_TEW
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 1
+		y = 4
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = TEW
+			NOT = {
+				has_war_with = TEW
+			}
+		}
+		bypass = {
+			NOT = { country_exists = TEW }
+		}
+		completion_reward = {
+			TEW = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_USA
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 3
+		y = 1
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = USA
+			NOT = {
+				has_war_with = USA
+			}
+		}
+		bypass = {
+			NOT = { country_exists = USA }
+		}
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_MJN
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 3
+		y = 2
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = MJN
+			NOT = {
+				has_war_with = MJN
+			}
+		}
+		bypass = {
+			NOT = { country_exists = MJN }
+		}
+		completion_reward = {
+			MJN = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_LPP
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 3
+		y = 3
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = LPP
+			NOT = {
+				has_war_with = LPP
+			}
+		}
+		bypass = {
+			NOT = { country_exists = LPP }
+		}
+		completion_reward = {
+			LPP = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_CVV
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 3
+		y = 4
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = CVV
+			NOT = {
+				has_war_with = CVV
+			}
+		}
+		bypass = {
+			NOT = { country_exists = CVV }
+		}
+		completion_reward = {
+			CVV = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_LCK
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 5
+		y = 1
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = LCK
+			NOT = {
+				has_war_with = LCK
+			}
+		}
+		bypass = {
+			NOT = { country_exists = LCK }
+		}
+		completion_reward = {
+			LCK = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_BRL
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 5
+		y = 2
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = BRL
+			NOT = {
+				has_war_with = BRL
+			}
+		}
+		bypass = {
+			NOT = { country_exists = BRL }
+		}
+		completion_reward = {
+			BRL = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_FNX
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 5
+		y = 3
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = FNX
+			NOT = {
+				has_war_with = FNX
+			}
+		}
+		bypass = {
+			NOT = { country_exists = FNX }
+		}
+		completion_reward = {
+			FNX = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_DMG
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = LEL_expand }
+		x = 5
+		y = 4
+		relative_position_id = LEL_expand
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			country_exists = DMG
+			NOT = {
+				has_war_with = DMG
+			}
+		}
+		bypass = {
+			NOT = { country_exists = DMG }
+		}
+		completion_reward = {
+			DMG = {
+				add_opinion_modifier = { target = LEL modifier = diplomatic_agreements_enemy }
+				add_ideas = heyeloism_influence
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_heyeloism
+		available = {
+		}
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.20
+		}
+	}
+
+	focus = {
+		id = LEL_project_infrastructure
+		prerequisite = { focus = LEL_heyeloism }
+		available = {
+		    has_country_flag = ars_science_15_cf
+		}
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = heyeloism.1
+		}
+	}
+
+	focus = {
+		id = LEL_industrial_construction
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = LEL_project_infrastructure }
+		x = -1
+		y = 1
+		relative_position_id = LEL_project_infrastructure
+		cost = 10
+		available = {
+		    has_country_flag = ars_engineering_15_cf
+		}
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_arms_construction
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = LEL_project_infrastructure }
+		x = 1
+		y = 1
+		relative_position_id = LEL_project_infrastructure
+		cost = 10
+		available = {
+		    has_country_flag = ars_engineering_15_cf
+		}
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_building_new_territory
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = LEL_arms_construction focus = LEL_industrial_construction }
+		prerequisite = { focus = LEL_mihent }
+		x = 0
+		y = 2
+		relative_position_id = LEL_project_infrastructure
+		cost = 10
+		available = {
+		    has_country_flag = ars_logistics_15_cf
+		    controls_state = 354
+		    controls_state = 353
+		    controls_state = 352
+		    controls_state = 230
+		    controls_state = 229
+		    controls_state = 231
+		    controls_state = 419
+		    controls_state = 420
+		}
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		completion_reward = {
+			419 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			230 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			231 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			353 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			354 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_discovery
+		icon = GFX_focus_research
+		prerequisite = { focus = LEL_building_new_territory }
+		x = 0
+		y = 1
+		available = {
+		    has_country_flag = ars_science_30_cf
+		}
+		relative_position_id = LEL_building_new_territory
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = LEL_nuclearr
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = LEL_discovery }
+		prerequisite = { focus = LEL_tac }
+		x = 0
+		y = 3
+		relative_position_id = LEL_discovery
+		cost = 10
+		available = {
+		    has_country_flag = ars_science_60_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.75
+				category = nuclear
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = LEL_mihent
+		prerequisite = { focus = LEL_heyeloism }
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		}
+		icon = GFX_goal_generic_major_war
+		x = 9
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+		        target = MIH
+		        type = annex_everything
+	        }
+	        declare_war_on = {
+		        target = KAR
+		        type = annex_everything
+	        }
+		}
+	}
+
+	focus = {
+		id = LEL_rei
+		prerequisite = { focus = LEL_mihent }
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+            date > 1103.01.01
+		    REI = {
+		        controls_state = 454
+		        controls_state = 455
+		    }
+		    has_war = no    
+		}
+		icon = GFX_goal_generic_major_war
+		x = 9
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+		        target = REI
+		        type = annex_everything
+	        }
+		}
+	}
+
+	focus = {
+		id = LEL_tac
+		prerequisite = { focus = LEL_rei }
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		    TAC = {
+		        is_puppet = no
+		    }
+		    has_war = no    
+		}
+		icon = GFX_goal_generic_major_war
+		x = 9
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+		        target = TAC
+		        type = annex_everything
+	        }
+		}
+	}

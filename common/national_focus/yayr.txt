@@ -1,0 +1,2435 @@
+focus_tree = {
+	id = yayr_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = YAY
+	    }
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = YAY_civilizad
+		icon = GFX_goal_generic_demand_territory
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		x = 15
+		y = 0
+		cost = 8
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = yay_1_country
+		}
+	}
+
+	focus = {
+		id = YAY_political_restructuring
+		prerequisite = { focus = YAY_civilizad }
+		icon = GFX_goal_demand_sudetenland
+		available = {
+		    has_country_flag = ars_language_10_start_cf
+		}
+		x = 8
+		y = 1
+		cost = 20
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = yay_1
+			country_event = yayr.6
+		}
+	}
+
+	focus = {
+		id = YAY_political_northeast
+		prerequisite = { focus = YAY_political_restructuring }
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = YAY_west
+		prerequisite = { focus = YAY_political_restructuring }
+		icon = GFX_goal_generic_position_armies
+		x = 15
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		    has_country_flag = ars_ancient_language_15_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = YAY_gyni
+		prerequisite = { focus = YAY_west }
+		icon = GFX_goal_molotov_ribbentrop_pact
+		mutually_exclusive = { focus = YAY_thinoren }
+		x = 14
+		y = 3
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_communication_nations_30_cf
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GYN = {
+				add_opinion_modifier = { target = YAY modifier = YAY_relations_west }
+			}
+			THI = {
+				add_opinion_modifier = { target = YAY modifier = YAY_relations_west_negative }
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_gyni_2
+		prerequisite = { focus = YAY_gyni }
+		icon = GFX_focus_generic_treaty
+		x = 14
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.035
+			GYN = {
+			   add_stability = 0.035
+			}   
+		}
+	}
+
+	focus = {
+		id = YAY_gyni_3
+		prerequisite = { focus = YAY_gyni }
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 12
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_trade
+			country_event = yayr.5 
+		}
+	}
+
+	focus = {
+		id = YAY_gyni_4
+		prerequisite = { focus = YAY_gyni_3 focus = YAY_gyni_2 focus = YAY_thi_3 focus = YAY_thi_2 }
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 15
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_monthly
+		}
+	}
+
+	focus = {
+		id = YAY_thi_2
+		text = YAY_gyni_2
+		prerequisite = { focus = YAY_thinoren }
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.035
+			THI = {
+			   add_stability = 0.035
+			}   
+		}
+	}
+
+	focus = {
+		id = YAY_thi_3
+		text = YAY_gyni_3
+		prerequisite = { focus = YAY_thinoren }
+		icon = GFX_goal_generic_trade
+		x = 18
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_trade
+			country_event = yayr.5 
+		}
+	}
+
+	focus = {
+		id = YAY_thi_war
+		icon = GFX_goal_generic_major_war
+		mutually_exclusive = { focus = YAY_gyn_war }
+		prerequisite = { focus = YAY_gyni_4 }
+		prerequisite = { focus = YAY_thi_2 }
+		available = {
+			is_puppet = no			
+			NOT = { is_in_faction_with = THI }
+		}
+		x = 16
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GYN
+			} 
+		}
+	}
+
+	focus = {
+		id = YAY_gyn_war
+		icon = GFX_goal_generic_major_war
+		mutually_exclusive = { focus = YAY_thi_war }
+		prerequisite = { focus = YAY_gyni_4 }
+		prerequisite = { focus = YAY_gyni_2 }
+		available = {
+			is_puppet = no			
+			NOT = { is_in_faction_with = GYN } 
+		}
+		x = 14
+		y = 6
+		cost = 10
+
+		
+		ai_will_do = {
+			factor = 10
+		}	
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = THI
+			} 
+		}
+	}
+
+	focus = {
+		id = YAY_thinoren
+		prerequisite = { focus = YAY_west }
+		icon = GFX_goal_molotov_ribbentrop_pact
+		mutually_exclusive = { focus = YAY_gyni }
+		x = 16
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		    has_country_flag = ars_communication_nations_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			THI = {
+				add_opinion_modifier = { target = YAY modifier = YAY_relations_west }
+			}
+			GYN = {
+				add_opinion_modifier = { target = YAY modifier = YAY_relations_west_negative }
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_religion
+		prerequisite = { focus = YAY_political_restructuring }
+		icon = GFX_focus_generic_self_management
+		x = 8
+		y = 2
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_ancient_language_15_cf
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = YAY_religion_yindoism
+		prerequisite = { focus = YAY_religion }
+		mutually_exclusive = { focus = YAY_religion_lensim }
+		icon = GFX_goal_generic_territory_or_war
+		x = 7
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_idea = yay_fundamenta_1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_religion_yindoism
+		}
+	}
+
+	focus = {
+		id = YAY_religion_lensim
+		prerequisite = { focus = YAY_religion }
+		mutually_exclusive = { focus = YAY_religion_yindoism }
+		icon = GFX_goal_generic_neutrality_focus
+
+		available = {
+			NOT = { has_idea = yay_fundamenta_1 } 
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		x = 9
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_religion_lensim
+		}
+	}
+
+	focus = {
+		id = YAY_tinyo_decision
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = YAY_religion_lensim focus = YAY_religion_yindoism }
+		x = 8
+		y = 4
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_concept_of_society_30_cf
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    TNY = {
+			    country_event = yayr.4
+		    }
+		}
+	}
+
+	focus = {
+		id = YAY_rouanir_1
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = YAY_tinyo_decision }
+		x = 8
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		    has_country_flag = ars_communication_nations_30_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    custom_effect_tooltip = yay_forts
+			160 = {
+				if = {
+					limit = { country_exists = ROU }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 628
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9613
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}	
+	}
+
+	focus = {
+		id = YAY_war_rouanir_complex
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = YAY_rouanir_1 }
+		available = {
+			is_puppet = no			
+			NOT = { is_in_faction_with =  ROU }
+		}
+		available = {
+		    has_country_flag = ars_military_theory_30_cf
+		}
+		x = 8
+		y = 7
+		cost = 12
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}	
+		
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROU
+			} 
+		}
+	}
+
+	focus = {
+		id = YAY_claim_tinyo
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = YAY_tinyo_decision }
+		available = {
+		    NOT = {
+		        country_exists = TNY
+		    }
+		}    
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		x = 7
+		y = 5
+		cost = 20
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_state_claim = 25
+			add_state_claim = 22
+			add_state_claim = 32
+			add_state_claim = 21
+			add_state_claim = 158
+			add_state_claim = 161
+			add_state_claim = 160
+		}
+	}
+
+	focus = {
+		id = YAY_infrastructure_tinyo
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = YAY_tinyo_decision }
+		available = {
+			OR = {
+				has_government = henism_autocracy
+				has_government = fundamentalism
+				has_government = reactionary
+			}
+			date > 1103.01.01
+		}
+		available = {
+		    has_country_flag = ars_engineering_30_cf
+		}
+		x = 9
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 161 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {	
+				prioritize = { 158 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_optional_northeast_war
+		prerequisite = { focus = YAY_political_northeast }
+		mutually_exclusive = { focus = YAY_optional_northeast_diplomacy }
+		icon = GFX_goal_generic_more_territorial_claims
+		available = {
+			OR = {
+				has_government = henism_autocracy
+				has_government = radicalism
+				has_government = anarchism
+			}
+		}
+		x = 0
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FFR = {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion }
+			}
+			A01 = {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion }
+			}
+			TIR = {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion }
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_optional_northeast_diplomacy
+		prerequisite = { focus = YAY_political_northeast }
+		mutually_exclusive = { focus = YAY_optional_northeast_war }
+		icon = GFX_goal_generic_improve_relations
+		x = 3
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = henism_autocracy
+			has_idea = yay_henism_1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FFR= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A01= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A02= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A03= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A04= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A05= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A06= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A07= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			A08= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+			TIR= {
+				add_opinion_modifier = { target = YAY modifier = YAY_union_opinion_diplomacy }
+				add_ideas = yay_influence
+			}
+		}
+	}
+
+    focus = {
+		id = YAY_war_initial
+		prerequisite = { focus = YAY_optional_northeast_war }
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = yayr.1
+		}
+	}
+
+	focus = {
+		id = YAY_claim_union
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = YAY_war_initial }
+		available = {
+		    NOT = {
+		        country_exists = A01
+		        country_exists = TIR
+		    }
+		}    
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_state_claim = 15
+			add_state_claim = 29
+			add_state_claim = 18
+			add_state_claim = 28
+			add_state_claim = 42
+			add_state_claim = 764
+			add_state_claim = 763
+			add_state_claim = 765
+			add_state_claim = 8
+			add_state_claim = 34
+			add_state_claim = 6
+		}
+	}
+
+	focus = {
+		id = YAY_dismantle_union
+		prerequisite = { focus = YAY_optional_northeast_diplomacy }
+		mutually_exclusive = { focus = YAY_join_union }
+		icon = GFX_goal_generic_secret_weapon
+		x = 2
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = -1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    create_faction = comitte
+		    custom_effect_tooltip = yayr.dismantle.union.tt
+		    custom_effect_tooltip = yayr.dismantle.union.2.tt
+		    hidden_effect =
+			    add_political_power = 60
+		    }
+		}
+	}
+
+	focus = {
+		id = YAY_join_union
+		prerequisite = { focus = YAY_optional_northeast_diplomacy }
+		mutually_exclusive = { focus = YAY_dismantle_union }
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 4
+		cost = 25
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    country_event = yayr.2
+		}
+	}
+
+	focus = {
+		id = YAY_dismantle_union_2
+		prerequisite = { focus = YAY_dismantle_union }
+		available = {
+		    TIR = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			}
+			A02 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			} 
+			A03 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			} 
+			A04 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			} 
+			A05 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			} 
+			A06 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			}   
+		}
+		icon = GFX_goal_generic_military_deal
+		x = 1
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    TIR = {
+		        country_event = yayr.3
+		    } 
+		    A02 = {
+		        country_event = yayr.3
+		    }  
+		    A03 = {
+		        country_event = yayr.3
+		    }  
+		    A04 = {
+		        country_event = yayr.3
+		    } 
+		    A05 = {
+		        country_event = yayr.3
+		    }  
+		    A06 = {
+		        country_event = yayr.3
+		    }      
+		}
+	}
+
+	focus = {
+		id = YAY_dismantle_union_3
+		prerequisite = { focus = YAY_dismantle_union }
+		available = {
+		    A01 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			}
+			A07 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			}  
+			A08 = {
+			    henism_autocracy > 0.3
+			    has_government = henism_autocracy
+			}   
+		}
+		icon = GFX_goal_generic_military_deal
+		x = 3
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    A01 = {
+		        country_event = yayr.3
+		    } 
+		    A08 = {
+		        country_event = yayr.3
+		    }  
+		    A07 = {
+		        country_event = yayr.3
+		    }      
+		}
+	}
+
+	focus = {
+		id = YAY_govern_optional
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = YAY_civilizad }
+		available = {
+		    has_country_flag = ars_concept_of_society_45_cf
+		}
+		x = 25
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = -0.125
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_1
+		icon = GFX_focus_henism_autocracy
+		mutually_exclusive = { focus = YAY_fundamentalism_1}
+		prerequisite = { focus = YAY_govern_optional }
+		x = 22
+		y = 2
+		cost = 15
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_henism_1
+			add_stability = 0.06
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_1
+		icon = GFX_focus_fundamentalism
+		mutually_exclusive = { focus = YAY_henism_autocracy_1}
+		prerequisite = { focus = YAY_govern_optional }
+		x = 28
+		y = 2
+		cost = 15
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_fundamenta_1
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_2
+		available = {
+		    has_government = fundamentalism
+		}    
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = YAY_fundamentalism_1 }
+		x = 28
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_3
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = YAY_fundamentalism_2 }
+		mutually_exclusive = { focus = YAY_fundamentalism_4 }
+		x = 27
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+			add_ideas = yay_fund_1
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_4
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = YAY_fundamentalism_2 }
+		mutually_exclusive = { focus = YAY_fundamentalism_3}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		x = 29
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+			add_ideas = yay_fund_2
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_5
+		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = YAY_fundamentalism_4 focus = YAY_fundamentalism_3 } 
+		mutually_exclusive = { focus = YAY_fundamentalism_6 }
+		x = 29
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_social
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_6
+		available = {
+		    has_idea = yay_1
+		}
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = YAY_fundamentalism_4 focus = YAY_fundamentalism_3 } 
+		mutually_exclusive = { focus = YAY_fundamentalism_5 }
+		x = 27
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = yay_state
+			    remove_idea = yay_1		
+			}
+		}	
+	}
+
+	focus = {
+		id = YAY_fundamentalism_7
+		icon = GFX_focus_research
+		prerequisite = { focus = YAY_fundamentalism_5 focus = YAY_fundamentalism_6 } 
+		mutually_exclusive = { focus = YAY_fundamentalism_8 }
+		x = 27
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = YAY_fundamentalism_8
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = YAY_fundamentalism_5 focus = YAY_fundamentalism_6 } 
+		mutually_exclusive = { focus = YAY_fundamentalism_7 }
+		x = 29
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_2
+		icon = GFX_focus_research2
+		prerequisite = { focus = YAY_henism_autocracy_1 }
+		x = 20
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_5
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = YAY_henism_autocracy_1 }
+		x = 22
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_autoc_3
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_3
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = YAY_henism_autocracy_1 }
+		x = 24
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_autoc_1
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_4
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = YAY_henism_autocracy_5 }
+		prerequisite = { focus = YAY_henism_autocracy_3 }
+		prerequisite = { focus = YAY_henism_autocracy_2 }
+		x = 22
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_autoc_2
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_7
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = YAY_henism_autocracy_4 }
+		x = 23
+		y = 7
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = yay_1
+		}
+	}
+
+	focus = {
+		id = YAY_henism_autocracy_6
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = YAY_henism_autocracy_4 }
+		x = 21
+		y = 7
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = yay_conduct
+		}
+	}
+
+	focus = {
+		id = YAY_initial_infrastructure
+		icon = GFX_goal_generic_production
+		x = 34
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		    has_country_flag = ars_engineering_15_cf
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    swap_ideas = {
+		        add_idea = yay_industry_2
+		        remove_idea = yay_industry_1
+		    }    
+		}
+	}
+
+	focus = {
+		id = YAY_technology_construct
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = YAY_initial_infrastructure }
+		x = 36
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_the_four_year_plan
+				bonus = 0.6
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_tower
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = YAY_initial_infrastructure  }
+		x = 32
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_the_bombe
+				bonus = 0.6
+				uses = 1
+				category = computing_tech
+			}		
+		}
+	}
+
+	focus = {
+		id = YAY_new_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = YAY_initial_infrastructure }
+		x = 34
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			random_state = {
+				limit = { has_state_flag = YAY_industry_1 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			#	Adds a civilian Factory (Athens)
+			random_owned_controlled_state = {
+				prioritize = { 27 }
+				limit = {									
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = YAY_industry_1
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_prodct
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = YAY_new_industry }
+		x = 33
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = YAY_new_industry }
+		x = 35
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+		        add_idea = yay_tec_2
+		        remove_idea = yay_tec_1
+		    }
+		}
+	}
+
+	focus = {
+		id = YAY_tech_slot_2
+		icon = GFX_focus_research
+		prerequisite = { focus = YAY_tech_slot }
+		x = 36
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+		        add_idea = yay_tec_3
+		        remove_idea = yay_tec_2
+		    }
+		}
+	}
+
+	focus = {
+		id = YAY_tech_slot_3
+		icon = GFX_focus_research_3
+		prerequisite = { focus = YAY_tech_slot_2 }
+		x = 37
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+		        add_idea = yay_tec_4
+		        remove_idea = yay_tec_3
+		    }
+		}
+	}
+
+
+	focus = {
+		id = YAY_reformulation
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = YAY_prodct focus = YAY_tech_slot }
+		x = 34
+		y = 3
+		cost = 10
+
+		available = {
+		    has_country_flag = ars_engineering_30_cf
+		}
+
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+		        add_idea = yay_industry_3
+		        remove_idea = yay_industry_2
+		    } 
+		}
+	}
+
+	focus = {
+		id = YAY_speed_product
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = YAY_tech_slot }
+		prerequisite = { focus = YAY_reformulation }
+		x = 35
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_ideas = yay_speed_pro   
+		}
+	}
+
+	focus = {
+		id = YAY_speed_product_2
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = YAY_speed_product }
+		mutually_exclusive = { focus = YAY_prodct_2 }
+		x = 37
+		y = 6
+	    cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_building_slot
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = YAY_prodct }
+		prerequisite = { focus = YAY_reformulation }
+		x = 33
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 2
+			}    
+		}
+	}
+
+	focus = {
+		id = YAY_prodct_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus =YAY_building_slot }
+		mutually_exclusive = { focus = YAY_speed_product_2 }
+		x = 31
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_prodct_3
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = YAY_prodct }
+		x = 31
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			country_event = yayr.7
+	    }
+	}
+
+	focus = {
+		id = YAY_infras
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YAY_building_slot }
+		prerequisite = { focus = YAY_speed_product }
+		prerequisite = { focus = YAY_reformulation }
+		x = 34
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			    prioritize = { 27 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+			    prioritize = { 24 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_infras_north
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YAY_infras }
+		x = 34
+		y = 7
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			    prioritize = { 16 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_infras_center
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YAY_infras_north }
+		x = 34
+		y = 8
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			    prioritize = { 27 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_infras_south
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YAY_infras_center }
+		x = 34
+		y = 9
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			    prioritize = { 26 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_infras_east
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YAY_infras }
+		x = 36
+		y = 8
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			    prioritize = { 17 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_infras_west
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YAY_infras }
+		x = 32
+		y = 8
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			    prioritize = { 24 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_industrialization
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = YAY_infras_south }
+		prerequisite = { focus = YAY_infras_west }
+		prerequisite = { focus = YAY_infras_east }
+
+		x = 0
+		y = 1
+		relative_position_id = YAY_infras_south
+		cost = 15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    swap_ideas = {
+		        add_idea = yay_industry_4
+		        remove_idea = yay_industry_3
+		    }
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = YAY_army
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 45
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_aviation
+		icon = GFX_goal_generic_build_airforce
+		x = 43
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		    has_country_flag = ars_military_theory_10_cf
+		}
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 0
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 0
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_definitive
+		prerequisite = { focus = YAY_aviation }
+		prerequisite = { focus = YAY_army }
+		icon = GFX_goal_generic_position_armies
+		available = {
+		    has_country_flag = ars_military_theory_20_cf
+		}
+		x = 44
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			air_experience = 25
+		}
+	}
+
+	focus = {
+		id = YAY_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = YAY_definitive }
+		x = 46
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_tatics
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = YAY_definitive }
+		x = 48
+		y = 3
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+    }
+
+    focus = {
+		id = YAY_engineers
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = YAY_definitive }
+		x = 47
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GRE_engineers
+				bonus = 0.25 
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = YAY_engineers }
+		x = 45
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = YAY_engineers }
+		x = 47
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.25
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = YAY_engineers }
+		x = 49
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.25
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_fighter
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = YAY_definitive }
+		x = 40
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.25
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_bomber
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = YAY_fighter }
+		x = 41
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.25
+				uses = 1
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_support_air
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = YAY_bomber }
+		x = 41
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.25
+				ahead_reduction = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = YAY_definitive }
+		x = 42
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.25
+				uses = 1
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_submarine
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = YAY_navy }
+		x = 43
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+
+	focus = {
+		id = YAY_destroyer
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = YAY_submarine }
+		x = 43
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
