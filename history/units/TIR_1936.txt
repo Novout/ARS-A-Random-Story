@@ -1,0 +1,188 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division 1 TIR"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Frederitch Army #####
+	division= {	# "TIR Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "TIR Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "TIR Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "TIR Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "TIR Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "TIR Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "TIR Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 16"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 17"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 18"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "TIR Division 19"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6569
+		division_template = "Division 1 TIR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,416 @@
+division_template = {
+	name = "Division 1"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division 2"		
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division 3"		
+	regiments = {
+		heavy_infantry = { x = 0 y = 0 }
+		heavy_infantry = { x = 0 y = 1 }
+		heavy_infantry = { x = 0 y = 2 }
+		heavy_infantry = { x = 1 y = 0 }
+		heavy_infantry = { x = 1 y = 1 }
+		heavy_infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "WAL Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6114
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11206
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 111
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3105
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6207
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3111
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9066
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 168
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11206
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6185
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9171
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9095
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6152
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9175
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11058
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 16"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 58
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 17"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6155
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 18"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9178
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 19"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6055
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9083
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11060
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 22"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6208
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 23"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11130
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 24"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 203
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 25"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 167
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 26"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3069
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 27"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6061
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 28"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3097
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 29"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 30"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 31"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 32"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 33"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 34"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 35"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 36"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11202
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 37"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3320
+		division_template = "Division 2" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 38"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3320
+		division_template = "Division 2" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 39"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3320
+		division_template = "Division 2" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 40"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 362
+		division_template = "Division 3" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 41"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 362
+		division_template = "Division 3" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "WAL Division 42"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 362
+		division_template = "Division 3" 
+		start_experience_factor = 0.2
+	}
+}

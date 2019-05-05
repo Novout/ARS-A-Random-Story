@@ -1,0 +1,215 @@
+division_template = {
+	name = "Division 1 PRU"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "PRU Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3522
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 16"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 17"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 18"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 19"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+	division= {	# "PRU Division 22"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9294
+		division_template = "Division 1 PRU" 
+		start_experience_factor = 0.5
+	}
+}

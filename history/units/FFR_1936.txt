@@ -1,0 +1,262 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division 1 FFR"		
+	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
+	# Difference is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	    ars_engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Division 2 FFR"		
+	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
+	# Difference from DI is their equipment
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Division 3 FFR"	# Division d'Infanterie Motorisée
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Division 4 FFR"	# Division d'Infanterie Alpine
+	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }	
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Division 5 FFR" 	# Division de Cavalerie
+	# Note: Transformed to DLC, DLM divisions, 1936-39 
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+		armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+##### OOB #####
+units = {
+	##### Frederitch Army #####
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division= {	# "FFR Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6513
+		division_template = "Division 1 FFR" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	# Xe Corps d'Armée (Région Militaire in 1936) -- Strassbourg
+	division= {	# "FFR Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6513
+		division_template = "Division 1 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6513
+		division_template = "Division 1 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11388
+		division_template = "Division 1 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 2 FFR" # Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5 
+
+	}
+	division= {	# "FFR Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "FFR Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}	
+	division= {	# "FFR Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	# "FFR Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	# "FFR Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11505
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}	
+	division= {	# "FFR Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 11221
+		division_template = "Division 4 FFR" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}	
+
+	navy = { 
+		name = "FFR NAVY" 
+		base = 241
+		location = 241
+
+		ship = { name = "FFR 1" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FFR version_name = "FFR NAVY" } } } 
+		ship = { name = "FFR 2" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FFR version_name = "FFR NAVY" } } } 
+		ship = { name = "FFR 3" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FFR version_name = "FFR NAVY" } } } 
+	}
+}
+
+air_wings = {
+	57 = {
+		fighter_equipment_1 =  {
+			owner = "FFR" 
+			amount = 356
+		}
+	}
+	57 = {
+		ars_tac_bomber_equipment_1  =  {
+			owner = "FFR" 
+			amount = 12
+		}
+	}
+}	

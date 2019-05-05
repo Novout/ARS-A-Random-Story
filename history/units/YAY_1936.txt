@@ -1,0 +1,181 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division 1 YAY"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Division 2 YAY"
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+        armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Division 3 YAY"	
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Frederitch Army #####
+	division= {	# "YAY Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11491
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11491
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11491
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3669
+		division_template = "Division 2 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3669
+		division_template = "Division 2 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3669
+		division_template = "Division 2 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "YAY Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "YAY Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "YAY Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "YAY Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "YAY Division 22"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11732
+		division_template = "Division 1 YAY" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}		
+}
+
+air_wings = {
+	57 = { 
+		fighter_equipment_0 = {
+			owner = "YAY"
+			amount = 7
+		}
+	}
+}

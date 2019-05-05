@@ -1,0 +1,200 @@
+division_template = {
+	name = "Division 1"		
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division 2"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "1Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "2Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "3Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "4Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "5Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "6Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "7Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "8Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "9Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "10Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "11Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "12Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "13Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "14Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "15Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "16Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "17Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "18Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "19Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1493
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}

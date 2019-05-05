@@ -1,0 +1,276 @@
+division_template = {
+	name = "Royal Division"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "Royal Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 16"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  6232
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 17"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 18"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 19"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 22"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 23"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 24"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 25"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  3392
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 26"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  572
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 27"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  572
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "Royal Division 28"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =  572
+		division_template = "Royal Division" 
+		start_experience_factor = 0.2
+	}
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AGN"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+}

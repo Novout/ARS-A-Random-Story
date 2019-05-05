@@ -1,0 +1,204 @@
+division_template = {
+	name = "Division 1 TNY"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Division 2 TNY" 	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Division 3 TNY"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Division 4 TNY" 		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Division 5 TNY"	
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "TNY Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9898
+		division_template = "Division 1 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9898
+		division_template = "Division 1 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9898
+		division_template = "Division 1 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9898
+		division_template = "Division 1 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9898
+		division_template = "Division 1 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 911
+		division_template = "Division 2 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6780
+		division_template = "Division 2 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6780
+		division_template = "Division 3 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6780
+		division_template = "Division 4 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6606
+		division_template = "Division 4 TNY" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TNY Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6606
+		division_template = "Division 5 TNY" 
+		start_experience_factor = 0.2
+	}
+
+	navy = {				
+		name = "Naval TNY 1"			
+		base = 911
+		location = 911		
+		ship = { name = "TNY 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = THI version_name = "Chacal Class" } } }
+	}
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TNY"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_0
+			creator = "TNY" 
+		}
+		requested_factories = 1
+		progress = 0.6
+		efficiency = 50
+	}
+}
+
+

@@ -1,0 +1,53 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division 1 A08"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Frederitch Army #####
+	division= {	# "A08 Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 698
+		division_template = "Division 1 A08" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "A08 Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 698
+		division_template = "Division 1 A08" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "A08 Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 698
+		division_template = "Division 1 A08" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "A08 Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 698
+		division_template = "Division 1 A08" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+}

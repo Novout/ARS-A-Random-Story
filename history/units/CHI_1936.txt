@@ -1,0 +1,681 @@
+division_template = {
+	name = "Division 1"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division 2"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division 3"		
+	regiments = {
+		armoured_car = { x = 0 y = 0 }
+		armoured_car = { x = 0 y = 1 }
+		armoured_car = { x = 0 y = 2 }
+		armoured_car = { x = 1 y = 0 }
+		armoured_car = { x = 1 y = 1 }
+		armoured_car = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "1 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1625
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.72
+	}
+	division= {	# "2 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1625
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.72
+	}
+	division= {	# "3 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4085
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.72
+	}
+	division= {	# "4 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4085
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.72
+	}
+	division= {	# "5 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4085
+		division_template = "Division 2" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.72
+	}
+	division= {	# "6 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12436
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.82
+	}
+	division= {	# "8 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10431
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.82
+	}
+	division= {	# "9 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10431
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.82
+	}
+	division= {	# "10 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10039
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.82
+	}
+	division= {	# "11 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10039
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.82
+	}
+	division= {	# "12 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4480
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.82
+	}
+	division= {	# "13 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4480
+		division_template = "Division 2" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	# "14 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10335
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+	}
+	division= {	# "15 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7665
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "16 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7665
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "17 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10517
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "18 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10517
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "19 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10517
+		division_template = "Division 2" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "20 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9999
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "21 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9999
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "22 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11988
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "23 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11988
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "24 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11988
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "25 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10114
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "26 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10114
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.84
+	}
+	division= {	# "27 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1628
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "28 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1628
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "29 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1153
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "30 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1153
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "31 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10044
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "32 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10044
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.80
+	}
+	division= {	# "33 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11937
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "34 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1171
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.78
+	}
+	division= {	# "35 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1171
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "36 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1099
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "37 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11913
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "38 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11913
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "39 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11913
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "40 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11982
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "41 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11982
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "42 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1089
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "43 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1089
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "44 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4091
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "45 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4091
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.70
+	}
+	division= {	# "46 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4156
+		division_template = "Division 1" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.55
+	}
+	division= {	# "47 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4156
+		division_template = "Division 1" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.55
+	}
+	division= {	# "48 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 3" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	# "49 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 3" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	# "50 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 3" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	# "51 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 3" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	# "52 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 3" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	# "53 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "54 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "55 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "56 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "57 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "58 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "59 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+	division= {	# "60 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1193
+		division_template = "Division 1" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.99
+	}
+}
+
+air_wings = {
+	602 = {
+		fighter_equipment_1 =  {
+			owner = "CHI" 
+			amount = 146
+		}
+	}
+	602 = {
+		ars_tac_bomber_equipment_1  =  {
+			owner = "CHI" 
+			amount = 41
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_stg
+			creator = "CHI"
+		}
+		requested_factories = 4
+		efficiency = 87
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "CHI"
+		}
+		requested_factories = 1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ars_tac_bomber_equipment_1
+			creator = "CHI"
+		}
+		requested_factories = 1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = armoured_car_equipment_1 
+			creator = "CHI"
+		}
+		requested_factories = 1
+		efficiency = 100
+	}
+}

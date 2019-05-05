@@ -1,0 +1,336 @@
+division_template = {
+	name = "Division 1"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+
+	support = {
+        ars_engineer = { x = 0 y = 0 }
+        ars_artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	# "1Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "2Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "3Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "4Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "5Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "6Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "7Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "8Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "9Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "10Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "11Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "12Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "13Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "14Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "15Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "16Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "17Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "18Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "19Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "20Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "21Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "22Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "23Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "24Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "25Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "26Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+}
+units = {
+	division= {	# "27Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1806
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+
+	navy = { 
+		name = "USA NAVY" 
+		base = 1500
+		location = 1500
+
+		ship = { name = "USA 1" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = USA version_name = "USA NAVY" } } } 
+		ship = { name = "USA 2" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = USA version_name = "USA NAVY" } } } 
+		ship = { name = "USA 3" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = USA version_name = "USA NAVY" } } } 
+	}
+}
+
+air_wings = { 
+	383 = { 
+		fighter_equipment_0 = { 
+			amount = 53
+			owner = "USA" 
+		} 
+	}
+}

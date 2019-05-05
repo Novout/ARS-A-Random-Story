@@ -1,0 +1,288 @@
+division_template = {
+	name = "Division 1"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	    ars_artillery = { x = 0 y = 0 }
+	    ars_engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	# "1Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "2Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "3Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "4Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "5Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "6Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "7Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "8Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "9Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "10Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "11Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "12Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "13Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "14Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "15Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "16Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3795
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "17Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "18Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "19Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "20Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "21Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "22Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "23Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "24Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "24Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6813
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+
+	navy = { 
+		name = "LEL NAVY" 
+		base = 5005
+		location = 5005
+
+		ship = { name = "LEL 1" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 2" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 3" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 4" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 5" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 6" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 7" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 8" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 9" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 10" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 11" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+		ship = { name = "LEL 12" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = LEL version_name = "LEL NAVY" } } } 
+	}
+}
+
+air_wings = {
+	675 = {
+		fighter_equipment_1 =  {
+			owner = "LEL" 
+			amount = 116
+		}
+	}
+	675 = {
+		ars_tac_bomber_equipment_1  =  {
+			owner = "LEL" 
+			amount = 91
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_stg
+			creator = "LEL"
+		}
+		requested_factories = 5
+		efficiency = 98
+	}
+}	

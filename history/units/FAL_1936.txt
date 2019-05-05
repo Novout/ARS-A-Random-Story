@@ -1,0 +1,274 @@
+division_template = {
+	name = "Division 1"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "1Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "2Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "3Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "4Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "5Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "6Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "7Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "8Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "9Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "10Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "11Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "12Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "13Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "14Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "15Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "16Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "17Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "18Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "19Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "20Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "21Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "22Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "23Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "24Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "25Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1199
+		division_template = "Division 1" 
+		start_experience_factor = 0.2
+	}
+
+	navy = { 
+		name = "FAL NAVY" 
+		base = 3456
+		location = 3456
+
+		ship = { name = "FAL 1" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 2" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 3" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 4" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 5" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 6" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 7" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 8" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+		ship = { name = "FAL 9" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY" } } } 
+	}
+
+	navy = { 
+		name = "FAL NAVY 2" 
+		base = 7982
+		location = 7982
+
+		ship = { name = "FAL 10" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 11" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 12" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 13" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 14" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 15" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 16" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 17" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 18" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 19" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 20" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+		ship = { name = "FAL 21" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = FAL version_name = "FAL NAVY 2" } } } 
+	}
+}

@@ -1,0 +1,297 @@
+division_template = {
+	name = "Division 1 THI"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Division 2 THI"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	# "THI Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3816
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3816
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3816
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 3816
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 2 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 2 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 2 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 16"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 17"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 18"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 19"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 22"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 23"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 24"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 25"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+
+	division= {	# "THI Division 26"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 10024
+		division_template = "Division 1 THI" 
+		start_experience_factor = 0.2
+	}
+}
+
+air_wings = { 
+	166 = { 
+		fighter_equipment_0 = { 
+			amount = 70
+			owner = "THI" 
+		} 
+		ars_tac_bomber_equipment_0 = { 
+			amount = 30
+			owner = "THI" 
+		} 
+	}
+}	

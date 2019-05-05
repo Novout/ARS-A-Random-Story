@@ -1,0 +1,255 @@
+﻿division_template = {
+	name = "Division 1 GYN"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Division 2 GYN" 	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	# "GYN Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 503
+		division_template = "Division 1 GYN" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "GYN Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 503
+		division_template = "Division 1 GYN" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}		
+	division= {	# "GYN Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 503
+		division_template = "Division 1 GYN" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+	division= {	# "GYN Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 503
+		division_template = "Division 1 GYN" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}	
+
+	division= {	# "GYN Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 503
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 15"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 16"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 17"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 18"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 19"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 20"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+	division= {	# "GYN Division 21"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 595
+		division_template = "Division 2 GYN" 	
+		start_experience_factor = 0.2
+	}
+
+	navy = { 
+		name = "GYN NAVY" 
+		base = 758 
+		location = 758 
+
+		ship = { name = "gyn 1" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 2" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 3" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 4" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 5" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 6" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 7" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+		ship = { name = "gyn 8" definition = ars_light_boat equipment = { ars_light_boat_equipment_1 = { amount = 1 owner = GYN version_name = "GYN NAVY" } } } 
+	}
+}

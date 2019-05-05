@@ -1,0 +1,152 @@
+division_template = {
+	name = "Division 1 TAR"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	# "TAR Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9508
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9508
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9508
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 9508
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 13"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+	division= {	# "TAR Division 14"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 11507
+		division_template = "Division 1 TAR" 
+		start_experience_factor = 0.2
+	}
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TAR"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 40
+	}
+}
+

@@ -1,0 +1,146 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division 1 SWE"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Sweden Army #####
+	division= {	# "1 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}	
+	division= {	# "2 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}		
+	division= {	# "3 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "4 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "5 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "6 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "7 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "8 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "9 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "10 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "11 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "12 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "13 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+	division= {	# "14 Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6147
+		division_template = "Division 1 SWE" 	
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,124 @@
+﻿division_template = {
+	name = "Division 1 KRY"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	    infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	# "A01 Division 1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}	
+	division= {	# "A01 Division 2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}	
+	division= {	# "A01 Division 7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}
+	division= {	# "A01 Division 12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 6963
+		division_template = "Division 1 KRY" 	
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
+	}	
+}
