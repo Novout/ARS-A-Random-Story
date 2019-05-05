@@ -1,0 +1,285 @@
+﻿add_namespace = pacyentesn
+
+country_event = {
+	id = pacyentesn.1
+	title = pacyentesn.1.t
+	desc = pacyentesn.1.d
+	picture = GFX_report_event_cze_little_entente  
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.1.a
+		ai_chance = { factor = 25 }
+		ROU = {
+		    country_event = { id = pacyentesn.2 }
+		}
+		PCC = {
+			add_opinion_modifier = { target = TAR modifier = diplomatic_agreements_enemy }
+		}
+		TAR = {
+			add_opinion_modifier = { target = PCC modifier = diplomatic_agreements_enemy }
+		}
+		set_country_flag = pcc_help_war_with_tarantyr
+		set_country_flag = pcc_war_with_tarantyr
+	}	
+	option = {
+		name = pacyentesn.1.b
+		ai_chance = { factor = 25 }
+		AGN = {
+		    country_event = { id = pacyentesn.2 }
+		}    
+		PCC = {
+			add_opinion_modifier = { target = TAR modifier = diplomatic_agreements_enemy }
+		}
+		TAR = {
+			add_opinion_modifier = { target = PCC modifier = diplomatic_agreements_enemy }
+		}
+		set_country_flag = pcc_help_war_with_tarantyr
+		set_country_flag = pcc_war_with_tarantyr
+	}
+	option = {
+		name = pacyentesn.1.c
+		ai_chance = { factor = 50 }
+		PCC = {
+			add_opinion_modifier = { target = TAR modifier = diplomatic_agreements_enemy }
+		}
+		TAR = {
+			add_opinion_modifier = { target = PCC modifier = diplomatic_agreements_enemy }
+		}
+		declare_war_on = {
+		    target = TAR
+		    type = annex_everything
+	    }
+	    set_country_flag = pcc_war_with_tarantyr
+	}
+}
+
+country_event = {
+	id = pacyentesn.2
+	title = pacyentesn.2.t
+	desc = pacyentesn.2.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.2.a
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+		    target = TAR
+		    type = annex_everything
+	    }
+	    PCC = {
+	        declare_war_on = {
+		        target = TAR
+		        type = annex_everything
+	        }
+	    }
+		ROOT = {
+			add_opinion_modifier = { target = TAR modifier = diplomatic_agreements_enemy }
+		}
+		TAR = {
+			add_opinion_modifier = { target = ROOT modifier = diplomatic_agreements_enemy }
+		}
+	}	
+	option = {
+		name = pacyentesn.2.b
+		ai_chance = { factor = 0 }
+		add_political_power = -200
+	}
+}
+
+country_event = {
+	id = pacyentesn.3
+	title = pacyentesn.3.t
+	desc = pacyentesn.3.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.3.a
+		ai_chance = { factor = 100 }
+		PCC = {
+			add_opinion_modifier = { target = URJ modifier = diplomatic_agreements_opi }
+		}
+		URJ = {
+			add_opinion_modifier = { target = PCC modifier = diplomatic_agreements_opi }
+		}
+	}	
+}
+
+country_event = {
+	id = pacyentesn.4
+	title = pacyentesn.4.t
+	desc = pacyentesn.4.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.4.a
+		ai_chance = { factor = 100 }
+		214 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		262 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		579 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		516 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		644 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		PCC = {
+		    add_manpower = 10502
+		    add_political_power = 20
+		    annex_country = { target = URJ transfer_troops = yes }
+		    set_country_flag = URJ_for_PCC
+	    }
+	}	
+	option = {
+		name = pacyentesn.4.b
+		ai_chance = { factor = 0 }
+	}	
+}
+
+country_event = {
+	id = pacyentesn.5
+	title = pacyentesn.5.t
+	desc = {
+		text = pacyentesn.5.d
+	}
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.5.a
+		ai_chance = { factor = 100 }
+		PCC = {
+		    add_to_faction = ROU
+	    }    
+	}
+	option = {
+		name = pacyentesn.5.b	
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = pacyentesn.6
+	title = pacyentesn.6.t
+	desc = pacyentesn.6.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.6.a
+		ai_chance = { factor = 100 }
+		66 = {
+			if = {
+				limit = { is_owned_by = WAL }
+				add_core_of = PCC
+			}
+		}
+		WAL = {
+			every_unit_leader = {
+				set_nationality = PCC
+			}
+		}
+		PCC = {
+		    annex_country = { target = WAL transfer_troops = yes }
+		    add_political_power = 10
+		    add_named_threat = { threat = 1 name = pcc_waltri_wt }
+        }
+	}
+	option = {
+		name = pacyentesn.6.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = pacyentesn.7
+	title = pacyentesn.7.t
+	desc = pacyentesn.7.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.7.a
+		ai_chance = { factor = 100 }
+		annex_country = { target = RUE transfer_troops = yes }
+		241 = {
+			if = {
+				limit = { is_owned_by = RUE }
+				add_core_of = PCC
+			}
+		}
+		224 = {
+			if = {
+				limit = { is_owned_by = RUE }
+				add_core_of = PCC
+			}
+		}
+		RUE = {
+			every_unit_leader = {
+				set_nationality = PCC
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pacyentesn.8
+	title = pacyentesn.8.t
+	desc = pacyentesn.8.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pacyentesn.8.a	
+        set_politics = {
+			ruling_party = henism_autocracy
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = henism_autocracy
+			popularity = 0.5
+		}
+	}
+}

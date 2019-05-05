@@ -1,0 +1,239 @@
+﻿###########################
+# China Events
+###########################
+
+add_namespace = arschina
+
+country_event = {
+	id = arschina.1
+	title = arschina.1.t
+	desc = arschina.1.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arschina.1.a
+		ai_chance = { factor = 80 } 
+		CHI = { 
+			transfer_state = 601
+			transfer_state = 752
+			add_state_core = 601
+			add_state_core = 752
+		}
+	}	
+	option = {
+	    name = arschina.1.b
+	    ai_chance = { factor = 20 } 
+	    declare_war_on = {
+		    target = CHI
+		    type = annex_everything
+	    }
+	}
+}
+
+country_event = {
+	id = arschina.2
+	title = arschina.2.t
+	desc = arschina.2.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arschina.2.a
+		ai_chance = { factor = 80 } 
+		CHI = { 
+			transfer_state = 322
+			transfer_state = 758
+			transfer_state = 757
+			add_state_core = 322
+			add_state_core = 758
+			add_state_core = 757
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CHI
+				}
+				add_core_of = CHI
+			}
+		}
+	}	
+	option = {
+	    name = arschina.2.b
+	    ai_chance = { factor = 20 } 
+	    declare_war_on = {
+		    target = CHI
+		    type = annex_everything
+	    }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = CHI
+				}
+				add_core_of = CHI
+			}
+		}
+	}
+}
+
+country_event = {
+	id = arschina.3
+	title = arschina.3.t
+	desc = arschina.3.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arschina.3.a
+		ai_chance = { factor = 80 } 
+		declare_war_on = {
+		    target = MAT
+		    type = annex_everything
+	    }
+	    declare_war_on = {
+		    target = KRY
+		    type = annex_everything
+	    }
+	    declare_war_on = {
+		    target = JAL
+		    type = annex_everything
+	    }
+	}	
+}
+
+country_event = {
+	id = arschina.4
+	title = arschina.4.t
+	desc = arschina.4.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arschina.4.a
+		ai_chance = { factor = 80 } 
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = arschina.5 ### Supremacy
+	title = arschina.5.t
+	desc = arschina.5.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    tag = CHI
+	    CHI = {
+	        has_war_with = LEX
+	    }
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = arschina.5.a
+        set_country_flag = lex_air_supremacy
+	}
+}
+
+country_event = {
+	id = arschina.6
+	title = arschina.6.t
+	desc = arschina.6.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arschina.6.a
+		ai_chance = { factor = 5 } 
+		add_ideas = chi_fal_cooperation
+		CHI = {
+		    add_ideas = chi_fal_cooperation
+		    country_event = { days = 1 id = arschina.7 }
+		}    
+		set_country_flag = fal_accept_chi
+	}	
+	option = {
+		name = arschina.6.b
+		set_country_flag = fal_reject_chi
+		ai_chance = { factor = 0 } 
+	}
+}
+
+country_event = {
+	id = arschina.7
+	title = arschina.7.t
+	desc = arschina.7.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arschina.7.a
+	}	
+}
+
+country_event = {
+	id = arschina.8 ### Supremacy
+	title = arschina.8.t
+	desc = arschina.8.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    tag = FAL
+	    CHI = {
+	        has_war_with = LIG
+	    }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = arschina.8.a
+        ai_chance = { factor = 1 } 
+        declare_war_on = {
+		    target = LIG
+		    type = annex_everything
+	    }
+	}
+	option = {
+		name = arschina.8.b
+        ai_chance = { factor = 1 } 
+	}
+}

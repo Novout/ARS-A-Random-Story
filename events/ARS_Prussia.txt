@@ -1,0 +1,68 @@
+﻿###########################
+# Fredericth(Prussia) Events
+###########################
+
+add_namespace = prussia
+
+country_event = {
+	id = prussia.1
+	title = prussia.1.t
+	desc = prussia.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = prussia.1.a
+		ai_chance = { factor = 5 } 
+		FFR = { 
+			transfer_state = 54
+			add_state_core = 54
+		}
+		FFR = { 
+			transfer_state = 50
+			add_state_core = 50
+		}
+		FFR = { 
+			transfer_state = 52
+			add_state_core = 52
+		}
+		FFR = { 
+			transfer_state = 53
+			add_state_core = 53
+		}
+	}	
+	option = {
+		name = prussia.1.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				has_war = no
+			}
+		}	
+		create_wargoal = {
+			type = take_state_focus
+			target = FFR
+			generator = { 65 }
+		}
+	}
+}
+
+country_event = {
+	id = prussia.2
+	title = prussia.2.t
+	desc = prussia.2.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = prussia.2.a
+		create_wargoal = {
+			type = take_state_focus
+			target = PCC
+			generator = { 85 }
+		}
+	}
+}

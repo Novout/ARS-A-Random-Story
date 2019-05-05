@@ -1,0 +1,1103 @@
+﻿###########################
+# Fredericth Events
+###########################
+
+add_namespace = frederitch
+
+#Rouanir Strike
+country_event = {
+	id = frederitch.1
+	title = frederitch.1.t
+	desc = frederitch.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.1.a
+		add_political_power = 100
+		hidden_effect = {
+			country_event = { days = 1 id = news.1 }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.3
+	title = frederitch.3.t
+	desc = frederitch.3.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.3.a
+		ai_chance = { factor = 35 } 
+		HOL = { 
+			transfer_state = 765
+			add_state_core = 765
+		}
+		HOL = { 
+			transfer_state = 6
+			add_state_core = 6
+		}
+		HOL = { 
+			transfer_state = 34
+			add_state_core = 34
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.3 }
+		}
+	}	
+	option = {
+	    name = frederitch.3.b
+	    ai_chance = { factor = 65 } 
+	    create_wargoal = {
+			type = take_state_focus
+			target = HOL
+			generator = { 35 }
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.3 }
+		}
+	}
+}
+
+country_event = {
+	id = frederitch.4
+	title = frederitch.4.t
+	desc = frederitch.4.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.4.a 
+		FFR = { add_to_faction = ROOT }
+	}	
+}
+
+country_event = {
+	id = frederitch.6
+	title = frederitch.6.t
+	desc = frederitch.6.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.6.a
+		add_political_power = -160
+		hidden_effect = {
+			country_event = { days = 1 id = news.4 }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.8
+	title = frederitch.8.t
+	desc = frederitch.8.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = frederitch.8.a
+	    FFR = {
+			transfer_state = 58
+			add_state_core = 58
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.9
+	title = frederitch.9.t
+	desc = frederitch.9.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = frederitch.9.a
+	    FFR = {
+			transfer_state = 37
+			add_state_core = 37
+		}
+		FFR = {
+			transfer_state = 99
+			add_state_core = 99
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.10
+	title = frederitch.10.t
+	desc = frederitch.10.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = frederitch.10.a
+	    FFR = {
+			annex_country = { target = VVV }
+		}
+		set_country_flag = VVV_annexed
+	}	
+}
+
+country_event = {
+	id = frederitch.7
+	title = frederitch.7.t
+	desc = frederitch.7.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = frederitch.7.a
+	}	
+}
+
+country_event = {
+	id = frederitch.12
+	title = frederitch.12.t
+	desc = frederitch.12.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = frederitch.12.a
+	    add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+	    }
+	}	
+	option = {
+	    name = frederitch.12.b
+	    add_political_power = -105
+	    add_ideas = ffr_steel
+	    56 = {
+			add_resource = {
+				type = steel
+				amount = 5
+			}
+		}
+	}
+}	
+
+country_event = {
+	id = frederitch.13
+	title = frederitch.13.t
+	desc = frederitch.13.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+		
+	option = {
+	    name = frederitch.13.a
+	    59 = {
+			add_resource = {
+				type = steel
+				amount = 2
+			}
+		}
+		61 = {
+			add_resource = {
+				type = steel
+				amount = 3
+			}
+		}
+		64 = {
+			add_resource = {
+				type = steel
+				amount = 3
+			}
+		}
+	}
+}	
+
+country_event = {
+	id = frederitch.15
+	title = frederitch.15.t
+	desc = frederitch.15.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+		
+	option = {
+	    name = frederitch.15.a
+	    ai_chance = { factor = 90 } 
+	    138 = {
+			add_building_construction = {
+				type = bunker
+				province = 3307
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6412
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9362
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9300
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11160
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11327
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11215
+				level = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = frederitch.16
+	title = frederitch.16.t
+	desc = frederitch.16.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+		
+	option = {
+	    name = frederitch.16.a
+	    custom_effect_tooltip = ffr_fortification_wnw
+	    set_country_flag = ffr_help_ron_cf
+	    ai_chance = { factor = 90 } 
+        RON = {
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		FFR = {
+			add_opinion_modifier = { target = RON modifier = diplomatic_agreements_opi }
+		}
+	    130 = {
+			add_building_construction = {
+				type = bunker
+				province = 11317
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9332
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9397
+				level = 3
+			}
+		}
+		132 = {
+			add_building_construction = {
+				type = bunker
+				province = 6335
+				level = 3
+			}
+		}
+	}
+	option = {
+	    name = frederitch.16.b
+	    custom_effect_tooltip = ffr_fortification_ron_border
+	    ai_chance = { factor = 10 } 
+        RON = {
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_enemy }
+		}
+		FFR = {
+			add_opinion_modifier = { target = RON modifier = diplomatic_agreements_enemy }
+		}
+		125 = {
+			add_building_construction = {
+				type = bunker
+				province = 221
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11253
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 11221
+				level = 3
+			}
+			add_building_construction = {
+				type = bunker
+				province = 296
+				level = 3
+			}
+		}
+	}
+}			
+
+#Rouanir Decision
+country_event = {
+	id = frederitch.2
+	title = frederitch.2.t
+	desc = frederitch.2.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.2.a
+		ai_chance = { factor = 2 } 
+		declare_war_on = {
+			target = FFR
+			type = take_state_focus
+			generator = { 55 }
+		}	
+		hidden_effect = {
+			country_event = { days = 1 id = news.2 }
+		}
+	}
+	option = {
+	    name = frederitch.2.b
+	    add_political_power = -20
+	    ai_chance = { factor = 8 } 
+		ROU = {
+			add_ai_strategy = {
+				type = antagonize
+				id = "FFR"
+				value = 200
+			}
+		}
+	}
+}
+
+country_event = {
+	id = frederitch.17
+	title = frederitch.17.t
+	desc = frederitch.17.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.17.a
+		add_political_power = 50
+		FF1 = { transfer_state = 307 }
+		puppet = FF1
+		hidden_effect = {
+			country_event = { days = 1 id = news.22 }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.18
+	title = frederitch.18.t
+	desc = frederitch.18.d
+	picture = GFX_report_event_cze_little_entente
+
+	trigger = { 
+	    FF1 = { 
+	        exists = yes
+	        is_puppet_of = FFR
+	    }
+        tag = FF1
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = frederitch.18.a
+		add_popularity = {
+			popularity = 0.90
+			ideology = henism_pacifism
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.19
+	title = frederitch.19.t
+	desc = frederitch.19.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.19.a
+		BLF = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		WAL = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		RON = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		PCC = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.23 }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.20
+	title = frederitch.20.t
+	desc = frederitch.20.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.20.a
+		FF1 = { transfer_state = 489 }
+		FF1 = { transfer_state = 493 }
+	}	
+}
+
+country_event = {
+	id = frederitch.21
+	title = frederitch.21.t
+	desc = frederitch.21.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.21.a
+		FF1 = { transfer_state = 488 }
+		FF1 = { transfer_state = 486 }
+	}	
+}
+
+country_event = {
+	id = frederitch.22
+	title = frederitch.22.t
+	desc = frederitch.22.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.22.a
+		FF1 = { transfer_state = 687 }
+		FF1 = { transfer_state = 309 }
+		FF1 = { transfer_state = 310 }
+		FF1 = { transfer_state = 306 }
+		FF1 = { transfer_state = 305 }
+		FF1 = { transfer_state = 490 }
+		FF1 = { transfer_state = 491 }
+		FF1 = { transfer_state = 303 }
+		FF1 = { transfer_state = 494 }
+		FF1 = { transfer_state = 492 }
+		FF1 = { transfer_state = 304 }
+		FF1 = { transfer_state = 685 }
+		give_guarantee = AGL
+	}	
+}
+
+country_event = {
+	id = frederitch.23
+	title = frederitch.23.t
+	desc = frederitch.23.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.23.a
+		custom_effect_tooltip = claim_agtiya_tt
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = FF1
+				}
+				add_core_of = FF1
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.24
+	title = frederitch.24.t
+	desc = frederitch.24.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.24.a
+		BRL = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		FNX = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		DMG = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		AGL = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.25
+	title = frederitch.25.t
+	desc = frederitch.25.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.25.a
+		LCK = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+		MAS = {
+		    add_ideas = ffr_pacifism_influence
+			add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.26
+	title = frederitch.26.t
+	desc = frederitch.26.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.26.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500 
+		    producer = USA
+	    }
+		add_ideas = ffr_pacifism_influence
+		add_opinion_modifier = { target = FFR modifier = diplomatic_agreements_opi }
+	}	
+}
+
+country_event = {
+	id = frederitch.27 ###Yayr treaty
+	title = frederitch.27.t
+	desc = frederitch.27.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.27.a
+		add_to_faction = FRC
+		FRC = {
+		    set_stability = 0.59
+			set_war_support = 0.21
+			if = {
+				limit = {
+					NOT = { has_government = henism_pacifism }
+				}
+				set_politics = {
+					ruling_party = henism_pacifism
+					elections_allowed = yes
+				}
+			}
+		    add_popularity = {
+				popularity = 0.90
+				ideology = henism_pacifism
+			}
+		}	
+        FRC = { 
+			transfer_state = 17
+			add_state_core = 17
+		}
+		FRC = { 
+			transfer_state = 27
+			add_state_core = 27
+		}
+		FRC = { 
+			transfer_state = 16
+			add_state_core = 16
+		}
+		FRC = { 
+			transfer_state = 24
+			add_state_core = 24
+		}
+		FRC = { 
+			transfer_state = 33
+			add_state_core = 33
+		}
+		FRC = { 
+			transfer_state = 26
+			add_state_core = 26
+		}
+		FRC = { 
+			transfer_state = 20
+			add_state_core = 20
+		}
+		FRC = { 
+			transfer_state = 28
+			add_state_core = 28
+		}
+		FRC = { 
+			transfer_state = 42
+			add_state_core = 42
+		}
+		FRC = { 
+			transfer_state = 18
+			add_state_core = 18
+		}
+		FRC = { 
+			transfer_state = 29
+			add_state_core = 29
+		}
+		FRC = { 
+			transfer_state = 15
+			add_state_core = 15
+		}
+		FFR = { 
+			transfer_state = 763
+			add_state_core = 763
+		}
+		FFR = { 
+			transfer_state = 764
+			add_state_core = 764
+		}
+		FRC = { 
+			transfer_state = 8
+			add_state_core = 8
+		}
+		if = {
+			limit = {
+				NOT = {
+				    7 = { is_owned_by = HOL }
+			    }
+			}
+		    HOL = { 
+			    transfer_state = 7
+			    add_state_core = 7
+		    }
+		}	
+		if = {
+			limit = {
+				NOT = {
+				    35 = { is_owned_by = HOL }
+			    }
+			}
+		    HOL = { 
+			    transfer_state = 35
+			    add_state_core = 35
+		    }
+		}
+		if = {
+			limit = {
+				NOT = {
+				    765 = { is_owned_by = HOL }
+			    }
+			}
+		    HOL = { 
+			    transfer_state = 765
+			    add_state_core = 765
+		    }
+		}
+		if = {
+			limit = {
+				NOT = {
+				    6 = { is_owned_by = HOL }
+			    }
+			}
+		    HOL = { 
+			    transfer_state = 6
+			    add_state_core = 6
+		    }
+		}
+		if = {
+			limit = {
+				NOT = {
+				    34 = { is_owned_by = HOL }
+			    }
+			}
+		    HOL = { 
+			    transfer_state = 34
+			    add_state_core = 34
+		    }
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = news.26 }
+			FRC = {
+		        load_oob = FRC_1936
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = frederitch.28
+	title = frederitch.28.t
+	desc = frederitch.28.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.28.a
+		FRC = { 
+			transfer_state = 25
+			add_state_core = 25
+		}
+		FRC = { 
+			transfer_state = 22
+			add_state_core = 22
+		}
+		FRC = { 
+			transfer_state = 32
+			add_state_core = 32
+		}
+		FRC = { 
+			transfer_state = 21
+			add_state_core = 21
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.29
+	title = frederitch.29.t
+	desc = frederitch.29.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.29.a
+		GYN = {
+		    country_event = { days = 1 id = frederitch.30 }
+	    }
+	}
+}
+
+country_event = {
+	id = frederitch.30
+	title = frederitch.30.t
+	desc = frederitch.30.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+
+	option = {
+		name = frederitch.30.a
+		ai_chance = { factor = 1 } 
+		declare_war_on = {
+			target = FRC
+			type = take_state_focus
+			generator = { 15 }
+		}
+	}	
+	option = {
+		name = frederitch.30.b
+		ai_chance = { factor = 3 } 
+		FRC = { 
+			transfer_state = 30
+			add_state_core = 30
+		}
+		FRC = { 
+			transfer_state = 14
+			add_state_core = 14
+		}
+		FRC = { 
+			transfer_state = 23
+			add_state_core = 23
+		}
+		FRC = { 
+			transfer_state = 19
+			add_state_core = 19
+		}
+	}
+}
+
+country_event = {
+	id = frederitch.31
+	title = frederitch.31.t
+	desc = frederitch.31.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.31.a
+		set_capital = 64
+		FFR = {
+			if = {
+				limit = {
+					has_government = henism_pacifism
+				}
+				set_politics = {
+					ruling_party = pacifism
+					elections_allowed = yes
+				}
+			}
+		    add_popularity = {
+				popularity = 1.0
+				ideology = pacifism
+			}
+		}          
+		if = {
+			limit = {
+			    NOT = {
+				    60 = { is_owned_by = VVV }
+			    }
+			}
+		    FFR = { 
+			    transfer_state = 60
+			    add_state_core = 60
+		    }
+		}
+		if = {
+			limit = {
+			    NOT = {
+				    65 = { is_owned_by = VVV }
+			    }
+			}
+		    FFR = { 
+			    transfer_state = 65
+			    add_state_core = 65
+		    }
+		}
+	}	
+}
+
+country_event = {
+	id = frederitch.32
+	title = frederitch.32.t
+	desc = frederitch.32.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.32.a
+		set_capital = 126
+		add_to_faction = RON
+		RON = {
+			if = {
+				limit = {
+					has_government = traditional_conservatism
+				}
+				set_politics = {
+					ruling_party = pacifism
+					elections_allowed = yes
+				}
+			}
+		    add_popularity = {
+				popularity = 1.0
+				ideology = pacifism
+			}
+		}          
+		if = {
+			limit = {
+			    NOT = {
+				    125 = { is_owned_by = FFR }
+			    }
+			}
+		    RON = { 
+			    transfer_state = 125
+			    add_state_core = 125
+		    }
+		}
+		RON = { 
+			transfer_state = 131
+			add_state_core = 131
+	    }
+	    RON = { 
+			transfer_state = 121
+			add_state_core = 121
+	    }
+	    RON = { 
+			transfer_state = 133
+			add_state_core = 133
+	    }
+	    RON = { 
+			transfer_state = 120
+			add_state_core = 120
+	    }
+	    RON = { 
+			transfer_state = 136
+			add_state_core = 136
+	    }
+	}	
+}
+
+country_event = {
+	id = frederitch.40
+	title = frederitch.40.t
+	desc = frederitch.40.d
+	picture = GFX_report_event_cze_little_entente
+
+	trigger = { 
+	    FFR = { 
+	        has_civil_war = yes
+	    }
+	    tag = FFR
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = frederitch.40.a
+		set_cosmetic_tag = FFR_PRUSSIA
+	}
+}
+
+country_event = {
+	id = frederitch.35
+	title = frederitch.35.t
+	desc = frederitch.35.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.35.a
+		ai_chance = {
+			factor = 2
+		}
+	    FFR = { 
+			transfer_state = 5
+			add_state_core = 5
+	    }
+	    FFR = { 
+			transfer_state = 85
+			add_state_core = 85
+	    }
+	}	
+	option = {
+		name = frederitch.35.b
+		ai_chance = {
+			factor = 1
+		}
+	    declare_war_on = {
+			target = FFR
+			type = take_state_focus
+			generator = { 62 }
+		}
+	}
+}
+
+country_event = {
+	id = frederitch.33
+	title = frederitch.33.t
+	desc = frederitch.33.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = frederitch.33.a
+		hidden_effect = {
+			set_capital = 64
+			start_civil_war = {
+				ruling_party = henism_autocracy
+				ideology = henism_pacifism
+				size = 0.4
+				capital = 59
+				states = { 59 56 36 57 51 55 763 764 }
+			}
+			load_oob = "PRU_Civil_War_henism_autocracy"
+			hidden_effect = { news_event = { id = news.30 hours = 6 } }
+			set_politics = {
+				ruling_party = henism_autocracy
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = henism_autocracy
+				popularity = 0.85
+			}
+			add_popularity = {
+				ideology = reactionary
+				popularity = 0.15
+			}	
+		}
+		custom_effect_tooltip = FFR_civil_war_tt
+		hidden_effect = { set_cosmetic_tag = PRU_provisional_gvt }
+		random_other_country = {
+			limit = {
+				original_tag = FFR
+				has_government = henism_pacifism
+			}
+			set_cosmetic_tag = FFR_civil_war_pacifism
+		}
+		create_country_leader = {
+	        name = "Wilhelm III"
+	        desc = "POLITICS_GUILHERME_LEADER"
+	        picture = GFX_portrait_guilherme
+	        expire = "1965.1.1"
+	        ideology = henism_auto
+	        traits = {
+		        ffr_guilherme_military
+		        ffr_guilherme_autocracy
+	        }
+        }
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = FFR
+					has_government = henism_pacifism
+				}
+				save_event_target_as = pacifism_frederitch_civil_war
+				every_unit_leader = {
+					set_nationality = FFR
+				}
+			}
+			FFR = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
+						}
+					}
+					set_nationality = event_target:pacifism_frederitch_civil_war
+				}
+			}
+		}
+	}	
+}
+
+
+
+

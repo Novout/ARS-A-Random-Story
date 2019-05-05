@@ -1,0 +1,82 @@
+﻿add_namespace = ars_trigger_diplomatic
+
+country_event = {
+	id = ars_trigger_diplomatic.3 ###RUSSIAN EMPIRE
+	title = ars_trigger_diplomatic.3.t
+	desc = ars_trigger_diplomatic.3.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    PCC = { 
+	        has_completed_focus = PCC_russian_empire         
+	    }
+	    tag = PCC
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = ars_trigger_diplomatic.3.a	
+        set_politics = {
+			ruling_party = henism_autocracy
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = henism_autocracy
+			popularity = 0.5
+		}
+	}
+}
+
+country_event = {
+	id = ars_trigger_diplomatic.4  ###Pacifism WAR
+	title = ars_trigger_diplomatic.4.t
+	desc = ars_trigger_diplomatic.4.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    has_government = henism_pacifism
+        NOT = {
+            has_country_flag = ffr_war_henism
+            has_country_flag = henism_war
+        }
+        has_war = yes  
+	}
+
+	fire_only_once = no
+
+	option = {
+		name = ars_trigger_diplomatic.4.a
+		add_ideas = henism_pacifism_war
+		add_ideas = henism_military_war
+		set_country_flag = henism_war
+		clr_country_flag = henism_not_war
+	}
+}
+
+country_event = {
+	id = ars_trigger_diplomatic.5  ###Pacifism NOT WAR
+	title = ars_trigger_diplomatic.5.t
+	desc = ars_trigger_diplomatic.5.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    has_government = henism_pacifism
+        NOT = {
+            has_country_flag = ffr_war_henism
+            has_country_flag = henism_not_war
+        }
+        has_war = no  
+        has_country_flag = henism_war
+	}
+
+	fire_only_once = no
+
+	option = {
+		name = ars_trigger_diplomatic.5.a
+		remove_ideas = henism_pacifism_war
+		remove_ideas = henism_military_war
+		clr_country_flag = henism_war
+		set_country_flag = henism_not_war
+	}
+}

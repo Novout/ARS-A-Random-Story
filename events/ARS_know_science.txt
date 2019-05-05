@@ -1,0 +1,424 @@
+add_namespace = ars_know_science
+
+country_event = {
+	id = ars_know_science.1 ####Engineering Tier 1
+	title = ars_know_science.1.t
+	desc = ars_know_science.1.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = engineering_1
+	    }    
+	    has_country_flag = ars_engineering_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.1.a
+		ai_chance = { factor = 1 }
+		add_ideas = engineering_tier_1_a
+		set_country_flag = engineering_1
+	}	
+	option = {
+		name = ars_know_science.1.b
+		ai_chance = { factor = 1 }
+		add_ideas = engineering_tier_1_b
+		set_country_flag = engineering_1
+	}
+}
+
+country_event = {
+	id = ars_know_science.2 ####Engineering Tier 2
+	title = ars_know_science.2.t
+	desc = ars_know_science.2.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = engineering_2
+	    }    
+	    has_country_flag = ars_industry_15_cf
+	    has_country_flag = ars_language_20_cf
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.2.a
+		ai_chance = { factor = 1 }
+		add_ideas = engineering_tier_2_a
+		set_country_flag = engineering_2
+	}	
+	option = {
+		name = ars_know_science.2.b
+		ai_chance = { factor = 0 }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		set_country_flag = engineering_2
+	}
+}
+
+country_event = {
+	id = ars_know_science.3 ####Engineering Tier 2
+	title = ars_know_science.3.t
+	desc = ars_know_science.3.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = engineering_3
+	    }    
+	    has_country_flag = ars_industry_30_cf
+	    has_country_flag = ars_engineering_30_cf
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.3.a
+		ai_chance = { factor = 1 }
+		add_ideas = engineering_tier_3_a
+		set_country_flag = engineering_3
+	}	
+	option = {
+		name = ars_know_science.3.b
+		ai_chance = { factor = 1 }
+		add_ideas = engineering_tier_3_b
+		set_country_flag = engineering_3
+	}
+}
+
+country_event = {
+	id = ars_know_science.4 ####Science Tier 1
+	title = ars_know_science.4.t
+	desc = ars_know_science.4.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = science_1
+	    }    
+	    has_country_flag = ars_science_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 50
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.4.a
+		ai_chance = { factor = 1 }
+		add_ideas = science_tier_1_a
+		set_country_flag = science_1
+	}
+	option = {
+		name = ars_know_science.4.b
+		ai_chance = { factor = 1 }
+		add_ideas = science_tier_1_b
+		set_country_flag = science_1
+	}
+	option = {
+		name = ars_know_science.4.c
+		ai_chance = { factor = 1 }
+		add_ideas = science_tier_1_c
+		set_country_flag = science_1
+	}
+	option = {
+		name = ars_know_science.4.e
+		ai_chance = { factor = 1 }
+		add_ideas = science_tier_1_e
+		set_country_flag = science_1
+	}	
+}
+
+country_event = {
+	id = ars_know_science.5####Logistics Tier 1
+	title = ars_know_science.5.t
+	desc = ars_know_science.5.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = logistics_1
+	    }    
+	    has_country_flag = ars_logistics_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 50
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.5.a
+		ai_chance = { factor = 1 }
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_country_flag = logistics_1
+	}
+	option = {
+		name = ars_know_science.5.b
+		ai_chance = { factor = 1 }
+		add_ideas = logistics_tier_1_b
+		set_country_flag = logistics_1
+	}	
+}
+
+country_event = {
+	id = ars_know_science.6####Logistics 2
+	title = ars_know_science.6.t
+	desc = ars_know_science.6.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = logistics_2
+	    }    
+	    has_country_flag = ars_logistics_15_cf
+	    has_country_flag = ars_military_theory_10_cf
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.6.a
+		ai_chance = { factor = 2 }
+		add_ideas = logistics_tier_2_a
+		set_country_flag = logistics_2
+	}
+	option = {
+		name = ars_know_science.6.b
+		ai_chance = { factor = 1 }
+		add_ideas = logistics_tier_2_b
+		set_country_flag = logistics_2
+	}	
+}
+
+country_event = {
+	id = ars_know_science.7####Chemistry 2
+	title = ars_know_science.7.t
+	desc = ars_know_science.7.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = chemistry_1
+	    }    
+	    has_country_flag = ars_chemistry_30_cf
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.7.a
+		ai_chance = { factor = 1 }
+		add_ideas = chemistry_tier_1_a
+		set_country_flag = chemistry_1
+	}	
+}
+
+country_event = {
+	id = ars_know_science.8####Industry
+	title = ars_know_science.8.t
+	desc = ars_know_science.8.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = industry_1
+	    }    
+	    has_country_flag = ars_industry_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 70
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.8.a
+		ai_chance = { factor = 1 }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		set_country_flag = industry_1
+	}	
+}
+
+country_event = {
+	id = ars_know_science.9####Industry 2
+	title = ars_know_science.9.t
+	desc = ars_know_science.9.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = industry_2
+	    }    
+	    has_country_flag = ars_industry_30_cf
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.9.a
+		ai_chance = { factor = 1 }
+		add_ideas = industry_tier_2_a
+		set_country_flag = industry_2
+	}	
+	option = {
+		name = ars_know_science.9.b
+		ai_chance = { factor = 1 }
+		add_ideas = industry_tier_2_b
+		set_country_flag = industry_2
+	}
+	option = {
+		name = ars_know_science.9.c
+		ai_chance = { factor = 1 }
+		add_ideas = industry_tier_2_c
+		set_country_flag = industry_2
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+country_event = {
+	id = ars_know_science.10####Science Tier 4
+	title = ars_know_science.10.t
+	desc = ars_know_science.10.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = science_2
+	    }    
+	    has_country_flag = ars_science_60_cf
+	}
+
+	mean_time_to_happen = {
+		days = 40
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.10.a
+		ai_chance = { factor = 1 }
+		add_ideas = science_tier_2_a
+		set_country_flag = science_2
+	}	
+}
+
+country_event = {
+	id = ars_know_science.11####Chemistry 3
+	title = ars_know_science.11.t
+	desc = ars_know_science.11.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = chemistry_2
+	    }    
+	    has_country_flag = ars_chemistry_60_cf
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.11.a
+		ai_chance = { factor = 1 }
+		add_ideas = chemistry_tier_2_a
+		set_country_flag = chemistry_2
+	}	
+}
+
+country_event = {
+	id = ars_know_science.12####Science Tier 2 + Ancient
+	title = ars_know_science.12.t
+	desc = ars_know_science.12.d
+	picture = GFX_ars_report_technological
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = science_3
+	    }    
+	    has_country_flag = ars_science_30_cf
+	    has_country_flag = ars_ancient_language_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 40
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_science.12.a
+		ai_chance = { factor = 1 }
+		add_research_slot = 1
+		set_country_flag = science_3
+	}	
+}

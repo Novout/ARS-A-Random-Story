@@ -1,0 +1,199 @@
+###########################
+# Fredericth Events
+###########################
+
+add_namespace = yayr
+
+#Rouanir Strike
+country_event = {
+	id = yayr.1
+	title = yayr.1.t
+	desc = yayr.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yayr.1.a
+		add_political_power = 50
+		declare_war_on = {
+  			type = annex_everything
+  			target = TIR
+  		}
+  		add_ai_strategy = {
+			type = antagonize
+			id = "TIR"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A01"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A02"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A03"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A04"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A05"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A06"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A07"
+			value = 500
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = "A08"
+			value = 500
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.10 }
+		}
+	}	
+}
+
+country_event = {
+	id = yayr.2
+	title = yayr.2.t
+	desc = yayr.2.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = yayr.2.a 
+		A01 = { add_to_faction = ROOT }
+	}	
+}
+
+country_event = {
+	id = yayr.3
+	title = yayr.3.t
+	desc = yayr.3.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = yayr.3.a 
+		YAY = { add_to_faction = ROOT }
+	}	
+}
+
+country_event = {
+	id = yayr.4
+	title = yayr.4.t
+	desc = yayr.4.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = yayr.4.a 
+		ai_chance = { factor = 3 } 
+		declare_war_on = {
+  			type = annex_everything
+  			target = YAY
+  		}
+	}	
+	option = {
+		name = yayr.4.b
+		ai_chance = { factor = 7 } 
+		YAY = {
+			annex_country = { target = TNY }
+		}
+		set_country_flag = TNY_annexed
+		hidden_effect = {
+			country_event = { days = 1 id = news.11 }
+		}
+	}
+}
+
+country_event = {
+	id = yayr.5
+	title = yayr.5.t
+	desc = yayr.5.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = yayr.5.a 
+		ai_chance = { factor = 5 } 
+		33 = {
+			add_resource = {
+				type = steel
+				amount = 4
+			}
+		}
+		24 = {
+			add_resource = {
+				type = aluminium
+				amount = 2
+			}
+		}
+	}	
+	option = {
+		name = yayr.5.b
+		ai_chance = { factor = 5 } 
+		add_ideas = yay_resources
+	}
+}
+
+country_event = {
+	id = yayr.6
+	title = yayr.6.t
+	desc = yayr.6.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+		
+	option = {
+		name = yayr.6.a
+		ai_chance = { factor = 100 } 
+		add_stability = -0.03
+		add_war_support = -0.10
+		hidden_effect = {
+			country_event = { days = 1 id = news.12 }
+		}
+	}
+}
+
+country_event = {
+	id = yayr.7
+	title = yayr.7.t
+	desc = yayr.7.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+		
+	option = {
+		name = yayr.7.a
+		ai_chance = { factor = 60 } 
+		add_ideas = yay_event_industry
+	}
+    option = {
+		name = yayr.7.b
+		ai_chance = { factor = 40 } 
+		add_stability = 0.02
+	}
+}

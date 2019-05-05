@@ -1,0 +1,15 @@
+add_namespace = randomevents
+
+country_event = {
+	id = randomevents.1
+	title = randomevents.1.t
+	desc = randomevents.1.d
+	picture = GFX_frost_war_logo
+
+	is_triggered_only = yes
+
+	option = {
+		name = randomevents.1.a
+		ai_chance = { factor = 100 } 
+	}
+}

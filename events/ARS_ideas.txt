@@ -1,0 +1,48 @@
+﻿add_namespace = tewbuff
+add_namespace = tewideas
+
+country_event = {
+	id = tewbuff.1
+	title = tewbuff.1.t
+	desc = tewbuff.1.d
+	picture = GFX_tewfv_inicial_1  
+
+	is_triggered_only = yes
+	
+	option = {
+		name = tewbuff.1.a
+		random_owned_controlled_state = {	
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = tewbuff.1.c
+		random_owned_controlled_state = {	
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = tewbuff.1.e
+		random_owned_controlled_state = {	
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = tewbuff.1.b
+	}	
+}

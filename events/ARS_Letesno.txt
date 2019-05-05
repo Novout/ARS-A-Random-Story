@@ -1,0 +1,399 @@
+﻿add_namespace = letesno
+
+country_event = {
+	id = letesno.1 ####East
+	title = letesno.1.t
+	desc = letesno.1.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.1.a
+		puppet = LE1
+		ai_chance = { factor = 100 }
+		LE1 = {
+		    set_stability = 0.35
+			set_war_support = 0.6
+			set_politics = {
+			    ruling_party = egalitarianism
+				elections_allowed = yes	
+			}
+		    add_popularity = {
+				popularity = 1.0
+				ideology = egalitarianism
+			}
+		} 
+		LE1 = { transfer_state = 44 }
+		LE1 = { transfer_state = 184 }
+		LE1 = { transfer_state = 185 }
+		LE1 = { transfer_state = 186 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = LE1
+				}
+				add_core_of = LE1
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = letesno.2 ####West
+	title = letesno.2.t
+	desc = letesno.2.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.2.a
+		puppet = LE2
+		ai_chance = { factor = 100 }
+		LE2 = {
+		    set_stability = 0.35
+			set_war_support = 0.6
+			set_politics = {
+			    ruling_party = egalitarianism
+				elections_allowed = yes	
+			}
+		    add_popularity = {
+				popularity = 1.0
+				ideology = egalitarianism
+			}
+		} 
+		LE2 = { transfer_state = 1 }
+		LE2 = { transfer_state = 114 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = LE2
+				}
+				add_core_of = LE2
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = letesno.3 ####South
+	title = letesno.3.t
+	desc = letesno.3.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.3.a
+		puppet = LE3
+		ai_chance = { factor = 100 }
+		LE3 = {
+		    set_stability = 0.35
+			set_war_support = 0.6
+			set_politics = {
+			    ruling_party = egalitarianism
+				elections_allowed = yes	
+			}
+		    add_popularity = {
+				popularity = 1.0
+				ideology = egalitarianism
+			}
+		} 
+		LE3 = { transfer_state = 458 }
+		LE3 = { transfer_state = 460 }
+		LE3 = { transfer_state = 459 }
+		LE3 = { transfer_state = 665 }
+		LE3 = { transfer_state = 448 }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = LE3
+				}
+				add_core_of = LE3
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = letesno.4
+	title = letesno.4.t
+	desc = letesno.4.d
+	picture = GFX_tewfv_inicial_1  
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.4.a
+		hidden_effect = {
+			division_template = {
+				name = "Infantry Division"
+				priority = 2
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			
+	    	   		infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"4. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"5. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"6. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}			
+			}
+	    }
+	}
+}
+
+country_event = {
+	id = letesno.5 ####Balearic
+	title = letesno.5.t
+	desc = letesno.5.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+		
+	option = {
+		name = letesno.5.a
+		ai_chance = { factor = 1 }
+		COD = {
+		    country_event = { id = letesno.6 }
+		}
+	}
+}
+
+country_event = {
+	id = letesno.6 ####5 responde
+	title = letesno.6.t
+	desc = letesno.6.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.6.a
+		ai_chance = { factor = 0 }
+		declare_war_on = {
+  			type = annex_everything
+  			target = THI
+  		}
+	}	
+	option = {
+		name = letesno.6.b
+		ai_chance = { factor = 2 }
+		add_political_power = -250
+		add_stability = -0.15
+		LE3 = { transfer_state = 177 }
+	}
+}
+
+country_event = {
+	id = letesno.7 ####Rouanir
+	title = letesno.7.t
+	desc = letesno.7.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.7.a
+		ROU = {
+		    country_event = { id = letesno.8 }
+		}
+	}	
+}
+
+country_event = {
+	id = letesno.8 ####Rouanir
+	title = letesno.8.t
+	desc = letesno.8.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.8.a
+		ai_chance = { factor = 1 }
+		LE1 = { transfer_state = 47 }
+		LE1 = { transfer_state = 731 }
+		LE1 = { transfer_state = 341 }
+		LE1 = { transfer_state = 347 }
+		LE1 = { transfer_state = 340 }
+		LE1 = { transfer_state = 187 }
+		LE1 = { transfer_state = 339 }
+	}
+	option = {
+		name = letesno.8.b
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+  			type = annex_everything
+  			target = COD
+  		}
+  		declare_war_on = {
+  			type = annex_everything
+  			target = LE1
+  		}
+  		declare_war_on = {
+  			type = annex_everything
+  			target = LE2
+  		}
+  		declare_war_on = {
+  			type = annex_everything
+  			target = LE3
+  		}
+	}		
+}
+
+country_event = {
+	id = letesno.9
+	title = letesno.9.t
+	desc = letesno.9.d
+	picture = GFX_tewfv_inicial_1  
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.9.a
+		hidden_effect = {
+			division_template = {
+				name = "Infantry Division"
+				priority = 2
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			
+	    	   		infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"4. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"5. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"6. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"7. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}			
+				create_unit = {
+					division = "name = \"8. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"9. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"10. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+			}
+	    }
+	}
+}
+
+country_event = {
+	id = letesno.10
+	title = letesno.10.t
+	desc = letesno.10.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.10.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+  			type = annex_everything
+  			target = BMY
+  		}
+		LE3 = {
+		    declare_war_on = {
+  			    type = annex_everything
+  			    target = BMY
+  			}    
+  		}
+	}		
+}
+
+country_event = {
+	id = letesno.11
+	title = letesno.11.t
+	desc = letesno.11.d
+	picture = GFX_report_event_cze_little_entente
+
+	is_triggered_only = yes
+	
+	option = {
+		name = letesno.11.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = reactionary
+			elections_allowed = no
+		}
+		add_popularity = {
+			popularity = 0.90
+			ideology = reactionary
+		}
+	}		
+}
+
+
+

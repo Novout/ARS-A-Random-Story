@@ -1,0 +1,178 @@
+﻿add_namespace = brazil
+add_namespace = brasil_trigger
+
+country_event = {
+	id = brazil.1
+	title = brazil.1.t
+	desc = brazil.1.d
+	picture = GFX_report_event_brazil_sul
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = brazil.1.a
+		SMP = { 
+			transfer_state = 502
+			add_state_core = 502
+		}
+		SMP = { 
+			transfer_state = 503
+			add_state_core = 503
+		}
+		add_political_power = 250
+		add_stability = 0.2
+		puppet = SMP
+		hidden_effect = {
+			news_event = { hours = 18 id = news.500 }
+		}
+	}
+}
+
+country_event = {
+	id = brazil.10
+	title = brazil.10.t
+	desc = brazil.10.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = brazil.10.a
+		add_political_power = 250
+		add_stability = 0.25
+	}
+	option = {
+		name = brazil.10.b
+		set_country_flag = bra_communism_cohen
+		add_political_power = -250
+		add_stability = -0.25
+		add_ideas = bra_communism_country
+	}
+	option = {
+		name = brazil.10.c
+	}
+}
+
+country_event = {
+	id = brazil.11
+	title = brazil.11.t
+	desc = brazil.11.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = brazil.11.a
+		declare_war_on = {
+			target = URG
+			type = take_state_focus
+			generator = { 300 } 
+		}
+	}
+}
+
+country_event = {
+	id = brazil.12
+	title = brazil.12.t
+	desc = brazil.12.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = brazil.12.a
+		swap_ideas = {
+		    add_idea = bra_imigration_for_brazil
+		    remove_idea = bra_multicultu
+        }
+		TUN = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		FAF = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		LBA = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		COG = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		ANG = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		MZB = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		EGY = {
+			add_ideas = bra_imigration_to_brazil
+		}
+		SUD = {
+			add_ideas = bra_imigration_to_brazil
+		}
+	}
+}
+
+country_event = {
+	id = brazil.13
+	title = brazil.13.t
+	desc = brazil.13.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = brazil.13.a
+		declare_war_on = {
+			target = ARG
+			type = take_state_focus
+			generator = { 300 } 
+		}
+		declare_war_on = {
+			target = PAR
+			type = take_state_focus
+			generator = { 300 } 
+		}
+		declare_war_on = {
+			target = BOL
+			type = take_state_focus
+			generator = { 300 } 
+		}
+		declare_war_on = {
+			target = CHL
+			type = take_state_focus
+			generator = { 300 } 
+		}
+		declare_war_on = {
+			target = PRU
+			type = take_state_focus
+			generator = { 300 } 
+		}
+		declare_war_on = {
+			target = ECU
+			type = take_state_focus
+			generator = { 300 } 
+		}
+		declare_war_on = {
+			target = COL
+			type = take_state_focus
+			generator = { 300 } 
+		}
+	}
+}
+
+country_event = {
+	id = brazil.14 #####
+	title = brazil.14.t
+	desc = brazil.14.d
+	picture = GFX_
+
+	trigger = {
+	    tag = SPR
+	    has_government = communism
+	}    
+
+	option = {
+		name = brazil.14.a
+		add_ideas = spr_milita
+	}
+}

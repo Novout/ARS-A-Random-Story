@@ -1,0 +1,44 @@
+add_namespace = arsdecision
+
+country_event = {
+	id = arsdecision.1
+	title = arsdecision.1.t
+	desc = arsdecision.1.d
+	picture = GFX_tewfv_inicial_1  
+
+	is_triggered_only = yes
+	
+	option = {
+		name = arsdecision.1.a
+		hidden_effect = {
+			division_template = {
+				name = "Infantry Division"
+				priority = 2
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			
+	    	   		infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.1" 
+					owner = ROOT
+				}	
+				create_unit = {
+					division = "name = \"3. Infantry Division \" division_template = \"Infantry Division\" start_experience_factor = 0.1" 
+					owner = ROOT
+				}		
+			}
+	    }
+	}
+}

@@ -1,0 +1,275 @@
+add_namespace = ars_yernio_trigger
+add_namespace = ars_rouanir
+
+country_event = {
+	id = ars_yernio_trigger.1  ### YERNIO REVOLT
+	title = ars_yernio_trigger.1.t
+	desc = ars_yernio_trigger.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    date > 1100.04.01
+	    tag = ROU
+	    ROU = {
+            has_stability < 0.32
+	    }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = ars_yernio_trigger.1.a
+        YER = { 
+			transfer_state = 736
+			transfer_state = 102
+			transfer_state = 103
+			transfer_state = 104
+			transfer_state = 109
+			transfer_state = 105
+			transfer_state = 163
+			add_state_core = 736
+			add_state_core = 102
+			add_state_core = 103
+			add_state_core = 104
+			add_state_core = 109
+			add_state_core = 105
+			add_state_core = 163
+			load_oob = "YER_revolt"
+		}
+		YER = {
+			set_politics = {
+				ruling_party = traditional_conservatism
+				elections_allowed = no
+			}
+		    add_popularity = {
+				popularity = 0.90
+				ideology = traditional_conservatism
+			}
+			declare_war_on = {
+  			    type = annex_everything
+  			    target = ROU
+  		    }
+		}
+		hidden_effect = {
+		    104 = {	
+			    add_extra_state_shared_building_slots = 5
+			    add_building_construction = {
+				    type = arms_factory
+				    level = 3
+				    instant_build = yes
+				} 
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				} 
+				add_building_construction = {
+				    type = steel_refinery
+				    level = 1
+				    instant_build = yes
+				}  
+			}
+			103 = {	
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = {
+				    type = arms_factory
+				    level = 2
+				    instant_build = yes
+				} 
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}   
+			}
+			102 = {	
+			    add_extra_state_shared_building_slots = 4
+			    add_building_construction = {
+				    type = arms_factory
+				    level = 1
+				    instant_build = yes
+				} 
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 3
+				    instant_build = yes
+				}   
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ars_yernio_trigger.2  ### YERNIO REVOLT
+	title = ars_yernio_trigger.2.t
+	desc = ars_yernio_trigger.2.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = { 
+	    tag = YER
+	    YER = {
+            NOT = {
+                has_war_with = ROU
+            }    
+	    }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = ars_yernio_trigger.2.a
+		ai_chance = { factor = 25 }
+		puppet = ROU
+		puppet = BAV
+        ROU = { 
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 154
+			transfer_state = 73
+			transfer_state = 664
+			transfer_state = 43
+			transfer_state = 155
+			transfer_state = 71
+			transfer_state = 70
+			transfer_state = 152
+			transfer_state = 75
+			transfer_state = 69
+			transfer_state = 9
+		}
+		BAV = { 
+			transfer_state = 53
+			transfer_state = 52
+			transfer_state = 50
+			transfer_state = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 50
+			add_state_core = 54
+		}
+		hidden_effect = {
+			country_event = { days = 2 id = fw_news.1 }
+		}
+	}
+	option = {
+		name = ars_yernio_trigger.2.b
+		ai_chance = { factor = 0 }
+		puppet = ROU
+		puppet = BAV
+        ROU = { 
+			transfer_state = 664
+			transfer_state = 43
+			transfer_state = 155
+			transfer_state = 71
+			transfer_state = 70
+			transfer_state = 152
+			transfer_state = 75
+			transfer_state = 69
+			transfer_state = 9
+		}
+		BAV = { 
+			transfer_state = 53
+			transfer_state = 52
+			transfer_state = 50
+			transfer_state = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 50
+			add_state_core = 54
+		}
+		YER = { 
+		    transfer_state = 82
+			transfer_state = 83
+			transfer_state = 154
+			transfer_state = 73	
+		}
+	}
+}
+
+country_event = {
+	id = ars_rouanir.1
+	title = ars_rouanir.1.t
+	desc = ars_rouanir.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	fire_only_once = yes
+
+	trigger = { 
+	    tag = ROU
+	    YER = {
+            exists = yes
+	    }
+	}
+	
+	option = {
+		name = ars_rouanir.1.a
+		add_stability = -0.1
+		DES = {
+			transfer_state = 187
+			transfer_state = 47
+			transfer_state = 731
+			transfer_state = 47
+			transfer_state = 212
+			transfer_state = 211
+			transfer_state = 341
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 48
+			transfer_state = 77
+			add_state_core = 187
+			add_state_core = 47
+			add_state_core = 731
+			add_state_core = 47
+			add_state_core = 212
+			add_state_core = 211
+			add_state_core = 341
+			add_state_core = 347
+			add_state_core = 340
+			add_state_core = 339
+			add_state_core = 48
+			add_state_core = 77
+		}
+		YER = { 
+			transfer_state = 106
+			add_state_core = 106
+		}
+	}	
+}
+
+country_event = {
+	id = ars_rouanir.2
+	title = ars_rouanir.2.t
+	desc = ars_rouanir.2.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ars_rouanir.2.a
+		ai_chance = { factor = 10 }
+		LEL = { transfer_state = 347 }
+		LEL = { transfer_state = 340 }
+		LEL = { transfer_state = 339 }
+		LEL = { transfer_state = 341 }
+		LEL = { transfer_state = 211 }
+		LEL = { transfer_state = 212 }
+		LEL = { transfer_state = 77 }
+		LEL = { transfer_state = 48 }
+		LEL = { transfer_state = 731 }
+		LEL = { transfer_state = 47 }
+		LEL = { transfer_state = 187 }
+		LEL = { transfer_state = 184 }
+	}
+	option = {
+		name = ars_rouanir.2.b
+		ai_chance = { factor = 0 }
+	}	
+}

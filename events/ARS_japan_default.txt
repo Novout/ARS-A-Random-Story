@@ -1,0 +1,40 @@
+﻿add_namespace = ars_japan_default
+
+country_event = {
+	id = ars_japan_default.1
+	title = ars_japan_default.1.t
+	desc = ars_japan_default.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ars_japan_default.1.a
+		add_political_power = 150
+		add_to_faction = KRY
+		declare_war_on = {
+			target = ZXD
+			type = take_state_focus
+			generator = { 716 }
+		}
+		KRY = {
+			load_oob = "KRY_1111"
+			declare_war_on = {
+			    target = ZXD
+			    type = take_state_focus
+			    generator = { 408 }
+		    }
+		}
+		KRY = { 
+			transfer_state = 525
+			transfer_state = 527
+			add_state_core = 525
+			add_state_core = 527
+		}
+		JAL = { 
+			transfer_state = 716
+			add_state_core = 716
+			load_oob = "JAL_1112"
+		}
+	}	
+}

@@ -1,0 +1,272 @@
+﻿add_namespace = Ideologies
+
+#Henism Pacifism
+country_event = {
+	id = Ideologies.1
+	title = Ideologies.1.t
+	desc = Ideologies.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = henism_pacifism }
+		henism_pacifism > 0.65	
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.1.a
+		ai_chance = { factor = 95 }
+		set_politics = { ruling_party = henism_pacifism elections_allowed = yes }
+		add_popularity = { ideology = henism_pacifism popularity = 0.05 }
+	}	
+}
+
+#Henism Autocracy
+country_event = {
+	id = Ideologies.2
+	title = Ideologies.2.t
+	desc = Ideologies.2.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = henism_autocracy }
+		henism_autocracy > 0.5
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.2.a
+		ai_chance = { factor = 6 }
+		set_politics = { ruling_party = henism_autocracy elections_allowed = no }
+		add_popularity = { ideology = henism_autocracy popularity = 0.05 }
+	}
+	
+	option = {
+		name = Ideologies.2.b
+		ai_chance = { factor = 5 }
+		start_civil_war = { ideology = henism_autocracy size = 0.5 }
+	}		
+}
+
+
+#Traditional Conservatism
+# country_event = {
+	# id = Ideologies.3
+	# title = Ideologies.3.t
+	# desc = Ideologies.3.d
+	# picture = GFX_report_event_cze_little_entente
+	
+	# trigger = {
+		# NOT = { has_government = traditional_conservatism }
+		# traditional_conservatism > 0.5	
+		# has_civil_war = no
+		# has_war = no
+	# }
+	
+	# mean_time_to_happen = {
+		# days = 2
+	# }
+	
+	# option = {
+		# name = Ideologies.3.a
+		# ai_chance = { factor = 95 }
+		# set_politics = { ruling_party = traditional_conservatism elections_allowed = yes }
+		# add_popularity = { ideology = traditional_conservatism popularity = 0.2 }
+	# }
+	
+	# option = {
+		# name = Ideologies.3.b
+		# ai_chance = { factor = 5 }
+		# start_civil_war = { ideology = traditional_conservatism size = 0.5 }
+	# }		
+# }
+
+#Coronelism
+country_event = {
+	id = Ideologies.4
+	title = Ideologies.4.t
+	desc = Ideologies.4.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = coronelism }
+		coronelism > 0.5	
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.4.a
+		ai_chance = { factor = 95 }
+		set_politics = { ruling_party = coronelism elections_allowed = yes }
+		add_popularity = { ideology = coronelism popularity = 0.05 }
+	}		
+}
+
+#Radicalism 
+country_event = {
+	id = Ideologies.5
+	title = Ideologies.5.t
+	desc = Ideologies.5.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = radicalism }
+		radicalism > 0.5	
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.5.a
+		ai_chance = { factor = 10 }
+		set_politics = { ruling_party = radicalism elections_allowed = yes }
+		add_popularity = { ideology = radicalism popularity = 0.05 }
+	}
+	
+	option = {
+		name = Ideologies.5.b
+		ai_chance = { factor = 90 }
+		start_civil_war = { ideology = radicalism size = 0.5 }
+	}		
+}
+
+#Reactionary 
+country_event = {
+	id = Ideologies.6
+	title = Ideologies.6.t
+	desc = Ideologies.6.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = reactionary }
+		reactionary > 0.5	
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.6.a
+		ai_chance = { factor = 45 }
+		set_politics = { ruling_party = reactionary elections_allowed = yes }
+		add_popularity = { ideology = reactionary popularity = 0.05 }
+	}
+	
+	option = {
+		name = Ideologies.6.b
+		ai_chance = { factor = 55 }
+		start_civil_war = { ideology = reactionary size = 0.5 }
+	}		
+}
+
+#Anarchism Rise
+country_event = {
+	id = Ideologies.7
+	title = Ideologies.7.t
+	desc = Ideologies.7.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = henism_pacifism }
+		NOT = { has_government = anarchism }
+		has_stability < 0.15
+		NOT = { OR = { tag = FFR tag = ROU tag = COD tag = USA tag = YAY tag = PCC tag = FAL tag = LEL } }
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = Ideologies.7.a
+		ai_chance = { factor = 55 }
+		add_ideas = ars_anarchism_rise
+	}		
+}
+
+#Egalitarianism
+country_event = {
+	id = Ideologies.10
+	title = Ideologies.10.t
+	desc = Ideologies.10.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = egalitarianism }
+		egalitarianism > 0.5	
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.10.a
+		ai_chance = { factor = 80 }
+		set_politics = { ruling_party = egalitarianism elections_allowed = yes }
+		add_popularity = { ideology = egalitarianism popularity = 0.05 }
+	}
+	
+	option = {
+		name = Ideologies.10.b
+		ai_chance = { factor = 10 }
+		start_civil_war = { ideology = egalitarianism size = 0.5 }
+	}		
+}
+
+#Fundamentalism
+country_event = {
+	id = Ideologies.11
+	title = Ideologies.11.t
+	desc = Ideologies.11.d
+	picture = GFX_report_event_cze_little_entente
+	
+	trigger = {
+		NOT = { has_government = fundamentalism }
+		fundamentalism > 0.5	
+		has_civil_war = no
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Ideologies.11.a
+		ai_chance = { factor = 80 }
+		set_politics = { ruling_party = fundamentalism elections_allowed = yes }
+		add_popularity = { ideology = fundamentalism popularity = 0.05 }
+	}
+	
+	option = {
+		name = Ideologies.11.b
+		ai_chance = { factor = 10 }
+		start_civil_war = { ideology = fundamentalism size = 0.5 }
+	}		
+}

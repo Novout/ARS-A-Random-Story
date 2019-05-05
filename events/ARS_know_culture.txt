@@ -1,0 +1,421 @@
+add_namespace = ars_know_culture
+add_namespace = ars_culture_political
+
+country_event = {
+	id = ars_culture_political.1 ####stability_head_of_state
+	title = ars_culture_political.1.t
+	desc = ars_culture_political.1.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_1
+	    }    
+	    has_country_flag = ars_concept_of_society_30_cf
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.1.a
+		ai_chance = { factor = 2 }
+		set_country_flag = stability_head_of_state
+		set_country_flag = political_1
+	}	
+	option = {
+		name = ars_culture_political.1.b
+		ai_chance = { factor = 1 }
+		add_political_power = 150
+		set_country_flag = political_1
+	}
+}
+
+country_event = {
+	id = ars_culture_political.2 ####army_chief_1_cf
+	title = ars_culture_political.2.t
+	desc = ars_culture_political.2.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_2
+	    }    
+	    has_country_flag = ars_ancient_language_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.2.a
+		ai_chance = { factor = 2 }
+		set_country_flag = army_chief_1_cf
+		set_country_flag = political_2
+	}	
+	option = {
+		name = ars_culture_political.2.b
+		ai_chance = { factor = 1 }
+		set_country_flag = army_chief_2_cf
+		set_country_flag = political_2
+	}
+}
+
+country_event = {
+	id = ars_culture_political.3 ####army_chief_1_cf
+	title = ars_culture_political.3.t
+	desc = ars_culture_political.3.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_3
+	    }    
+	    has_country_flag = ars_communication_nations_15_cf
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.3.a
+		ai_chance = { factor = 1 }
+		set_country_flag = navy_chief_1_cf
+		set_country_flag = air_chief_1_cf
+		set_country_flag = political_3
+	}	
+	option = {
+		name = ars_culture_political.3.b
+		ai_chance = { factor = 1 }
+		set_country_flag = navy_chief_2_cf
+		set_country_flag = air_chief_2_cf
+		set_country_flag = political_3
+	}
+}
+
+country_event = {
+	id = ars_culture_political.4 ####army_chief_1_cf
+	title = ars_culture_political.4.t
+	desc = ars_culture_political.4.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_4
+	    }    
+	    has_country_flag = ars_communication_nations_30_cf
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.4.a
+		ai_chance = { factor = 1 }
+		set_country_flag = high_command_1_cf
+		set_country_flag = high_command_2_cf
+		set_country_flag = political_4
+	}	
+	option = {
+		name = ars_culture_political.4.b
+		ai_chance = { factor = 1 }
+		set_country_flag = high_command_3_cf
+		set_country_flag = high_command_4_cf
+		set_country_flag = political_4
+	}
+}
+
+country_event = {
+	id = ars_culture_political.5 ####army_chief_1_cf
+	title = ars_culture_political.5.t
+	desc = ars_culture_political.5.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_5
+	    }    
+	    has_country_flag = ars_military_theory_10_cf
+	    has_country_flag = ars_political_thought_tier_1_cf
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.5.a
+		ai_chance = { factor = 1 }
+		set_country_flag = theorist_1_cf
+		set_country_flag = political_5
+	}	
+	option = {
+		name = ars_culture_political.5.b
+		ai_chance = { factor = 1 }
+		set_country_flag = theorist_2_cf
+		set_country_flag = political_5
+	}
+	option = {
+		name = ars_culture_political.5.c
+		ai_chance = { factor = 1 }
+		set_country_flag = theorist_3_cf
+		set_country_flag = political_5
+	}
+}
+
+country_event = {
+	id = ars_culture_political.6 ####army_chief_1_cf
+	title = ars_culture_political.6.t
+	desc = ars_culture_political.6.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_6
+	    }    
+	    has_country_flag = ars_concept_of_society_45_cf
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.6.a
+		ai_chance = { factor = 1 }
+		set_country_flag = commercial_foreign_minister_cf
+		set_country_flag = political_6
+	}	
+	option = {
+		name = ars_culture_political.6.b
+		ai_chance = { factor = 1 }
+		set_country_flag = foreign_minister_for_war_cf
+		set_country_flag = political_6
+	}
+	option = {
+		name = ars_culture_political.6.c
+		ai_chance = { factor = 1 }
+		set_country_flag = foreign_minister_pacifist_cf
+		set_country_flag = political_6
+	}
+}
+
+country_event = {
+	id = ars_culture_political.7 ####army_chief_1_cf
+	title = ars_culture_political.7.t
+	desc = ars_culture_political.7.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_7
+	    }    
+	    has_country_flag = ars_language_20_cf
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_culture_political.7.a
+		ai_chance = { factor = 1 }
+		set_country_flag = interior_minister_education_cf
+		set_country_fla = political_7
+	}	
+	option = {
+		name = ars_culture_political.7.b
+		ai_chance = { factor = 1 }
+		set_country_flag = interior_minister_safety_cf
+		set_country_flag = political_7
+	}
+	option = {
+		name = ars_culture_political.7.c
+		ai_chance = { factor = 1 }
+		set_country_flag = interior_minister_military_cf
+		set_country_flag = political_7
+	}
+}	
+
+country_event = {
+	id = ars_know_culture.3
+	title = ars_know_culture.3.t
+	desc = ars_know_culture.3.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = political_10
+	    }    
+	    OR = {
+	        has_war = yes
+	        threat > 0.75
+	    }    
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_culture.3.a
+		ai_chance = { factor = 1 }
+		set_country_flag = war_economy_cf
+		add_ideas = war_economy
+		clr_country_flag = political_11
+		set_country_flag = political_10
+	}
+}	
+
+country_event = {
+	id = ars_know_culture.4
+	title = ars_know_culture.4.t
+	desc = ars_know_culture.4.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = concept_of_society_1
+	    }    
+	    has_country_flag = ars_concept_of_society_15_start_cf    
+	}
+
+	mean_time_to_happen = {
+		days = 70
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_culture.4.a
+		ai_chance = { factor = 1 }
+		add_ideas = concept_of_society_tier_1_a
+		set_country_flag = concept_of_society_1
+	}
+}	
+
+country_event = {
+	id = ars_know_culture.5
+	title = ars_know_culture.5.t
+	desc = ars_know_culture.5.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = concept_of_society_2
+	    }    
+	    has_country_flag = ars_concept_of_society_45_cf    
+	}
+
+	mean_time_to_happen = {
+		days = 70
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_culture.5.a
+		ai_chance = { factor = 1 }
+		add_political_power = 300
+		set_country_flag = concept_of_society_2
+	}
+}	
+
+country_event = {
+	id = ars_know_culture.6
+	title = ars_know_culture.6.t
+	desc = ars_know_culture.6.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = concept_of_society_3
+	    }    
+	    has_country_flag = ars_concept_of_society_75_cf    
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_culture.6.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+		    add_idea = concept_of_society_tier_2_a
+		    remove_idea = concept_of_society_tier_1_a
+		}    
+		set_country_flag = concept_of_society_3
+	}
+}	
+
+country_event = {
+	id = ars_know_culture.7
+	title = ars_know_culture.7.t
+	desc = ars_know_culture.7.d
+	picture = GFX_ars_report_culture
+	
+	trigger = { 
+	    NOT = {
+	        has_country_flag = military_theory_1
+	    }    
+	    has_country_flag = ars_military_theory_10_cf    
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = ars_know_culture.7.a ###Tactical
+		ai_chance = { factor = 1 }   
+		set_country_flag = military_theory_1
+		set_country_flag = ars_tactic_cf
+		custom_effect_tooltip = ars_tactic_tt
+	}
+	option = {
+		name = ars_know_culture.7.b ###Planned
+		ai_chance = { factor = 1 } 
+		set_country_flag = military_theory_1
+		set_country_flag = ars_planned_cf
+		custom_effect_tooltip = ars_planned_tt
+	}
+	option = {
+		name = ars_know_culture.7.c ###Delay
+		ai_chance = { factor = 1 }
+		set_country_flag = military_theory_1
+		set_country_flag = ars_delay_cf
+		custom_effect_tooltip = ars_delay_tt
+	}
+	option = {
+		name = ars_know_culture.7.e ###Mobile
+		ai_chance = { factor = 0 }  
+		set_country_flag = military_theory_1
+		set_country_flag = ars_mobile_cf
+		custom_effect_tooltip = ars_mobile_tt
+	}
+}	

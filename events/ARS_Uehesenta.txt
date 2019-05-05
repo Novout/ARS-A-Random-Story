@@ -1,0 +1,134 @@
+﻿add_namespace = uehesenta
+
+country_event = {
+	id = uehesenta.1  ###Elections
+	title = uehesenta.1.t
+	desc = uehesenta.1.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+
+	option = {
+		name = uehesenta.1.a
+		ai_chance = { factor = 5 } 
+		add_popularity = {
+			popularity = 0.25
+			ideology = traditional_conservatism
+		}
+		set_country_flag = USA_traditional_conservatism_tt
+	}
+	option = {
+		name = uehesenta.1.b
+		ai_chance = { factor = 6 } 
+		set_politics = {
+			ruling_party = henism_autocracy
+		    elections_allowed = no
+		}
+		add_popularity = {
+			popularity = 0.25
+			ideology = henism_autocracy
+		}
+		set_country_flag = USA_henism_autocracy_tt
+	}
+}
+
+country_event = {
+	id = uehesenta.2  ###War at Cevevo
+	title = uehesenta.2.t
+	desc = uehesenta.2.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+
+	option = {
+		name = uehesenta.2.a
+		add_political_power = 50
+		set_country_flag = USA_war_cevevo_tt
+	}
+}
+
+country_event = {
+	id = uehesenta.3  ###Decision Cevevo
+	title = uehesenta.3.t
+	desc = uehesenta.3.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+
+	option = {
+		name = uehesenta.3.a
+		ai_chance = { factor = 10 } 
+		annex_country = { target = CVV transfer_troops = yes }
+		annex_country = { target = XJP transfer_troops = yes }
+		add_political_power = -120
+	}
+	option = {
+		name = uehesenta.3.b
+		ai_chance = { factor = 5 } 
+		puppet = CVV
+		puppet = XJP
+		add_political_power = 300
+	}
+}
+
+country_event = {
+	id = uehesenta.4 ###Decision Cevevo
+	title = uehesenta.4.t
+	desc = uehesenta.4.d
+	picture = GFX_report_event_cze_little_entente
+	
+	is_triggered_only = yes
+
+	option = {
+		name = uehesenta.4.a
+		add_to_faction = CAN
+		CAN = { 
+			transfer_state = 463
+			add_state_core = 463
+		}
+		CAN = { 
+			transfer_state = 471
+			add_state_core = 471
+		}
+		CAN = { 
+			transfer_state = 472
+			add_state_core = 472
+		}
+		CAN = { 
+			transfer_state = 470
+			add_state_core = 470
+		}
+		CAN = { 
+			transfer_state = 469
+			add_state_core = 469
+		}
+		CAN = { 
+			transfer_state = 467
+			add_state_core = 467
+		}
+		CAN = { 
+			transfer_state = 389
+			add_state_core = 389
+		}
+		CAN = { 
+			transfer_state = 683
+			add_state_core = 683
+		}
+		CAN = { 
+			transfer_state = 682
+			add_state_core = 682
+		}
+		CAN = { 
+			transfer_state = 466
+			add_state_core = 466
+		}
+		CAN = { 
+			transfer_state = 332
+			add_state_core = 332
+		}
+		CAN = { 
+			transfer_state = 682
+			add_state_core = 682
+		}
+	}
+}
