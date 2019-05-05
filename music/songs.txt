@@ -1,0 +1,64 @@
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "music_1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "music_2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "music_3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}
+}
+
+music = {
+	song = "music_4"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "music_5"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}

@@ -1,0 +1,27 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_frost_war_logo"
+		texturefile = "gfx/event_pictures/frost_war_logo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ars_report_culture"
+		texturefile = "gfx/event_pictures/ars_report_culture.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ars_report_technological"
+		texturefile = "gfx/event_pictures/ars_report_technological.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_cze_little_entente"
+		texturefile = "gfx/event_pictures/ars_report_event.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_001"
+		texturefile = "gfx/event_pictures/ars_event_1.dds"
+	}
+}	

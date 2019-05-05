@@ -1,0 +1,34 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "novout_subtlety_2_0.ogg"
+	volume = 0.55
+}
+
+# General Peace:
+music = {
+	name = "music_1"
+	file = "novout_anxiety.ogg"
+	volume = 0.75
+}
+music = {
+	name = "music_2"
+	file = "novout_hope.ogg"
+	volume = 0.75
+}
+music = {
+	name = "music_3"
+	file = "novout_industry.ogg"
+	volume = 0.75
+}
+music = {
+	name = "music_4"
+	file = "novout_thought.ogg"
+	volume = 0.75
+}
+music = {
+	name = "music_5"
+	file = "novout_subtlety.ogg"
+	volume = 0.75
+}
