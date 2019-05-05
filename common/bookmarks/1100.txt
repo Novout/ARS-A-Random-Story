@@ -1,0 +1,111 @@
+bookmarks = {
+	bookmark =
+		name = "ARS_FIZLEN_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1100.1.4.17
+		picture = "GFX_select_date_1936"
+		default_country = "FFR"
+		default = yes
+		
+		"FFR"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = henism_pacifism
+			ideas={
+			}
+			focuses = {
+                FFR_france_resurge
+                FFR_resurge_germany
+                FFR_eng
+			}
+		}
+		"YAY"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = henism_autocracy
+			ideas={
+			}
+			focuses = {
+			    YAY_political_northeast
+			    YAY_religion
+			    YAY_west
+			}
+		}
+		"PCC"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = reactionary
+			ideas={
+			}
+			focuses = {
+			    HJK_WAR
+			    PCC_urjal_tready
+			    PCC_tarantyr_problem
+			}
+		}
+		"ROU"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = reactionary
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		"COD"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = traditional_conservatism
+			ideas={
+			}
+			focuses = {
+			    LET_balearic_islands
+			    LET_rouanir_problem
+			    LET_bwiyn
+			}
+		}
+		"USA"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = reactionary
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		"LEL"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = fundamentalism
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		"FAL"={
+			history = "NOT_GATHERING_STORM_DESC"
+			ideology = dictatorship
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+		"CHI"={
+			history = "NOT_GATHERING_STORM_DESC"
+			minor = yes
+			ideology = radicalism
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		"YUU"={
+			history = "NOT_GATHERING_STORM_DESC"
+			minor = yes
+			ideology = radicalism
+			ideas={
+			}
+			focuses = {
+			}
+		}
+	}
+}

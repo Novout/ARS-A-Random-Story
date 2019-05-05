@@ -1,0 +1,92 @@
+USA_UNIFIED = {
+    color = rgb { 121 156 212 }
+    color_ui = rgb { 121 156 212 }
+}
+FFR_PRUSSIA = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 150 150 150 }
+}
+PRU_NORTH_GERMAN = {
+    color = rgb { 113 93 47 }
+    color_ui = rgb { 113 93 47 }
+}
+PRU_GERMAN = {
+    color = rgb { 50 50 50 }
+    color_ui = rgb { 50 50 50 }
+}
+PCC_RUSSIAN_TAG = {
+    color = rgb { 175 219 174 }
+    color_ui = rgb { 150 200 154 }
+}
+JAL_JAPAN = {
+    color = rgb { 220 216 187 }
+    color_ui = rgb { 220 216 187 }
+}
+CHI_CHINA = {
+    color = rgb { 214 213 96 }
+    color_ui = rgb { 214 213 96 }
+}
+RAO_AFGHANISTAN = {
+    color = rgb { 98 169 162 }
+    color_ui = rgb { 98 169 162 }
+}
+PRE_THAILAND = {
+    color = rgb { 124 187 98 }
+    color_ui = rgb { 124 187 98 }
+}
+LIG_VIETNAM = {
+    color = rgb { 48 95 172 }
+    color_ui = rgb { 48 95 172 }
+}
+YIJ_INDIA = {
+    color = rgb { 207 95 84 }
+    color_ui = rgb { 207 95 84 }
+}
+YUU_MONGOLIAN = {
+    color = rgb { 208 85 83 }
+    color_ui = rgb { 165 85 83 }
+}
+LEL_OTTOMAN_EMPIRE = {
+    color = rgb { 108 201 28 }
+    color_ui = rgb { 108 201 28 }
+}
+WIL_EGYPT = {
+    color = rgb { 204 187 2 }
+    color_ui = rgb { 204 187 2 }
+}
+POG_ETHIOPIA = {
+    color = rgb { 154 143 168 }
+    color_ui = rgb { 154 143 168 }
+}
+TEW_ROMANIA = {
+    color = rgb { 102 168 138 }
+    color_ui = rgb { 102 168 138 }
+}
+RON_UNITED_KINGDOM = {
+    color = rgb { 200 60 50 }
+    color_ui = rgb { 200 60 50 }
+}
+LCK_MEXICO = {
+    color = rgb { 16 119 9 }
+    color_ui = rgb { 16 119 9 }
+}
+YER_YUGOSLAVIA = {
+    color = rgb { 129 133 201 }
+    color_ui = rgb { 129 133 201 }
+}
+BRL_BRAZIL = {
+    color = rgb { 27 143 72 }
+    color_ui = rgb { 27 143 72 }
+}
+DMG_ARGENTINA = {
+    color = rgb { 27 133 206 }
+    color_ui = rgb { 27 133 206 }
+}
+ROU_AUSTRIA_HUNGARY = {
+    color = rgb { 240 240 240 }
+    color_ui = rgb { 240 240 240 }
+}
+AGN_UKRAINE = {
+    color = rgb { 47 97 217 }
+    color_ui = rgb { 47 97 217 }
+}
