@@ -1,0 +1,967 @@
+technologies = {
+
+	ars_armored_car = { 
+
+		enable_equipments = {
+			armoured_car_equipment_1 
+		}
+
+		enable_subunits = {
+			armoured_car
+		}
+		
+		path = {
+			leads_to_tech = ars_light_tank
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ars_heavy_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1100
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 20
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	ars_light_tank = { 
+
+		enable_equipments = {
+			ars_light_tank_equipment_1 
+		}
+		
+		path = {
+			leads_to_tech = ars_light_tank2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ars_medium_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1103
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		sub_technologies = {
+			ars_light_urban
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+	ars_light_tank2 = { 
+
+		enable_equipments = {
+			ars_light_tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = ars_light_tank3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1106
+		folder = {
+			name = armour_folder
+			position = { x = -6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		sub_technologies = {
+			ars_light_urban2
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	ars_light_tank3 = { 
+
+		enable_equipments = {
+			ars_light_tank_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = ars_light_tank4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1109
+		folder = {
+			name = armour_folder
+			position = { x = -6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		sub_technologies = {
+			ars_light_urban2
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	ars_light_tank4 = { 
+
+		enable_equipments = {
+			ars_light_tank_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = ars_advanced_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1112
+		folder = {
+			name = armour_folder
+			position = { x = -6 y = 8}
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		sub_technologies = {
+			ars_light_urban2
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	ars_medium_tank = { 
+
+		enable_equipments = {
+			ars_medium_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = ars_medium_tank2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1106
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	ars_medium_tank2 = { 
+
+		enable_equipments = {
+			ars_medium_tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = ars_medium_tank3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1109
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	ars_medium_tank3 = { 
+
+		enable_equipments = {
+			ars_medium_tank_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = ars_advanced_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1112
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	ars_light_urban = {
+
+		enable_subunits = {
+			ars_light_armor_urban
+		}
+	
+		research_cost = 0.75
+		start_year = 1103
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+					tag = SHA
+					tag = MJN
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 7
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+
+	ars_heavy_tank = {
+
+		enable_equipments = {
+			ars_heavy_tank_equipment_1 
+		}
+		
+		path = {
+			leads_to_tech = ars_heavy_tank2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1103
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_heavy_tank2 = {
+
+		enable_equipments = {
+			ars_heavy_tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = ars_heavy_tank3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1106
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_heavy_tank3 = {
+
+		enable_equipments = {
+			ars_heavy_tank_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = ars_heavy_tank4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1109
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_heavy_tank4 = {
+
+		enable_equipments = {
+			ars_heavy_tank_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = ars_advanced_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1112
+		
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_advanced_tank = {
+
+		enable_equipments = {
+			ars_advanced_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = ars_advanced_tank2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ars_update_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_update_tank = {
+
+		ars_advanced_armor = {
+			hard_attack = 0.1
+			armor_value = 0.05
+		}
+
+		path = {
+			leads_to_tech = ars_update_tank2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 11 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_update_tank2 = {
+
+		ars_advanced_armor = {
+			hard_attack = 0.1
+			armor_value = 0.05
+		}
+
+		path = {
+			leads_to_tech = ars_update_tank3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 13 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_update_tank3 = {
+
+		ars_advanced_armor = {
+			hard_attack = 0.1
+			armor_value = 0.05
+		}
+		
+		research_cost = 1.5
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 15 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_advanced_tank2 = {
+
+		enable_equipments = {
+			ars_advanced_tank_equipment_2
+		}
+		
+		research_cost = 2.5
+		start_year = 1118
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		sub_technologies = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	ars_artillery = {
+
+		enable_equipments = {
+			ars_artillery_equipment_1
+		}
+
+		enable_subunits = {
+			ars_artillery
+		}
+		
+		path = {
+			leads_to_tech = ars_support_enginner 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ars_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1100
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_artillery2 = {
+
+		enable_equipments = {
+			ars_artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = ars_artillery3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1105
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_artillery3 = {
+
+		enable_equipments = {
+			ars_artillery_equipment_3
+		}
+		
+		research_cost = 2
+		start_year = 1110
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 5 }
+		}
+
+		path = {
+			leads_to_tech = ars_artillery4
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_artillery4 = {
+
+		enable_equipments = {
+			ars_artillery_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1112
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 8 }
+		}
+
+		path = {
+			leads_to_tech = ars_artillery5
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_artillery5 = {
+
+		enable_equipments = {
+			ars_artillery_equipment_5
+		}
+		
+		research_cost = 2
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 11 }
+		}
+
+		path = {
+			leads_to_tech = ars_artillery6
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_artillery6 = {
+
+		enable_equipments = {
+			ars_artillery_equipment_6
+		}
+		
+		research_cost = 2
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_support_enginner = {
+
+		enable_equipments = {
+			ars_support_equipment_1
+		}
+
+		enable_subunits = {
+			ars_engineer
+		}
+		
+		path = {
+			leads_to_tech = ars_support_logistics
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ars_military_police
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ars_field_hospital
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1102
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			support_equipments_tech   
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_military_police = {
+
+		enable_subunits = {
+			ars_military_police
+		}
+		
+		path = {
+			leads_to_tech = ars_support_eq_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1105
+		
+		folder = {
+			name = armour_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		categories = {
+			support_equipments_tech   
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_field_hospital = {
+
+		enable_subunits = {
+			ars_field_hospital
+		}
+		
+		path = {
+			leads_to_tech = ars_support_eq_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1105
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			support_equipments_tech   
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_support_logistics = {
+
+		enable_subunits = {
+			ars_logistics_company
+		}
+		
+		path = {
+			leads_to_tech = ars_support_eq_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1105
+		
+		folder = {
+			name = armour_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			support_equipments_tech   
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ars_support_eq_2 = {
+
+		enable_equipments = {
+			ars_support_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1115
+		
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			support_equipments_tech   
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

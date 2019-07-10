@@ -1,0 +1,606 @@
+technologies = {
+
+	early_light_boat = {
+
+		enable_equipments = {
+			ars_light_boat_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = basic_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1100
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	basic_boat = {
+
+		enable_equipments = { 
+			ars_light_boat_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = improved_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		
+		start_year = 1102
+
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	improved_boat = {
+
+		enable_equipments = { 
+			ars_light_boat_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1104
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	advanced_boat = {
+
+		enable_equipments = { 
+			ars_light_boat_equipment_4
+		}
+
+		path = {
+			leads_to_tech = ars_light_war_ship
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1106
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	ars_light_war_ship = {
+
+		enable_equipments = { 
+			ars_light_war_ship_1
+		}
+
+		path = {
+			leads_to_tech = ars_light_war_ship2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1108
+		
+		folder = {
+			name = naval_folder
+			position = { x = -2 y = 25 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	ars_light_war_ship2 = {
+
+		enable_equipments = { 
+			ars_light_war_ship_2
+		}
+
+		path = {
+			leads_to_tech = ars_light_war_ship3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1110
+		
+		folder = {
+			name = naval_folder
+			position = { x = -2 y = 31 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	ars_light_war_ship3 = {
+
+		enable_equipments = { 
+			ars_light_war_ship_3
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1112
+		
+		folder = {
+			name = naval_folder
+			position = { x = -2 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	
+	early_medium_boat = {
+
+		enable_equipments = { 
+			ars_heavy_boat_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = basic_light_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1100
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	basic_light_boat = {
+
+		enable_equipments = { 
+			ars_heavy_boat_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = improved_light_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		
+		start_year = 1102
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	improved_light_boat = {
+
+		enable_equipments = { 
+			ars_heavy_boat_equipment_3
+		}	
+		
+		path = {
+			leads_to_tech = advanced_light_boat
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1104
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	advanced_light_boat = {
+
+		enable_equipments = { 
+			ars_heavy_boat_equipment_4
+		}
+
+		path = {
+			leads_to_tech = ars_heavy_war_ship
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1106
+		
+		folder = {
+			name = naval_folder
+			position = { x = -1 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+
+	ars_heavy_war_ship = {
+
+		enable_equipments = { 
+			ars_heavy_war_ship_1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1108
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = 25 }
+		}
+
+		path = {
+			leads_to_tech = ars_heavy_war_ship2
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	ars_heavy_war_ship2 = {
+
+		enable_equipments = { 
+			ars_heavy_war_ship_2
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1110
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = 31 }
+		}
+
+		path = {
+			leads_to_tech = ars_heavy_war_ship3
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	ars_heavy_war_ship3 = {
+
+		enable_equipments = { 
+			ars_heavy_war_ship_3
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1112
+		
+		folder = {
+			name = naval_folder
+			position = { x = 2 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	ars_transport = {
+
+		transport_capacity = -0.5
+		naval_invasion_capacity = 6
+		
+		path = {
+			leads_to_tech = ars_transport_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1100
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+
+			modifier = {
+				factor = 1
+				tag = FFR
+			}
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	ars_transport_2 = {
+
+		invasion_preparation = -0.5
+		amphibious_invasion_defence = 0.15
+		naval_invasion_capacity = 20
+
+		path = {
+			leads_to_tech = ars_transport_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1104
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+			modifier = {
+				factor = 1
+				tag = FFR
+			}
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	ars_transport_3 = {
+
+		amphibious_invasion = 0.25
+		amphibious_invasion_defence = 0.5
+		naval_invasion_capacity = 40
+
+		research_cost = 2
+		start_year = 1108
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5
+				NOT = { has_war = yes }
+			}
+
+			modifier = {
+				factor = 1
+				tag = FFR
+			}
+			
+			modifier = {
+				factor = 2
+				tag = FAL
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+}
