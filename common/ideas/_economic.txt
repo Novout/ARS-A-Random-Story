@@ -1,0 +1,355 @@
+ideas = {
+	## ECONOMY
+	economy = { 
+		law = yes
+		#
+		civilian_economy = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			level = 5
+			
+			available = {
+				NOT = { has_country_flag = Mobilizing }
+			}
+			on_add = {
+				set_country_flag = civilian_economy
+				clr_country_flag = undisturbed_isolation
+				clr_country_flag = isolation
+				clr_country_flag = low_economic_mobilisation
+				clr_country_flag = partial_economic_mobilisation
+				clr_country_flag = war_economy
+				clr_country_flag = tot_economic_mobilisation
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				#conscription_factor = -0.3
+				research_time_factor = 0.06
+				political_power_factor = 0.075
+				production_speed_industrial_complex_factor = 0.125 #0.10
+				production_speed_arms_factory_factor = -0.2
+				production_speed_smallarms_factory_factor = -0.2
+				production_speed_artillery_factory_factor = -0.2
+				production_speed_truck_factory_factor = -0.2
+				production_speed_tank_factory_factor = -0.2
+				production_speed_uniform_factory_factor = -0.2
+				production_speed_ammo_factory_factor = -0.2
+				production_speed_Ltaircraft_factory_factor = -0.2
+				production_speed_Hvaircraft_factory_factor = -0.2
+				production_speed_dockyard_factor = 0.10
+				production_speed_shipyard_factor = 0.10
+				production_speed_subyard_factor = 0.10
+				conversion_cost_civ_to_mil_factor= 0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+				production_speed_infrastructure_factor = 0.125 #0.25
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				line_change_production_efficiency_factor = -0.025
+			}			
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 1000
+					threat < 0.15
+					has_war = no
+				}
+   			}
+		}
+		#
+		low_economic_mobilisation = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 4
+			
+			available = {
+				has_country_flag = low_economic_mobilisation_cf
+			}
+			on_add = {		
+				set_country_flag = low_economic_mobilisation
+				clr_country_flag = undisturbed_isolation
+				clr_country_flag = civilian_economy
+				clr_country_flag = isolation
+				clr_country_flag = partial_economic_mobilisation
+				clr_country_flag = war_economy
+				clr_country_flag = tot_economic_mobilisation
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				conscription_factor = -0.2
+				research_time_factor = 0.03
+				political_power_factor = 0.04
+				production_speed_industrial_complex_factor = 0.03
+				production_speed_arms_factory_factor = -0.05
+				production_speed_smallarms_factory_factor = -0.05
+				production_speed_artillery_factory_factor = -0.05
+				production_speed_truck_factory_factor = -0.05
+				production_speed_tank_factory_factor = -0.05
+				production_speed_uniform_factory_factor = -0.05
+				production_speed_ammo_factory_factor = -0.05
+				production_speed_Ltaircraft_factory_factor = -0.05
+				production_speed_Hvaircraft_factory_factor = -0.05
+				production_speed_dockyard_factor = 0.10
+				production_speed_shipyard_factor = 0.10
+				production_speed_subyard_factor = 0.10
+				production_speed_infrastructure_factor = 0.05
+				production_speed_bunker_factor = 0.025
+				production_speed_pillbox_factor = 0.025
+				production_speed_coastal_bunker_factor = 0.025
+				production_speed_air_base_factor = 0.05
+				conversion_cost_civ_to_mil_factor= 0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+				modifier = {
+					factor = 8
+					OR = {
+						has_government = henism_autocracy
+						has_government = radicalism
+					}
+				}
+				modifier = {
+					factor = 100
+					threat > 0.25
+				}
+				modifier = {
+					factor = 0
+					threat > 0.50
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+   			}
+		}
+		#
+		partial_economic_mobilisation = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 3
+			
+			available = {
+				has_country_flag = partial_economic_mobilisation_cf
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_250
+				#subtract_from_variable = { dx = 250 }
+			
+				set_country_flag = partial_economic_mobilisation
+				clr_country_flag = undisturbed_isolation
+				clr_country_flag = civilian_economy
+				clr_country_flag = isolation
+				clr_country_flag = low_economic_mobilisation
+				clr_country_flag = war_economy
+				clr_country_flag = tot_economic_mobilisation
+			}
+
+			default = yes
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				conscription_factor = -0.1
+				political_power_factor = -0.013
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_smallarms_factory_factor = 0.1
+				production_speed_artillery_factory_factor = 0.1
+				production_speed_truck_factory_factor = 0.1
+				production_speed_tank_factory_factor = 0.1
+				production_speed_uniform_factory_factor = 0.1
+				production_speed_ammo_factory_factor = 0.1
+				production_speed_Ltaircraft_factory_factor = 0.1
+				production_speed_Hvaircraft_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_shipyard_factor = 0.05
+				production_speed_subyard_factor = 0.05				
+				production_speed_bunker_factor = 0.05
+				production_speed_pillbox_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+				production_speed_air_base_factor = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				line_change_production_efficiency_factor = 0.025
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 4
+				modifier = {
+					factor = 100
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				modifier = {
+					factor = 10
+					threat > 0.50
+				}
+				modifier = {
+					factor = 0
+					threat < 0.50
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+   			}
+		}
+		#
+		war_economy = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 2
+			
+			available = {
+				NOT = { has_country_flag = Transition }
+				NOT = { has_country_flag = Mobilizing }
+				threat > 0.50
+				OR = {
+					has_country_flag = war_economy_cf
+					has_war = yes
+				}			
+			}
+			on_add = {		
+				set_country_flag = war_economy
+				clr_country_flag = undisturbed_isolation
+				clr_country_flag = civilian_economy
+				clr_country_flag = isolation
+				clr_country_flag = low_economic_mobilisation
+				clr_country_flag = partial_economic_mobilisation
+				clr_country_flag = tot_economic_mobilisation
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				conscription_factor = -0.15
+				research_time_factor = -0.03
+				political_power_factor = -0.05
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = 0.15
+				production_speed_smallarms_factory_factor = 0.15
+				production_speed_artillery_factory_factor = 0.15
+				production_speed_truck_factory_factor = 0.15
+				production_speed_tank_factory_factor = 0.15
+				production_speed_uniform_factory_factor = 0.15
+				production_speed_ammo_factory_factor = 0.15
+				production_speed_Ltaircraft_factory_factor = 0.15
+				production_speed_Hvaircraft_factory_factor = 0.15
+				conversion_cost_civ_to_mil_factor= -0.15
+				conversion_cost_mil_to_civ_factor = 0.15
+				enemy_partisan_effect = 0.05
+				production_speed_bunker_factor = 0.08
+				production_speed_pillbox_factor = 0.08
+				production_speed_coastal_bunker_factor = 0.08
+				production_speed_air_base_factor = 0.015
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+				line_change_production_efficiency_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_war = yes
+				}
+				modifier = {
+					factor = 10
+					enemies_strength_ratio > 0.8
+				}
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+   			}
+		}
+		
+		tot_economic_mobilisation = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 1
+			
+			available = {
+				has_country_flag = tot_economic_mobilisation_cf
+			}
+			on_add = {
+				set_country_flag = tot_economic_mobilisation
+				clr_country_flag = undisturbed_isolation
+				clr_country_flag = civilian_economy
+				clr_country_flag = isolation
+				clr_country_flag = low_economic_mobilisation
+				clr_country_flag = partial_economic_mobilisation
+				clr_country_flag = war_economy
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.2
+				research_time_factor = -0.06
+				political_power_factor = -0.15
+				stability_weekly = -0.001
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_smallarms_factory_factor = 0.25
+				production_speed_artillery_factory_factor = 0.25
+				production_speed_truck_factory_factor = 0.25
+				production_speed_tank_factory_factor = 0.25
+				production_speed_uniform_factory_factor = 0.25
+				production_speed_ammo_factory_factor = 0.25
+				production_speed_Ltaircraft_factory_factor = 0.25
+				production_speed_Hvaircraft_factory_factor = 0.25
+				production_speed_dockyard_factor = -0.10
+				production_speed_shipyard_factor = -0.10
+				production_speed_subyard_factor = -0.10
+				conversion_cost_civ_to_mil_factor= -0.25
+				conversion_cost_mil_to_civ_factor = 0.25			
+				enemy_partisan_effect = 0.10
+				industrial_capacity_factory = 0.125
+				industrial_capacity_dockyard = 0.125
+				line_change_production_efficiency_factor = 0.075
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+				modifier = {
+					factor = 1000
+					enemies_strength_ratio > 0.9
+				}
+				modifier = {
+					factor = 0.5
+					has_manpower < 1000000
+					is_major = yes
+				}
+				modifier = {
+					factor = 0.5
+					has_manpower < 500000
+					is_major = no
+				}
+			}
+		}
+	}
+}
+### EOF ###

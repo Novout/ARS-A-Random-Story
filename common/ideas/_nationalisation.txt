@@ -1,0 +1,225 @@
+ideas = {
+	nationalization = { 
+		law = yes
+		
+		private_control = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 4
+			
+			available = {
+				NOT = {
+					OR = {
+						has_government = radicalism
+						has_government = henism_autocracy
+						has_government = traditional_conservatism
+						has_country_flag = taxes_extreme
+						has_country_flag = press_state
+					}
+				}
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_125
+				#subtract_from_variable = { dx = 125 }
+				set_country_flag = private_control
+				clr_country_flag = key_industries
+				clr_country_flag = major_industries
+				clr_country_flag = planned_economy
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				research_time_factor = -0.02
+				political_power_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = -0.08
+				industrial_capacity_dockyard = -0.08
+				stability_weekly  = 0.001
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 5
+					has_government = traditional_conservatism
+				}			
+			}
+		}
+		#
+		key_industries = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 3
+			
+			available = {
+				NOT = {
+					has_government = egalitarianism
+				}
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_150
+				#subtract_from_variable = { dx = 150 }
+				set_country_flag = key_industries
+				clr_country_flag = private_control
+				clr_country_flag = major_industries
+				clr_country_flag = planned_economy
+			}
+			
+			default = yes
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.025
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = -0.025
+				research_time_factor = -0.01
+				political_power_factor = -0.025
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				line_change_production_efficiency_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+				local_resources_factor = 0.025
+				stability_weekly  = 0.0005
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 10
+					democratic_govt = yes
+					has_war = yes
+				}
+				modifier = {
+					factor = 5
+					has_government = socialism
+				}
+			}
+		}
+		#
+		major_industries = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 2
+			
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							has_government = kiinism
+							has_government = egalitarianism
+						}
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = { 
+								tag = ROOT 
+								ratio > 0.8
+							}
+						}
+					}
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_200
+				#subtract_from_variable = { dx = 200 }
+				set_country_flag = major_industries
+				clr_country_flag = private_control
+				clr_country_flag = key_industries
+				clr_country_flag = planned_economy
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+				production_speed_arms_factory_factor = 0.06
+				production_speed_dockyard_factor = 0.06
+				research_time_factor = 0.02
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.05
+				line_change_production_efficiency_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_government = fascism
+				}
+				modifier = {
+					factor = 00
+					democratic_govt = yes
+					has_war = yes
+					is_in_faction = yes
+					is_major = no
+				}
+			}
+		}
+		#
+		planned_economy = {
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				OR = { 
+					has_government = henism_pacifism
+					has_government = henism_autocracy
+				}
+				NOT = {
+					has_country_flag = tax_minimal
+					has_country_flag = press_free
+				}
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_250
+				#subtract_from_variable = { dx = 250 }
+				set_country_flag = planned_economy
+				clr_country_flag = private_control
+				clr_country_flag = key_industries
+				clr_country_flag = major_industries
+			}
+			
+			level = 1
+		
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.10
+				research_time_factor = 0.04
+				political_power_factor = 0.10
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				stability_weekly  = -0.002
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				local_resources_factor = 0.075
+				line_change_production_efficiency_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 5
+				modifier = {
+					factor = 1000
+					has_government = henism_pacifism
+				}
+   			}
+		}
+	}
+}
+### EOF ###

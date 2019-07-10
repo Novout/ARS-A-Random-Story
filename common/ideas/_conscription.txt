@@ -1,0 +1,332 @@
+# Conscription
+ideas = {
+	
+	conscription = { 
+		law = yes
+		
+		cons_volunteer = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+			}
+			
+			level = 5
+			
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.02
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+				political_power_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#
+		cons_one = {
+			
+			cost = 0
+			removal_cost = -1
+
+			available = {
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			level = 4
+
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+				political_power_factor = 0.025
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				#stability_factor = -0.01
+				stability_weekly = -0.0002
+			}
+			
+			cancel_if_invalid = no
+
+			default = yes
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_idea = cons_volunteer
+				}
+				modifier = {
+					factor = 100
+					has_manpower < 150000 
+				}
+			}
+		}
+		#
+		cons_two = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				OR = {
+					AND = {
+						has_war = yes
+						enemies_strength_ratio > 0.3
+					}					
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			
+			level = 3
+
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.1
+				political_power_factor = 0.01
+				army_org_factor = 0.025
+				army_morale_factor = 0.025
+				stability_weekly = -0.0003
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_idea = cons_one
+				}
+				modifier = {
+					factor = 100
+					has_manpower < 150000 #3500
+				}
+			}
+		}
+		#
+		cons_three = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				OR = {
+					AND = {
+						has_war = yes
+						enemies_strength_ratio > 0.3
+					}					
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			level = 2
+
+			modifier = {
+				conscription = 0.15
+				conscription_factor = 0.15
+				industrial_capacity_factory = -0.03
+				industrial_capacity_dockyard = -0.03
+				political_power_factor = -0.01
+				stability_weekly = -0.0004
+				}
+
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_idea = cons_two
+					}
+				modifier = {
+					factor = 100
+					has_manpower < 150000 
+				}
+			}
+		}
+		#
+		cons_expanded_draft = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				has_war_support > 0.5
+				OR = {
+					has_country_flag  = tax_average
+					has_country_flag  = tax_high
+					has_country_flag  = tax_extreme
+				}
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 0.5
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			level = 1
+
+			modifier = {
+				conscription = 0.20
+				conscription_factor = 0.20
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+				political_power_factor = -0.025
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				stability_weekly = -0.0006
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_idea = cons_three
+				} 
+				modifier = {
+					factor = 100
+					has_manpower < 150000					
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		#
+		cons_extensive_draft = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				OR = {
+						has_war_support > 0.6
+						surrender_progress > 0
+					}
+				OR = {
+					has_country_flag  = tax_average
+					has_country_flag  = tax_high
+					has_country_flag  = tax_extreme
+				}
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 0.8
+				}
+				has_idea = cons_expanded_draft
+				OR = {
+					has_idea  = age_15
+					has_idea  = age_14
+					has_idea  = age_13
+					has_idea  = age_12
+					has_idea  = age_11
+					has_idea  = age_10
+					
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+
+			modifier = {
+				conscription = 0.25
+				conscription_factor = 0.25
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
+				training_time_army_factor = 0.05
+				political_power_factor = -0.05
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				stability_weekly = -0.0007
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_idea  = cons_extensive_draft
+				}
+				modifier = {
+					factor = 100
+					has_manpower < 150000 
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		#
+		cons_barrel = {
+			
+			cost = 0
+			removal_cost = -1
+
+			available = {
+				OR = {
+					has_war_support > 0.7
+					surrender_progress > 0
+				}
+				OR = {
+					has_country_flag  = tax_average
+					has_country_flag  = tax_high
+					has_country_flag  = tax_extreme
+				}
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 1
+				}
+				has_idea  = cons_extensive_draft
+				OR = {
+					has_idea  = age_12
+					has_idea  = age_11
+					has_idea  = age_10	
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+
+			modifier = {
+				conscription = 0.3
+				conscription_factor = 0.3
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				training_time_army_factor = 0.1
+				political_power_factor = -0.10
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+				stability_weekly = -0.0010
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_idea  = cons_extensive_draft 
+				}
+				modifier = {
+					factor = 100
+					has_manpower < 150000 
+				}
+			}
+			cancel_if_invalid = no
+		}
+	}
+}
+### EOF ###

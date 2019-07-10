@@ -1,0 +1,568 @@
+ideas = {
+	### Mobilization/Level of Readiness
+	mobilization_laws = { 
+		law = yes
+		
+		mob_reserve = {
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				NOT = { has_country_flag = Organizing }
+			}
+			
+			level = 4
+			default = yes
+			
+			modifier = {
+				political_power_factor = 0.05
+				attrition = -0.035
+				army_attack_factor = -0.08
+				army_defence_factor  = -0.08
+				army_morale_factor = -0.08
+				navy_org_factor = -0.08
+				air_superiority_efficiency = -0.08
+				air_cas_efficiency = -0.08
+				air_strategic_bomber_bombing_factor = -0.08
+				air_escort_efficiency = -0.08
+				air_intercept_efficiency = -0.08
+				air_nav_efficiency = -0.08
+				air_ace_generation_chance_factor = -0.08
+				training_time_army_factor = 0.12
+				industrial_capacity_dockyard = 0.08
+				industrial_capacity_factory = 0.08
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				
+				#ai_focus_defense_factor = 0.5
+			}
+			
+			on_add = {
+				custom_effect_tooltip = readiness_TT
+				set_country_flag = mob_reserve
+				clr_country_flag = mob_limited
+				clr_country_flag = mob_general
+				clr_country_flag = mob_standing
+				clr_country_flag = has_mob_standing
+				clr_country_flag = has_mob_limited
+				set_country_flag = has_mob_reserved
+				clr_country_flag = has_mob_general
+				clr_country_flag = Organizing
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 100
+					has_war = no
+					democratic_govt = yes
+					threat < 0.10
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = monarchism
+						has_war = yes
+						threat > 0.50
+						tag = POL
+						tag = CHI
+						tag = FIN
+						tag = SPR
+					}
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+		}
+		#
+		mob_standing = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 2
+			
+			available = {
+				OR = {
+					has_idea = mob_reserve
+					has_country_flag = mob_reserve_active
+				}
+				OR = {
+					has_war = yes
+					has_idea = low_economic_mobilisation
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_war_support > 0.6
+					threat > 0.2
+					
+					AND = { 
+						has_government = henism_autocracy
+						fascism > 0.79
+						threat > 0.15
+					}
+					AND = { 
+						has_government = egalitarianism
+						communism > 0.79
+						threat > 0.15
+					}
+				}
+				OR = {
+					has_idea = tax_low
+					has_idea = tax_average
+					has_idea = tax_high
+					has_idea = tax_extreme
+				}
+				NOT = {
+					OR = {
+						has_country_flag = Organizing
+						has_country_flag = Demobilizing
+					}
+				}
+			}
+			
+			modifier = {
+				political_power_factor = 0.025
+				attrition = -0.025
+				army_attack_factor = -0.05
+				army_defence_factor  = -0.05
+				army_morale_factor = -0.05
+				navy_org_factor = -0.05
+				air_superiority_efficiency = -0.05
+				air_cas_efficiency = -0.05
+				air_strategic_bomber_bombing_factor = -0.05
+				air_escort_efficiency = -0.05
+				air_intercept_efficiency = -0.05
+				air_nav_efficiency = -0.05
+				air_ace_generation_chance_factor = -0.05
+				training_time_army_factor = 0.1
+				industrial_capacity_dockyard = 0.04
+				industrial_capacity_factory = 0.04
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_arms_factory_factor = 0.025
+				production_speed_dockyard_factor = 0.025
+				
+				#ai_focus_defense_factor = 0.4
+			}
+			
+			cancel_if_invalid = no
+			
+			on_add = {
+				hidden_effect = { country_event = EAI_M.201 }
+				set_country_flag = has_mob_standing
+				clr_country_flag = has_mob_limited
+				clr_country_flag = has_mob_reserved
+				clr_country_flag = has_mob_general
+				clr_country_flag = Organizing
+				
+				#custom_effect_tooltip = money_cost_150
+				#subtract_from_variable = { dx = 150 }
+			}
+			
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 0
+					AND = {
+						tag = USA
+						is_in_faction = no
+						democratic_govt = yes
+						date < 1940.6.1
+					}
+				}
+   				modifier = {
+					factor = 10
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				modifier = {
+					factor = 10
+					OR = {
+						tag = ENG
+						tag = POL
+						tag = FRA
+					}
+					threat > 0.30
+					threat < 0.50
+				}
+				modifier = {
+					factor = 5
+					threat > 0.45
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+   			}
+		}
+		#
+		mob_limited = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 2
+			
+			available = {
+				hidden_trigger = {
+					OR = {
+						has_idea = mob_standing
+						has_country_flag = mob_standing_active
+					}
+				}
+				OR = {
+					has_war = yes
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					threat > 0.3
+				}
+				NOT = {
+					OR = {
+						has_country_flag = Organizing
+						has_country_flag = Demobilizing
+					}
+				}
+				
+				if = {
+					limit = {
+						tag = SOV
+						OR = {
+							has_idea = officers_purged 		
+							has_idea = officers_purged_2 			
+							has_idea = officers_purged_3 			
+							has_idea = officers_purged_4 			
+							has_idea = officers_purged_5 			
+							has_idea = officers_purged_6 			
+							has_idea = officers_purged_7 			
+							has_idea = officers_purged_8 			
+						}		
+					}
+					custom_trigger_tooltip = {
+						tooltip = SOV_has_not_officers_purged_tt
+						NOT = { has_idea = officers_purged }			
+						NOT = { has_idea = officers_purged_2 }			
+						NOT = { has_idea = officers_purged_3 }			
+						NOT = { has_idea = officers_purged_4 }			
+						NOT = { has_idea = officers_purged_5 }			
+						NOT = { has_idea = officers_purged_6 }			
+						NOT = { has_idea = officers_purged_7 }			
+						NOT = { has_idea = officers_purged_8 }				
+					}
+				}
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_200
+				#subtract_from_variable = { dx = 200 }
+				hidden_effect = { country_event = EAI_M.202 }
+				clr_country_flag = has_mob_standing
+				set_country_flag = has_mob_limited
+				clr_country_flag = has_mob_reserved
+				clr_country_flag = has_mob_general
+				clr_country_flag = Organizing
+			}
+			
+			modifier = {
+				political_power_factor = -0.025
+				attrition = -0.0125
+				army_attack_factor = -0.025
+				army_defence_factor  = -0.025
+				army_morale_factor = -0.025
+				navy_org_factor = -0.025
+				air_superiority_efficiency = -0.025
+				air_cas_efficiency = -0.025
+				air_strategic_bomber_bombing_factor = -0.025
+				air_escort_efficiency = -0.025
+				air_intercept_efficiency = -0.025
+				air_nav_efficiency = -0.025
+				air_ace_generation_chance_factor = -0.025
+				training_time_army_factor = 0.05
+				
+				#ai_focus_defense_factor = 0.3
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 0
+					has_war = no
+					democratic_govt = yes
+					threat < 0.40
+					is_major = yes
+				}
+				modifier = {
+					factor = 0
+					tag = USA
+					is_in_faction = no
+					democratic_govt = yes
+					date < 1941.6.1
+				}
+				modifier = {
+					factor = 100
+					OR = {
+						AND = {
+							date > 1939.3.1
+							tag = ENG
+							tag = FRA
+						}
+						has_government = henism_autocracy
+						has_government = radicalism
+						has_government = traditional_conservatism
+						threat > 0.50
+						tag = SPR
+						AND = {
+							tag = POL
+							tag = FIN
+							date > 1939.1.1
+						}
+						AND = {
+							tag = CHI
+							date > 1937.1.1
+						}
+					}
+				}
+			}
+		}
+		#
+		mob_general = {
+			cost = 0
+			removal_cost = -1
+			
+			level = 1
+			
+			available = {
+				hidden_trigger = {	
+					OR = {
+						has_idea = mob_limited
+						has_country_flag = mob_limited_active 
+					}
+				}
+				has_idea = mob_limited
+				OR = {
+					any_country = {
+						has_war_with = ROOT 
+					}
+					#has_idea = war_economy
+					threat > 0.5
+				}
+				NOT = {
+					OR = {
+						has_country_flag = Organizing
+						has_country_flag = Demobilizing
+					}
+				}
+				
+				if = {
+					limit = {
+						tag = SOV
+						OR = {
+							has_idea = officers_purged 		
+							has_idea = officers_purged_2 			
+							has_idea = officers_purged_3 			
+							has_idea = officers_purged_4 			
+							has_idea = officers_purged_5 			
+							has_idea = officers_purged_6 			
+							has_idea = officers_purged_7 			
+							has_idea = officers_purged_8 			
+							has_idea = officers_purged_9 			
+							has_idea = officers_purged_10 
+						}		
+					}
+					custom_trigger_tooltip = {
+						tooltip = SOV_has_not_officers_purged_tt
+						NOT = { has_idea = officers_purged }			
+						NOT = { has_idea = officers_purged_2 }			
+						NOT = { has_idea = officers_purged_3 }			
+						NOT = { has_idea = officers_purged_4 }			
+						NOT = { has_idea = officers_purged_5 }			
+						NOT = { has_idea = officers_purged_6 }			
+						NOT = { has_idea = officers_purged_7 }			
+						NOT = { has_idea = officers_purged_8 }			
+						NOT = { has_idea = officers_purged_9 }			
+						NOT = { has_idea = officers_purged_10 }			
+					}
+				}
+			}
+			on_add = {
+				#custom_effect_tooltip = money_cost_250
+				#subtract_from_variable = { dx = 250 }
+			}
+			
+			modifier = {
+				political_power_factor = -0.05
+				training_time_army_factor = -0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+			}
+			
+			on_add = {
+				hidden_effect = { country_event = EAI_M.203 }
+				clr_country_flag = has_mob_standing
+				clr_country_flag = has_mob_limited
+				clr_country_flag = has_mob_reserved
+				set_country_flag = has_mob_general
+				
+				clr_country_flag = Organizing
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+				modifier = {
+					factor = 1000
+					has_war = yes
+				}
+				modifier = {
+					factor = 1000
+					threat > 0.5
+				}
+			}
+		}
+		#
+		Organizing = {
+			#cost = 0
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			level = 1
+			
+			available = {
+				
+			}
+			
+			visible = {
+				
+			}
+			
+			on_add = {
+				#country_event = EAI_M.203
+				set_country_flag = Organizing 
+				if = {
+					limit = {
+						OR = {
+							has_idea = mobilisation_1
+							has_idea = mobilisation_2
+							has_idea = mobilisation_3
+							has_idea = mobilisation_4
+							has_idea = mobilisation_5
+							has_idea = mobilisation_7
+							has_idea = mobilisation_8
+							has_idea = mobilisation_9
+							has_idea = mobilisation_10
+							has_idea = mobilisation_12
+							has_idea = mobilisation_13
+							has_idea = mobilisation_14
+							has_idea = mobilisation_15
+						}
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_1
+						}
+						show_ideas_tooltip = mobilisation_1
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_2
+						}
+						show_ideas_tooltip = mobilisation_2
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_3
+						}
+						show_ideas_tooltip = mobilisation_3
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_4
+						}
+						show_ideas_tooltip = mobilisation_4
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_5
+						}
+						show_ideas_tooltip = mobilisation_5
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_7
+						}
+						show_ideas_tooltip = mobilisation_7
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_8
+						}
+						show_ideas_tooltip = mobilisation_8
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_9
+						}
+						show_ideas_tooltip = mobilisation_9
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_10
+						}
+						show_ideas_tooltip = mobilisation_10
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_12
+						}
+						show_ideas_tooltip = mobilisation_12
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_13
+						}
+						show_ideas_tooltip = mobilisation_13
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_14
+						}
+						show_ideas_tooltip = mobilisation_14
+					}
+					if = {
+						limit = {
+							has_idea = mobilisation_15
+						}
+						show_ideas_tooltip = mobilisation_15
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 0
+   				modifier = {
+					factor = 1
+					has_war = yes
+				}
+			}
+		}
+	}
+}
+### EOF ###

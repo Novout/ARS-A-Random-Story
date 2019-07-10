@@ -1,0 +1,622 @@
+ideas = {
+	army_size = {
+	
+		##################### Army Size ##################
+		tiny_army = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				
+			}
+			research_bonus = {
+				land_doctrine = -0.15
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		tiny_army_war = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				war_support_weekly  = -0.003
+			}
+			research_bonus = {
+				land_doctrine = -0.15
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		small_army = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				
+			}
+			research_bonus = {
+				land_doctrine = -0.075
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		small_army_war = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				war_support_weekly  = -0.0015
+			}
+			research_bonus = {
+				land_doctrine = -0.075
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		average_army = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.05
+				#planning_speed = 0.05
+				#training_time_army_factor = 0.04
+			}
+			research_bonus = {
+
+			}
+			#traits = { army_chief_offensive_2 }
+			#traits = { army_chief_defensive_2 }
+			removal_cost = -1
+		}
+		large_army = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.1
+				#planning_speed = 0.1
+				#training_time_army_factor = -0.04
+			}
+			research_bonus = {
+				land_doctrine = 0.075
+			}
+			#traits = { army_chief_offensive_3 }
+			#traits = { army_chief_defensive_3 }
+			removal_cost = -1
+		}
+		huge_army = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.15
+				#planning_speed = 0.15
+				#training_time_army_factor = -0.08
+			}
+			research_bonus = {
+				land_doctrine = 0.15
+			}
+			#traits = { army_chief_offensive_3 }
+			#traits = { army_chief_defensive_3 }
+			removal_cost = -1
+		}
+	}
+	air_size = {	
+		##################### Air Force Size ##################
+		tiny_air_force = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				
+			}
+			research_bonus = {
+				air_doctrine = -0.20
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		tiny_air_force_war = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				war_support_weekly  = -0.002
+			}
+			research_bonus = {
+				air_doctrine = -0.20
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		small_air_force = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				
+			}
+			research_bonus = {
+				air_doctrine = -0.10
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		small_air_force_war = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				war_support_weekly  = -0.001
+			}
+			research_bonus = {
+				air_doctrine = -0.10
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		average_air_force = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.05
+				#planning_speed = 0.05
+				#training_time_army_factor = 0.04
+			}
+			research_bonus = {
+
+			}
+			#traits = { army_chief_offensive_2 }
+			#traits = { army_chief_defensive_2 }
+			removal_cost = -1
+		}
+		large_air_force = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.1
+				#planning_speed = 0.1
+				#training_time_army_factor = -0.04
+			}
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			#traits = { army_chief_offensive_3 }
+			#traits = { army_chief_defensive_3 }
+			removal_cost = -1
+		}
+		huge_air_force = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.15
+				#planning_speed = 0.15
+				#training_time_army_factor = -0.08
+			}
+			research_bonus = {
+				air_doctrine = 0.20
+			}
+			#traits = { army_chief_offensive_3 }
+			#traits = { army_chief_defensive_3 }
+			removal_cost = -1
+		}
+	}
+	naval_size = {
+		##################### Navy Size ##################
+		tiny_navy = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				
+			}
+			research_bonus = {
+				naval_doctrine = -0.20
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		tiny_navy_war = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				war_support_weekly  = -0.0015
+			}
+			research_bonus = {
+				naval_doctrine = -0.20
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		small_navy = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = -0.1
+				#planning_speed = -0.1
+				#training_time_army_factor = 0.08
+				
+			}
+			research_bonus = {
+				naval_doctrine = -0.10
+			}
+			#traits = { army_chief_offensive_1 }
+			#traits = { army_chief_defensive_1 }
+			removal_cost = -1
+		}
+		average_navy = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.05
+				#planning_speed = 0.05
+				#training_time_army_factor = 0.04
+			}
+			research_bonus = {
+
+			}
+			#traits = { army_chief_offensive_2 }
+			#traits = { army_chief_defensive_2 }
+			removal_cost = -1
+		}
+		large_navy = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.1
+				#planning_speed = 0.1
+				#training_time_army_factor = -0.04
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			#traits = { army_chief_offensive_3 }
+			#traits = { army_chief_defensive_3 }
+			removal_cost = -1
+		}
+		huge_navy = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				#army_org_Factor = 0.15
+				#planning_speed = 0.15
+				#training_time_army_factor = -0.08
+			}
+			research_bonus = {
+				naval_doctrine = 0.20
+			}
+			#traits = { army_chief_offensive_3 }
+			#traits = { army_chief_defensive_3 }
+			removal_cost = -1
+		}
+	}
+	
+	hidden_ideas = {
+		land_level_1 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_2 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_3 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_4 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_5 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_6 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_7 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_8 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_9 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_10 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_11 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_12 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_13 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_14 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+		land_level_15 = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

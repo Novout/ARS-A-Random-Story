@@ -1,0 +1,61 @@
+idea_categories = {
+
+	hidden_ideas = {
+		hidden = yes
+	
+		cost = 0
+		removal_cost = -1
+	}
+	
+	country = {
+		national_spirit = yes
+		
+		cost = 0
+		removal_cost = -1
+	}
+	
+	government = {
+		slot = economy
+		slot = nationalization
+		slot = fdi_regulations
+		slot = tariffs
+		slot = trade_laws
+		slot = taxes
+		# max 12
+		cost = 0
+		removal_cost = 0
+	}
+	Manpower = {
+		slot = foreign_policy
+		slot = mobilization_laws
+		slot = conscription
+		slot = age_laws
+		slot = cadet_training_standards
+		slot = officer_training_standards
+		# maxed 12
+		cost = 0
+		removal_cost = 0
+	}
+	politicians = {
+		slot = head_of_state
+		slot = foreign_minister
+		slot = interior_minister
+		slot = tank_manufacturer
+		slot = naval_manufacturer
+		slot = aircraft_manufacturer
+		# max 12
+		cost = 0
+		removal_cost = 0
+	}
+	military_staff = {
+		slot = army_chief 
+		slot = navy_chief 
+		slot = air_chief
+		slot = high_command
+		slot = high_command
+		slot = theorist
+		# max 12
+		cost = 0
+		removal_cost = 0
+	}
+}

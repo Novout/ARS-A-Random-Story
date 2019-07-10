@@ -1,0 +1,285 @@
+ideas = {
+	### Training Standards
+	cadet_training_standards = { 
+		law = yes
+		
+		train_none = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+			}
+			level = 3
+			modifier = {
+				training_time_army_factor = -0.30
+				army_org_factor = -0.20
+				army_morale_factor = -0.20
+			}
+			
+			on_add = {
+				custom_effect_tooltip = low_train_TT
+				
+				set_country_flag = train_none
+				clr_country_flag = train_low
+				clr_country_flag = train_medium
+				clr_country_flag = train_high
+				clr_country_flag = train_elite
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 0
+			}
+		}
+		train_low = {
+			
+			cost = 0
+			removal_cost = -1
+
+			available = {
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+				if = {
+					limit = {
+						tag = SOV
+					}
+					NOT = { has_country_flag = purges }
+				}
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			level = 2
+			modifier = {
+				training_time_army_factor = -0.15
+				army_org_factor = -0.10
+				army_morale_factor = -0.10
+			}
+			
+			on_add = {
+				custom_effect_tooltip = low_train_TT
+				
+				set_country_flag = train_low
+				clr_country_flag = train_none
+				clr_country_flag = train_medium
+				clr_country_flag = train_high
+				clr_country_flag = train_elite
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 100
+					has_war = yes
+					enemies_strength_ratio > 1.5
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_war = no
+						enemies_strength_ratio < 1.1
+						AND = {
+							is_major = yes
+							has_manpower < 800000
+						}
+					}
+				}
+   			}
+		}
+		train_medium = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+			#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			if = {
+					limit = {
+						tag = SOV
+					}
+					NOT = { has_country_flag = purges }
+				}
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+				
+				set_country_flag = train_medium
+				clr_country_flag = train_none
+				clr_country_flag = train_low
+				clr_country_flag = train_high
+				clr_country_flag = train_elite
+			}
+			level = 1
+			modifier = {
+				training_time_army_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100
+					has_war = yes
+					enemies_strength_ratio > 0.9
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_war = no
+						enemies_strength_ratio < 0.7
+					}
+				}
+   			}
+		}
+		train_high = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+			
+				if = {
+					limit = {
+						tag = SOV
+						OR = {
+							has_idea = officers_purged 		
+							has_idea = officers_purged_2 			
+							has_idea = officers_purged_3 			
+							has_idea = officers_purged_4 			
+							has_idea = officers_purged_5 			
+							has_idea = officers_purged_6 			
+							has_idea = officers_purged_7 			
+							has_idea = officers_purged_8 			
+							has_idea = officers_purged_9 			
+							has_idea = officers_purged_10 
+						}		
+					}
+					custom_trigger_tooltip = {
+						tooltip = SOV_has_not_officers_purged_tt
+						NOT = { has_idea = officers_purged }			
+						NOT = { has_idea = officers_purged_2 }			
+						NOT = { has_idea = officers_purged_3 }			
+						NOT = { has_idea = officers_purged_4 }			
+						NOT = { has_idea = officers_purged_5 }			
+						NOT = { has_idea = officers_purged_6 }			
+						NOT = { has_idea = officers_purged_7 }			
+						NOT = { has_idea = officers_purged_8 }			
+						NOT = { has_idea = officers_purged_9 }			
+						NOT = { has_idea = officers_purged_10 }			
+					}
+				}
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+				
+				set_country_flag = train_high
+				clr_country_flag = train_none
+				clr_country_flag = train_low
+				clr_country_flag = train_medium
+				clr_country_flag = train_elite
+			}
+
+			modifier = {
+				training_time_army_factor = 0.125
+				army_org_factor = 0.075
+				army_morale_factor = 0.075
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					factor = 10
+					has_war = no
+					threat < 0.50
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						has_war = yes
+						tag = SOV
+						tag = CHI
+						tag = ITA
+					}
+				}
+   			}
+		}
+		train_elite = {
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				OR = {
+					has_country_flag = tax_low
+					has_country_flag = tax_average
+					has_country_flag = tax_high
+					has_country_flag = tax_extreme
+				}
+				NOT = { has_idea = officer_train_none }
+				if = {
+					limit = {
+						tag = SOV
+						OR = {
+							has_idea = officers_purged 		
+							has_idea = officers_purged_2 			
+							has_idea = officers_purged_3 			
+							has_idea = officers_purged_4 			
+							has_idea = officers_purged_5 			
+							has_idea = officers_purged_6 			
+							has_idea = officers_purged_7 			
+							has_idea = officers_purged_8 			
+							has_idea = officers_purged_9 			
+							has_idea = officers_purged_10 
+						}		
+					}
+					custom_trigger_tooltip = {
+						tooltip = SOV_has_not_officers_purged_tt
+						NOT = { has_idea = officers_purged }			
+						NOT = { has_idea = officers_purged_2 }			
+						NOT = { has_idea = officers_purged_3 }			
+						NOT = { has_idea = officers_purged_4 }			
+						NOT = { has_idea = officers_purged_5 }			
+						NOT = { has_idea = officers_purged_6 }			
+						NOT = { has_idea = officers_purged_7 }			
+						NOT = { has_idea = officers_purged_8 }			
+						NOT = { has_idea = officers_purged_9 }			
+						NOT = { has_idea = officers_purged_10 }			
+					}
+				}
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+				
+				set_country_flag = train_elite
+				clr_country_flag = train_none
+				clr_country_flag = train_low
+				clr_country_flag = train_medium
+				clr_country_flag = train_high
+			}
+
+			modifier = {
+				training_time_army_factor = 0.20
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+			}
+
+			
+			ai_will_do = {
+   				factor = 0
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}
+### EOF ###

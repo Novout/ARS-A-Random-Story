@@ -1,0 +1,90 @@
+ideas = {
+
+    country = {
+
+        usa_colonial_policy = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				political_power_factor = -0.2
+				justify_war_goal_time = -0.5
+			}
+		}
+
+		usa_aid = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		usa_military = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		usa_volunter = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    send_volunteer_divisions_required = -0.5
+				send_volunteers_tension = -0.20
+				send_volunteer_size = 4
+			}
+		}
+
+		usa_research_military = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    experience_gain_army = 0.05
+			    conscription = 0.01
+			    supply_consumption_factor = -0.10
+			}
+		}
+	}
+}		

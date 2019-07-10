@@ -1,0 +1,1652 @@
+ideas = {
+
+    country = {
+
+        know_engineering_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.10
+			}
+		}
+
+		know_engineering_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.20
+			}
+		}
+
+		know_engineering_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.30
+			}
+		}
+
+		know_engineering_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.40
+			}
+		}
+
+		know_engineering_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.50
+			}
+		}
+
+		know_science_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				research_time_factor = -0.04
+			}
+		}
+
+		know_science_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				research_time_factor = -0.08
+			}
+		}
+
+		know_science_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				research_time_factor = -0.12
+			}
+		}
+
+		know_science_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				research_time_factor = -0.16
+			}
+		}
+
+		know_science_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				research_time_factor = -0.20
+			}
+		}
+
+		know_mathematics_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.02
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		know_mathematics_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.04
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		know_mathematics_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.06
+				production_speed_buildings_factor = 0.3
+			}
+		}
+
+		know_mathematics_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.08
+				production_speed_buildings_factor = 0.4
+			}
+		}
+
+		know_mathematics_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.1
+				production_speed_buildings_factor = 0.5
+			}
+		}
+
+		know_logistics_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		know_logistics_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_infrastructure_factor = 0.2
+			}
+		}
+
+		know_logistics_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_infrastructure_factor = 0.3
+			}
+		}
+
+		know_logistics_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_infrastructure_factor = 0.4
+			}
+		}
+
+		know_logistics_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_infrastructure_factor = 0.5
+			}
+		}
+
+		know_industry_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industrial_capacity_factory = 0.1
+			    global_building_slots_factor = 0.15
+			}
+		}
+
+		know_industry_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industrial_capacity_factory = 0.2
+			    global_building_slots_factor = 0.30
+			}
+		}
+
+		know_industry_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industrial_capacity_factory = 0.3
+			    global_building_slots_factor = 0.45
+			}
+		}
+
+		know_industry_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industrial_capacity_factory = 0.4
+			    global_building_slots_factor = 0.60
+			}
+		}
+
+		know_industry_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industrial_capacity_factory = 0.5
+			    global_building_slots_factor = 0.75
+			}
+		}
+
+		know_chemistry_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    MONTHLY_POPULATION = 0.1
+			}
+		}
+
+		know_chemistry_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    MONTHLY_POPULATION = 0.2
+			}
+		}
+
+		know_chemistry_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    MONTHLY_POPULATION = 0.3
+			}
+		}
+
+		know_chemistry_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    MONTHLY_POPULATION = 0.4
+			}
+		}
+
+		know_chemistry_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    MONTHLY_POPULATION = 0.5
+			}
+		}
+
+		know_concept_of_society_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    drift_defence_factor = 0.05
+			    foreign_subversive_activites = -0.05
+			}
+		}
+
+		know_concept_of_society_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    drift_defence_factor = 0.10
+			    foreign_subversive_activites = -0.10
+			}
+		}
+
+		know_concept_of_society_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    drift_defence_factor = 0.15
+			    foreign_subversive_activites = -0.15
+			}
+		}
+
+		know_concept_of_society_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    drift_defence_factor = 0.20
+			    foreign_subversive_activites = -0.20
+			}
+		}
+
+		know_concept_of_society_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    drift_defence_factor = 0.25
+			    foreign_subversive_activites = -0.25
+			}
+		}
+
+		know_military_theory_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    planning_speed = 0.04
+			    max_planning = 0.04
+			}
+		}
+
+		know_military_theory_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    planning_speed = 0.08
+			    max_planning = 0.08
+			}
+		}
+
+		know_military_theory_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    planning_speed = 0.12
+			    max_planning = 0.12
+			}
+		}
+
+		know_military_theory_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    planning_speed = 0.18
+			    max_planning = 0.18
+			}
+		}
+
+		know_military_theory_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    planning_speed = 0.22
+			    max_planning = 0.22
+			}
+		}
+
+		know_military_theory_tier_6 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    planning_speed = 0.26
+			    max_planning = 0.26
+			}
+		}
+
+		know_language_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    political_power_factor = 0.05
+			}
+		}
+
+		know_language_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    political_power_factor = 0.10
+			}
+		}
+
+		know_language_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    political_power_factor = 0.15
+			}
+		}
+
+		know_language_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    political_power_factor = 0.20
+			}
+		}
+
+		know_language_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    political_power_factor = 0.25
+			}
+		}
+
+		know_old_customs_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.04
+			}
+		}
+
+		know_old_customs_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.08
+			}
+		}
+
+		know_old_customs_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.12
+			}
+		}
+
+		know_old_customs_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.16
+			}
+		}
+
+		know_old_customs_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.20
+			}
+		}
+
+		know_ancient_language_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.01
+			    research_time_factor = -0.01
+			    drift_defence_factor = 0.01
+			    army_org = 1
+			    consumer_goods_factor = -0.01
+			}
+		}
+
+		know_ancient_language_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.02
+			    research_time_factor = -0.02
+			    drift_defence_factor = 0.02
+			    army_org = 2
+			    consumer_goods_factor = -0.02
+			}
+		}
+
+		know_ancient_language_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.03
+			    research_time_factor = -0.03
+			    drift_defence_factor = 0.03
+			    army_org = 3
+			    consumer_goods_factor = -0.03
+			}
+		}
+
+		know_ancient_language_tier_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.04
+			    research_time_factor = -0.04
+			    drift_defence_factor = 0.04
+			    army_org = 4
+			    consumer_goods_factor = -0.04
+			}
+		}
+
+		know_ancient_language_tier_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    stability_factor = 0.05
+			    research_time_factor = -0.05
+			    drift_defence_factor = 0.05
+			    army_org = 5
+			    consumer_goods_factor = -0.05
+			}
+		}
+
+		know_communication_nations_tier_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    trade_opinion_factor = 0.2
+			    subversive_activites_upkeep = -0.1
+			    foreign_subversive_activites = -0.1
+			}
+		}
+
+		know_communication_nations_tier_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    trade_opinion_factor = 0.4
+			    subversive_activites_upkeep = -0.2
+			    foreign_subversive_activites = -0.2
+			}
+		}
+
+		know_communication_nations_tier_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    trade_opinion_factor = 0.6
+			    subversive_activites_upkeep = -0.3
+			    foreign_subversive_activites = -0.3
+			}
+		}
+
+		engineering_tier_1_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industry_air_damage_factor = -0.25
+			    production_factory_max_efficiency_factor = 0.1
+			}    
+		}
+
+		engineering_tier_1_b = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    global_building_slots_factor = 0.30
+			    industrial_capacity_factory = 0.05
+			}    
+		}
+
+		engineering_tier_2_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_industrial_complex_factor = 0.1
+			    consumer_goods_factor = -0.05
+			}    
+		}
+
+		engineering_tier_3_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    local_resources_factor = 0.20
+			    production_speed_steel_refinery_factor = 0.3
+			}    
+		}
+
+		engineering_tier_3_b = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_factory_start_efficiency_factor = 0.20
+			}    
+		}
+
+		science_tier_1_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industrial_capacity_factory = 0.10
+			    industrial_capacity_dockyard = 0.10
+			}    
+		}
+
+		science_tier_1_b = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    encryption = 0.2
+			    decryption = 0.2
+			}    
+		}
+
+		science_tier_1_c = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_buildings_factor = 0.1
+			}    
+		}
+
+		science_tier_1_e = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    conversion_cost_civ_to_mil_factor = -0.4
+			}    
+		}
+
+		logistics_tier_1_b = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    local_resources_factor = 0.10
+			}    
+		}
+
+		logistics_tier_2_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    supply_consumption_factor = -0.05
+			}    
+		}
+
+		logistics_tier_2_b = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_radar_station_factor = 0.30
+			}    
+		}
+
+		chemistry_tier_1_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    MONTHLY_POPULATION = 0.2
+			}    
+		}
+
+		industry_tier_2_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    production_speed_industrial_complex_factor = 0.1
+			}    
+		}
+
+		industry_tier_2_b = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    industry_repair_factor = 0.5
+			    industry_free_repair_factor = 1
+			}    
+		}
+
+		industry_tier_2_c = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    global_building_slots_factor = 0.20
+			}    
+		}
+
+		science_tier_2_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    research_time_factor = -0.01
+			}    
+		}
+
+		concept_of_society_tier_1_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    army_leader_start_level = 1
+			    political_power_gain = 0.2
+			}    
+		}
+
+		concept_of_society_tier_2_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+			    army_leader_start_level = 3
+			    political_power_gain = 0.5
+			}    
+		}
+
+		military_theory_tier_1_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			enable_tactic = tactic_relentless_assault
+
+			
+			modifier = {
+			    enable_tactic = tactic_relentless_assault
+			}    
+		}
+
+		chemistry_tier_2_a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				exists = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+			    MONTHLY_POPULATION = 3.0
+			}    
+		}
+	}
+}		
