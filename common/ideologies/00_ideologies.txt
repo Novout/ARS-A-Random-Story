@@ -1,0 +1,611 @@
+ideologies = {
+
+    henism_pacifism = {
+
+		types = {
+
+			henism_democratic = {
+
+			}
+
+			henism_monarch = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSPAC_1"
+			"FACTION_NAME_ARSPAC_2"
+			"FACTION_NAME_ARSPAC_3"
+			"FACTION_NAME_ARSPAC_4"
+			"FACTION_NAME_ARSPAC_5"
+		}
+
+		color = { 75 105 159 }
+
+
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+
+		rules = {
+			can_force_government = yes
+			can_puppet = no
+			can_send_volunteers = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 0.2
+			join_faction_tension = 0.2
+			lend_lease_tension = 0.2
+			send_volunteers_tension = 0.5
+			guarantee_tension = -0.1
+			drift_defence_factor = -0.15
+			stability_factor = 0.05
+			war_support_factor = -0.05
+			mobilization_laws_cost_factor = 0.1
+			high_command_cost_factor = 0.2
+		}
+
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+
+		ai_democratic = yes #
+	}
+
+	pacifism = {
+
+		types = {
+
+			pacifism = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSPAC_1"
+			"FACTION_NAME_ARSPAC_2"
+			"FACTION_NAME_ARSPAC_3"
+			"FACTION_NAME_ARSPAC_4"
+			"FACTION_NAME_ARSPAC_5"
+		}
+
+		color = { 255 255 255 }
+
+
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+
+		rules = {
+			can_force_government = yes
+			can_puppet = no
+			can_send_volunteers = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 0.2
+			join_faction_tension = 0.2
+			lend_lease_tension = 0.2
+			send_volunteers_tension = 0.5
+			guarantee_tension = -0.1
+			drift_defence_factor = -0.15
+			stability_factor = 0.05
+			war_support_factor = -0.05
+			mobilization_laws_cost_factor = 0.1
+			high_command_cost_factor = 0.2
+		}
+
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+
+		ai_democratic = yes #
+	}
+
+	henism_autocracy = {
+
+		types = {
+			henism_auto = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSHEA_1"
+			"FACTION_NAME_ARSHEA_2"
+			"FACTION_NAME_ARSHEA_3"
+			"FACTION_NAME_ARSHEA_4"
+			"FACTION_NAME_ARSHEA_5"
+		}
+
+		color = { 50 160 129 }
+
+		war_impact_on_world_tension = 0.9		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		modifiers = {
+		    consumer_goods_factor = -0.2
+		    ai_focus_aggressive_factor = 0.15
+			puppet_cost_factor = -0.75
+			war_support_factor = 0.10
+			high_command_cost_factor = -0.8
+            
+		}
+
+		faction_modifiers = {
+
+		}
+		
+		ai_fascist = yes #
+
+	}
+
+	traditional_conservatism = {
+
+		types = {
+
+			federal = {
+
+			}
+
+			conserv = {
+
+			}
+
+			moderatism = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSTRA_1"
+			"FACTION_NAME_ARSTRA_2"
+			"FACTION_NAME_ARSTRA_3"
+			"FACTION_NAME_ARSTRA_4"
+			"FACTION_NAME_ARSTRA_5"
+		}
+
+		color = { 17 62 18 }
+
+		war_impact_on_world_tension = 0.2		#no major danger
+		faction_impact_on_world_tension = 0.15
+
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = no
+		}
+
+		modifiers = {
+		    consumer_goods_factor = 0.05
+		    drift_defence_factor = 0.10  
+		    political_power_factor = 0.05
+		}
+
+		ai_fascist = yes
+
+	}
+
+	#Kiinism
+	kiinism = {
+
+		types = {
+
+			kiinism_liberal = {
+			}
+
+			radical_kiinism = {
+			}
+
+			anarcho_kiinism = {
+			}
+
+			kiinism_extreme = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSKII_1"
+			"FACTION_NAME_ARSKII_2"
+			"FACTION_NAME_ARSKII_3"
+			"FACTION_NAME_ARSKII_4"
+			"FACTION_NAME_ARSKII_5"
+		}
+
+		color = { 189 134 232 }
+
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = no
+		}
+
+		ai_fascist = yes
+
+	}
+
+	#Docile version of centrism
+	coronelism = {
+
+		types = {
+			coronelism_social = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSCOL_1"
+			"FACTION_NAME_ARSCOL_2"
+			"FACTION_NAME_ARSCOL_3"
+			"FACTION_NAME_ARSCOL_4"
+			"FACTION_NAME_ARSCOL_5"
+		}
+
+		color = { 153 76 101 }
+
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes 
+
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+		}
+
+		modifiers = {
+		    political_power_factor = -1.0
+		    stability_factor = -0.1
+		    war_support_factor = -1.0
+		}
+
+		faction_modifiers = {
+
+		}
+
+	}
+
+	#extremism
+	radicalism = {
+
+		types = {
+			syndicalism = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSRAD_1"
+			"FACTION_NAME_ARSRAD_2"
+			"FACTION_NAME_ARSRAD_3"
+			"FACTION_NAME_ARSRAD_4"
+			"FACTION_NAME_ARSRAD_5"
+		}
+
+		color = { 148 101 18 }
+
+		war_impact_on_world_tension = 0.1		#Commie less threatening
+		faction_impact_on_world_tension = 0.05
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+		}
+
+		modifiers = {
+            conscription_factor = 0.1
+            army_core_attack_factor = 0.1
+            army_core_defence_factor = 0.1
+            stability_factor = -0.1
+            training_time_factor = 0.2
+		}
+
+		faction_modifiers = {
+
+		}
+
+		ai_fascist = yes
+
+	}
+
+	dictatorship = {
+
+		types = {
+			dictatorship = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSDIT_1"
+			"FACTION_NAME_ARSDIT_2"
+			"FACTION_NAME_ARSDIT_3"
+			"FACTION_NAME_ARSDIT_4"
+			"FACTION_NAME_ARSDIT_5"
+		}
+
+		color = { 155 0 0 }
+
+		war_impact_on_world_tension = 0.1		#Commie less threatening
+		faction_impact_on_world_tension = 0.05
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		modifiers = {
+            political_power_factor = 0.2
+            drift_defence_factor = 1.0
+		}
+
+		faction_modifiers = {
+
+		}
+
+		ai_fascist = yes
+
+	}
+
+ 	#Autoritarian 
+	reactionary = {
+
+		types = {
+			plutocracy = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSREA_1"
+			"FACTION_NAME_ARSREA_2"
+			"FACTION_NAME_ARSREA_3"
+			"FACTION_NAME_ARSREA_4"
+			"FACTION_NAME_ARSREA_5"
+		}
+
+		color = { 211 104 0 }
+
+
+		war_impact_on_world_tension = 0.5	#no major danger
+		faction_impact_on_world_tension = 0.25
+
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 0.1
+			global_building_slots_factor = 0.15
+		}
+
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+
+		ai_fascist = yes #
+
+	}
+
+	#Anarch
+	anarchism = {
+
+		types = {
+			anarchism_total = {
+
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSANA_1"
+			"FACTION_NAME_ARSANA_2"
+			"FACTION_NAME_ARSANA_3"
+			"FACTION_NAME_ARSANA_4"
+			"FACTION_NAME_ARSANA_5"
+		}
+
+		color = { 255 0 0 }
+
+		war_impact_on_world_tension = 1.5			#evil!
+		faction_impact_on_world_tension = 1.5
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+		}
+
+		modifiers = {
+		    stability_factor = -1.0
+			war_support_factor = 1.0
+			drift_defence_factor = -1.0
+			political_power_factor = -1.0
+		}
+
+		ai_communist = yes
+
+	}
+
+	egalitarianism = {
+
+		types = {
+			egalitarianism = {
+
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSANA_1"
+			"FACTION_NAME_ARSANA_2"
+			"FACTION_NAME_ARSANA_3"
+			"FACTION_NAME_ARSANA_4"
+			"FACTION_NAME_ARSANA_5"
+		}
+
+		color = { 196 135 133 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		modifiers = {
+			political_power_factor = -0.15
+		}
+
+		ai_communist = yes # uses the fascist AI behaviour
+
+	}
+
+	#religion
+	fundamentalism = {
+
+		types = {
+
+			yindoism = {
+
+			}
+
+			lensim = {
+
+			}
+
+			heyeloism = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSFUN_1"
+			"FACTION_NAME_ARSFUN_2"
+			"FACTION_NAME_ARSFUN_3"
+			"FACTION_NAME_ARSFUN_4"
+			"FACTION_NAME_ARSFUN_5"
+		}
+
+		color = { 25 26 26 }
+
+		war_impact_on_world_tension = 1.1			#religion!
+		faction_impact_on_world_tension = 1.5
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+		}
+
+		modifiers = {
+			stability_factor = 1.0
+			war_support_factor = 0.1
+			political_power_factor = 0.15
+		}
+
+		ai_fascist = yes
+
+	}
+
+	tecnocracy = {
+
+		types = {
+			tecnocracy = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSREA_1"
+			"FACTION_NAME_ARSREA_2"
+			"FACTION_NAME_ARSREA_3"
+			"FACTION_NAME_ARSREA_4"
+			"FACTION_NAME_ARSREA_5"
+		}
+
+		color = { 0 143 255 }
+
+
+		war_impact_on_world_tension = 0.5	#no major danger
+		faction_impact_on_world_tension = 0.25
+
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+		    research_time_factor = -0.15
+		}
+
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+
+		ai_neutral = yes #
+
+	}
+
+	unknown = {
+
+		types = {
+
+			unknow = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ARSUNK_1"
+			"FACTION_NAME_ARSUNK"
+			"FACTION_NAME_ARSUNK"
+			"FACTION_NAME_ARSUNK"
+			"FACTION_NAME_ARSUNK"
+		}
+
+		color = { 250 250 250 }
+
+		war_impact_on_world_tension = 1.1	
+		faction_impact_on_world_tension = 1.5
+
+		rules = {
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 0.9
+		}
+
+		ai_neutral = yes
+
+	}
+
+}
