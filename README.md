@@ -1,8 +1,9 @@
 # ARS-A-Random-Story
 
-![](https://img.shields.io/badge/Hearts%20of%20Iron%20IV-1.4.2-brown.svg) ![](https://img.shields.io/badge/Lua-5.4-blue.svg)
+![](https://img.shields.io/badge/Hearts%20of%20Iron%20IV-1.4-brown.svg) ![](https://img.shields.io/badge/Lua-5.4-blue.svg)
 
-Projeto Orientado a Objeto de História Alternativa para o jogo HOI IV
+[Steam Link](https://steamcommunity.com/sharedfiles/filedetails/?id=1508114219)
+
 ## Project structure
  ```
     .
